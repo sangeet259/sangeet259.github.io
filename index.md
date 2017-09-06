@@ -14,4 +14,4 @@ And all this is possible because of the great community IIT Kharagpur has !
 **Some great seniors and cheerful friends is all you need to stay motivated !**<br>
 
 If interested , here's my [Resume](/resume.pdf). <br/>
-Have fun! <br/>
+Have a nice day :) ! <br/>
