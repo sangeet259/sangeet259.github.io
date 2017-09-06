@@ -61,10 +61,10 @@ url-pretty: "sangeet259.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: 
+disqus: sangeet259-github-io
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: 
+google_analytics: UA-106054431-1
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
