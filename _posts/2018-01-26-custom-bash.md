@@ -1,4 +1,5 @@
-Every time I re-install Ubnutu I have to search the web for the custom shell and git prompt to configure.
+Every time I re-install Ubnutu I have to search the web for the custom shell and git prompt to configure
+
 This time I thought to just put it down here.
 
 Steps :
@@ -6,7 +7,7 @@ Steps :
 * Save the above file as `git-prompt.sh` in the home directory
 * Download : https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 * Save the above file as `git-completion.bash` in the home directory
-* Now Open .bashrc file in any text editor and these lines at the end
+* Now open `.bashrc` file in any text editor and these lines at the end
 
 
 <br>
