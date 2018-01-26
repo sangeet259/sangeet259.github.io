@@ -5,6 +5,8 @@ They are really handy for git completions.
 
 ![img](https://imgur.com/a/hovfR "Image")
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/hovfR"><a href="//imgur.com/hovfR"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 <hr>
 
 This time I thought to just put it down here.
