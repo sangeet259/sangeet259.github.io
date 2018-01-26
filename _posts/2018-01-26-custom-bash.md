@@ -1,4 +1,11 @@
-Every time I re-install Ubnutu I have to search the web for the custom shell and git prompt to configure
+Every time I re-install Ubnutu I have to search the web for the custom shell and git promp configurations.
+They are really handy for git completions.
+
+<hr>
+
+![img](../img/bash.png "Image")
+
+<hr>
 
 This time I thought to just put it down here.
 
@@ -42,3 +49,6 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # '\W' adds the name of the current directory
 export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
 ```
+
+<hr>
+Acknowledgements : https://in.udacity.com/course/how-to-use-git-and-github--ud775
