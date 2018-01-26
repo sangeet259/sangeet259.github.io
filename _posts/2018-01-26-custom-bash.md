@@ -3,7 +3,7 @@ They are really handy for git completions.
 
 <hr>
 
-![img](../img/bash.png "Image")
+![img](https://imgur.com/a/hovfR "Image")
 
 <hr>
 
