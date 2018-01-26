@@ -3,9 +3,9 @@ Every time I re-install Ubnutu I have to search the web for the custom shell and
 This time I thought to just put it down here.
 
 Steps :
-* Download : https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+* Download : [git-prompt.sh](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh)
 * Save the above file as `git-prompt.sh` in the home directory
-* Download : https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+* Download : [git-completion.bash](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash)
 * Save the above file as `git-completion.bash` in the home directory
 * Now open `.bashrc` file in any text editor and these lines at the end
 
