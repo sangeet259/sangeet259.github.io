@@ -4,6 +4,7 @@ They are really handy for git completions.
 <hr>
 
 ![img](https://github.com/sangeet259/sangeet259.github.io/blob/master/img/bash.png "Image")
+<img src="https://github.com/sangeet259/sangeet259.github.io/blob/master/img/bash.png">
 
 <hr>
 
