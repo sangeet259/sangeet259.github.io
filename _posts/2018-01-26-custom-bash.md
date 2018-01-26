@@ -3,9 +3,7 @@ They are really handy for git completions.
 
 <hr>
 
-![img](https://imgur.com/a/hovfR "Image")
-
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/hovfR"><a href="//imgur.com/hovfR"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![img](https://github.com/sangeet259/sangeet259.github.io/blob/master/img/bash.png "Image")
 
 <hr>
 
