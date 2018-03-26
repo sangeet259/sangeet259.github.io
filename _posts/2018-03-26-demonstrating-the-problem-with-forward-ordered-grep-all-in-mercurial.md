@@ -48,3 +48,9 @@ Now see the result of `hg grep --all -r 0:tip "ruleid"`
 
 
 🎉  We got the older hits first and the results are correct.
+
+PS: There are other benifts of clear over dict.
+1. Time: See the pastebin paste I created comparing the times
+https://bpaste.net/show/fe79d2daae39
+2. clear method apparently according to this SO answer is more memory efficient
+https://stackoverflow.com/questions/10446839/does-dictionarys-clear-method-delete-all-the-item-related-objects-from-memory/30519908#30519908
