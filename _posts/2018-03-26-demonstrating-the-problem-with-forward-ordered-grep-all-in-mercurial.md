@@ -1,5 +1,5 @@
 # Demonstrating the problem with forward ordered grep `--``all`
-So if you do a `hg grep` `"``pattern``"` ```--``all`
+So if you do a `hg grep "pattern" --all`
 You would get all the lines along with revision numbers showing when this pattern appeared or disappeared from the repository. Cool, that’s what we want.
 
 And by default, does a reverse revlog search. That is, it starts from the latest revision and goes all the way upto the oldest one. And accordingly show you the result.
@@ -9,12 +9,12 @@ All the demonstration are performed on this repository : https://bitbucket.org/s
 *You can try to reproduce the following results by cloning*
 
 Okay, now coming to the point.
-This is the output of `hg grep` `"``ruleid``"` ```--``all` on that repo.
+This is the output of `hg grep "ruleid" --all` on that repo.
 
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_14728F58E2C2447B974FA1CEED8D87C4B844A7A44205FE637404A4BCC53C1097_1522070989071_image.png)
 
 
-This is what we expect. Now if you do `**hg grep -r 0:tip**` `**"**``**ruleid**``**"**` `****``**--**``**all**`, what you want is that the older hits are shown first, that we start from the oldest revision and iterate upto the latest revision. But the result is unexpected : 
+This is what we expect. Now if you do `hg grep -r 0:tip  "ruleid" --all`, what you want is that the older hits are shown first, that we start from the oldest revision and iterate upto the latest revision. But the result is unexpected :
 Output of `**hg grep -r 0:tip "ruleid" --all**` on that repo.
 
 
@@ -40,12 +40,11 @@ Hence this :
       matches.clear()
 
 
-Now see the result of `**hg grep**` `**--**``**all -r 0:tip**` `**"**``**ruleid**``**"**`
+Now see the result of `hg grep --all -r 0:tip "ruleid"`
 
 
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_14728F58E2C2447B974FA1CEED8D87C4B844A7A44205FE637404A4BCC53C1097_1522071934273_image.png)
 
 
- 
-🎉  We got the older hits first and the results are correct.
 
+🎉  We got the older hits first and the results are correct.
