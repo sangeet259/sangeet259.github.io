@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on sangeet259</title>
-    <link>sangeeet259.github.io/tags/python/</link>
+    <link>https://sangeet259.github.io/tags/python/</link>
     <description>Recent content in Python on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 07 Dec 2017 19:03:31 +0530</lastBuildDate>
     
-	<atom:link href="sangeeet259.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sangeet259.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Being Pythonic</title>
-      <link>sangeeet259.github.io/posts/being-pythonic/</link>
+      <link>https://sangeet259.github.io/posts/being-pythonic/</link>
       <pubDate>Thu, 07 Dec 2017 19:03:31 +0530</pubDate>
       
-      <guid>sangeeet259.github.io/posts/being-pythonic/</guid>
+      <guid>https://sangeet259.github.io/posts/being-pythonic/</guid>
       <description>I had encountered several times words like map, zip, lambda, *args, **kwargs. This time I decided to look up the web and really get the hang of them. So here I was searching the net. Finally I came across some nice explaations which I pen down here :
  Map, Zip and Lamda :: https://bradmontgomery.net/blog/pythons-zip-map-and-lambda/ **Args and **Kwargs :: https://pythontips.com/2013/08/04/args-and-kwargs-in-python-explained/  </description>
     </item>
