@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devops on sangeet259</title>
-    <link>sangeetmishra.in/tags/devops/</link>
+    <link>https://sangeeet259.github.io/tags/devops/</link>
     <description>Recent content in Devops on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 26 Jan 2018 19:03:31 +0530</lastBuildDate>
     
-	<atom:link href="sangeetmishra.in/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sangeeet259.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Custom Bash</title>
-      <link>sangeetmishra.in/posts/custom-bash-config/</link>
+      <link>https://sangeeet259.github.io/posts/custom-bash-config/</link>
       <pubDate>Fri, 26 Jan 2018 19:03:31 +0530</pubDate>
       
-      <guid>sangeetmishra.in/posts/custom-bash-config/</guid>
+      <guid>https://sangeeet259.github.io/posts/custom-bash-config/</guid>
       <description>Every time I re-install Ubnutu I have to search the web for the custom shell and git promp configurations. They are really handy for git completions.
   This time I thought to just put it down here.
 Steps :
@@ -25,10 +25,10 @@ Steps :
     
     <item>
       <title>Setting Up OpenCV</title>
-      <link>sangeetmishra.in/posts/opencv-setup/</link>
+      <link>https://sangeeet259.github.io/posts/opencv-setup/</link>
       <pubDate>Thu, 07 Dec 2017 19:03:31 +0530</pubDate>
       
-      <guid>sangeetmishra.in/posts/opencv-setup/</guid>
+      <guid>https://sangeeet259.github.io/posts/opencv-setup/</guid>
       <description>I was trying to use the Tensorflow&amp;rsquo;s newly released Object Detection API on my webcam. I realised I couldn&amp;rsquo;t open webcam, OpenCV which was bundled with ROS was throwing all sorts of errors, I Googled and tried many hacky solution but all in vain.
 Now that my end sems were over I decided to install it fresh.
 This site : https://www.learnopencv.com/install-opencv3-on-ubuntu/ is a great walktrough through the installation process. It&amp;rsquo;s absolutely complete.</description>
@@ -36,10 +36,10 @@ This site : https://www.learnopencv.com/install-opencv3-on-ubuntu/ is a great wa
     
     <item>
       <title>Setting Up CUDA</title>
-      <link>sangeetmishra.in/posts/cuda-setup/</link>
+      <link>https://sangeeet259.github.io/posts/cuda-setup/</link>
       <pubDate>Tue, 14 Nov 2017 19:03:31 +0530</pubDate>
       
-      <guid>sangeetmishra.in/posts/cuda-setup/</guid>
+      <guid>https://sangeeet259.github.io/posts/cuda-setup/</guid>
       <description>CUDA Set Up The last time I tried to fiddle with CUDA I got stuck in a login loop and had to reinstall Ubuntu. Last day again I was sitting in front of a fresh installation of Ubuntu and nightmares of last time&amp;rsquo;s Tensorflow GPU setup were all but moments away.
 Anyway I had to do it.
 But surprisingly this time it was short and simple ( simpler would hae been a better choice ).</description>
