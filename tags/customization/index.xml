@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Customization on sangeet259</title>
-    <link>https://sangeetmishra.in/tags/customization/</link>
+    <link>https://www.sangeetmishra.in/tags/customization/</link>
     <description>Recent content in Customization on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 26 Jan 2018 19:03:31 +0530</lastBuildDate>
     
-	<atom:link href="https://sangeetmishra.in/tags/customization/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sangeetmishra.in/tags/customization/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Custom Bash</title>
-      <link>https://sangeetmishra.in/posts/custom-bash-config/</link>
+      <link>https://www.sangeetmishra.in/posts/custom-bash-config/</link>
       <pubDate>Fri, 26 Jan 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeetmishra.in/posts/custom-bash-config/</guid>
+      <guid>https://www.sangeetmishra.in/posts/custom-bash-config/</guid>
       <description>Every time I re-install Ubnutu I have to search the web for the custom shell and git promp configurations. They are really handy for git completions.
   This time I thought to just put it down here.
 Steps :

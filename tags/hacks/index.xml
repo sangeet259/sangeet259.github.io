@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hacks on sangeet259</title>
-    <link>https://sangeetmishra.in/tags/hacks/</link>
+    <link>https://www.sangeetmishra.in/tags/hacks/</link>
     <description>Recent content in Hacks on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 07 Jan 2018 19:03:31 +0530</lastBuildDate>
     
-	<atom:link href="https://sangeetmishra.in/tags/hacks/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sangeetmishra.in/tags/hacks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Matplotlib Backened change during Training a DL Model</title>
-      <link>https://sangeetmishra.in/posts/matplotlib-backend-dl-training/</link>
+      <link>https://www.sangeetmishra.in/posts/matplotlib-backend-dl-training/</link>
       <pubDate>Sun, 07 Jan 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeetmishra.in/posts/matplotlib-backend-dl-training/</guid>
+      <guid>https://www.sangeetmishra.in/posts/matplotlib-backend-dl-training/</guid>
       <description>Matplotlib Backened change during Training a DL Model If you are training something on remote server where you dont have root access and get an error like your python is not configured for tkinter. This is nothing but maybe somewhere in your pipe
 Then you&amp;rsquo;re options are :
  First install tkinter, note that since you do not have sudo priviledge, you have to install tcl8.6-dev and tk8.6-dev from source too.</description>
