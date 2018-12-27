@@ -69,7 +69,8 @@ Next Yuya told me to work on passing multiple revisions with –all-files mode.<
       <guid>https://sangeet259.github.io/posts/gcoc-post-5/</guid>
       <description>GSOC Blog Post #5 This time I was working on changing the default of the grep command to a new behaviour.
 With this patch grep searches on the working directory by default and looks for all files tracked by the working directory and greps on them
-==========================Demonstration================ OLD BEHAVIOUR
+==========================Demonstration================
+OLD BEHAVIOUR
 $ hg init a $ cd a $ echo &amp;#34;some text&amp;#34;&amp;gt;&amp;gt;file1 $ hg add file1 $ hg commit -m &amp;#34;adds file1&amp;#34; $ hg mv file1 file2 $ hg grep &amp;#34;some&amp;#34; file2:1:some text file1:0:some text This behaviour is undesirable since file1 is not in the current history and was renamed as file2, so the second result was redundant and confusing</description>
     </item>
     
