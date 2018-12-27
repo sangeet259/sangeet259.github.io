@@ -2,120 +2,120 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on sangeet259</title>
-    <link>https://sangeet259.github.io/tags/</link>
+    <link>https://sangeetmishra.in/tags/</link>
     <description>Recent content in Tags on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 14 Nov 2017 19:03:31 +0530</lastBuildDate>
     
-	<atom:link href="https://sangeet259.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sangeetmishra.in/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Blog</title>
-      <link>https://sangeet259.github.io/tags/blog/</link>
+      <link>https://sangeetmishra.in/tags/blog/</link>
       <pubDate>Tue, 14 Nov 2017 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/tags/blog/</guid>
+      <guid>https://sangeetmishra.in/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Customization</title>
-      <link>https://sangeet259.github.io/tags/customization/</link>
+      <link>https://sangeetmishra.in/tags/customization/</link>
       <pubDate>Fri, 26 Jan 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/tags/customization/</guid>
+      <guid>https://sangeetmishra.in/tags/customization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Deep Learning</title>
-      <link>https://sangeet259.github.io/tags/deep-learning/</link>
+      <link>https://sangeetmishra.in/tags/deep-learning/</link>
       <pubDate>Sun, 07 Jan 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/tags/deep-learning/</guid>
+      <guid>https://sangeetmishra.in/tags/deep-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Devops</title>
-      <link>https://sangeet259.github.io/tags/devops/</link>
+      <link>https://sangeetmishra.in/tags/devops/</link>
       <pubDate>Fri, 26 Jan 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/tags/devops/</guid>
+      <guid>https://sangeetmishra.in/tags/devops/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gsoc</title>
-      <link>https://sangeet259.github.io/tags/gsoc/</link>
+      <link>https://sangeetmishra.in/tags/gsoc/</link>
       <pubDate>Sun, 12 Aug 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/tags/gsoc/</guid>
+      <guid>https://sangeetmishra.in/tags/gsoc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hacks</title>
-      <link>https://sangeet259.github.io/tags/hacks/</link>
+      <link>https://sangeetmishra.in/tags/hacks/</link>
       <pubDate>Sun, 07 Jan 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/tags/hacks/</guid>
+      <guid>https://sangeetmishra.in/tags/hacks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jekyll</title>
-      <link>https://sangeet259.github.io/tags/jekyll/</link>
+      <link>https://sangeetmishra.in/tags/jekyll/</link>
       <pubDate>Tue, 14 Nov 2017 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/tags/jekyll/</guid>
+      <guid>https://sangeetmishra.in/tags/jekyll/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mercurial</title>
-      <link>https://sangeet259.github.io/tags/mercurial/</link>
+      <link>https://sangeetmishra.in/tags/mercurial/</link>
       <pubDate>Sun, 12 Aug 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/tags/mercurial/</guid>
+      <guid>https://sangeetmishra.in/tags/mercurial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ml Dl Ai Ip</title>
-      <link>https://sangeet259.github.io/tags/ml-dl-ai-ip/</link>
+      <link>https://sangeetmishra.in/tags/ml-dl-ai-ip/</link>
       <pubDate>Thu, 07 Dec 2017 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/tags/ml-dl-ai-ip/</guid>
+      <guid>https://sangeetmishra.in/tags/ml-dl-ai-ip/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Psf</title>
-      <link>https://sangeet259.github.io/tags/psf/</link>
+      <link>https://sangeetmishra.in/tags/psf/</link>
       <pubDate>Sun, 12 Aug 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/tags/psf/</guid>
+      <guid>https://sangeetmishra.in/tags/psf/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://sangeet259.github.io/tags/python/</link>
+      <link>https://sangeetmishra.in/tags/python/</link>
       <pubDate>Thu, 07 Dec 2017 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/tags/python/</guid>
+      <guid>https://sangeetmishra.in/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Setup</title>
-      <link>https://sangeet259.github.io/tags/setup/</link>
+      <link>https://sangeetmishra.in/tags/setup/</link>
       <pubDate>Thu, 07 Dec 2017 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/tags/setup/</guid>
+      <guid>https://sangeetmishra.in/tags/setup/</guid>
       <description></description>
     </item>
     
