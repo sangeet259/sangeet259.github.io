@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on sangeet259</title>
+    <link>https://sangeet259.github.io/tags/</link>
+    <description>Recent content in Tags on sangeet259</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 14 Nov 2017 19:03:31 +0530</lastBuildDate>
+    
+	<atom:link href="https://sangeet259.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blog</title>
+      <link>https://sangeet259.github.io/tags/blog/</link>
+      <pubDate>Tue, 14 Nov 2017 19:03:31 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Customization</title>
+      <link>https://sangeet259.github.io/tags/customization/</link>
+      <pubDate>Fri, 26 Jan 2018 19:03:31 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/customization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>https://sangeet259.github.io/tags/deep-learning/</link>
+      <pubDate>Sun, 07 Jan 2018 19:03:31 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Devops</title>
+      <link>https://sangeet259.github.io/tags/devops/</link>
+      <pubDate>Fri, 26 Jan 2018 19:03:31 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gsoc</title>
+      <link>https://sangeet259.github.io/tags/gsoc/</link>
+      <pubDate>Sun, 12 Aug 2018 19:03:31 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/gsoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hacks</title>
+      <link>https://sangeet259.github.io/tags/hacks/</link>
+      <pubDate>Sun, 07 Jan 2018 19:03:31 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/hacks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jekyll</title>
+      <link>https://sangeet259.github.io/tags/jekyll/</link>
+      <pubDate>Tue, 14 Nov 2017 19:03:31 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/jekyll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mercurial</title>
+      <link>https://sangeet259.github.io/tags/mercurial/</link>
+      <pubDate>Sun, 12 Aug 2018 19:03:31 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/mercurial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ml Dl Ai Ip</title>
+      <link>https://sangeet259.github.io/tags/ml-dl-ai-ip/</link>
+      <pubDate>Thu, 07 Dec 2017 19:03:31 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/ml-dl-ai-ip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Psf</title>
+      <link>https://sangeet259.github.io/tags/psf/</link>
+      <pubDate>Sun, 12 Aug 2018 19:03:31 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/psf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://sangeet259.github.io/tags/python/</link>
+      <pubDate>Thu, 07 Dec 2017 19:03:31 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Setup</title>
+      <link>https://sangeet259.github.io/tags/setup/</link>
+      <pubDate>Thu, 07 Dec 2017 19:03:31 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/setup/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="SANGEET KUMAR MISHRA">
+    <meta name="description" content="Sangeet Kumar Mishra&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="https://sangeet259.github.io/">
+    <title>
+  Custom Bash · sangeet259
+</title>
+
+    <link rel="canonical" href="https://sangeet259.github.io/posts/custom-bash-config/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" integrity="sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://sangeet259.github.io/images/logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://sangeet259.github.io/images/logo.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.53" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://sangeet259.github.io/">
+      sangeet259
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeet259.github.io/about/">ABOUT</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeet259.github.io/posts/">BLOG</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeet259.github.io/values/">VALUES</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeet259.github.io/quotes/">QUOTES</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeet259.github.io/resume.pdf">RÉSUMÉ</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Custom Bash</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2018-01-26T19:03:31&#43;05:30'>
+                January 26, 2018
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              One minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://sangeet259.github.io/categories/blog/">Blog</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://sangeet259.github.io/tags/customization/">customization</a>
+      <span class="separator">•</span>
+    <a href="https://sangeet259.github.io/tags/devops/">devops</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p>Every time I re-install Ubnutu I have to search the web for the custom shell and git promp configurations.
+They are really handy for git completions.</p>
+
+<hr>
+
+<p><img src="https://i.imgur.com/JMom25J.png" alt="img" /></p>
+
+<hr>
+
+<p>This time I thought to just put it down here.</p>
+
+<p>Steps :</p>
+
+<ul>
+<li>Download : <a href="https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh">git-prompt.sh</a></li>
+<li>Save the above file as <code>git-prompt.sh</code> in the home directory</li>
+<li>Download : <a href="https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash">git-completion.bash</a></li>
+<li>Save the above file as <code>git-completion.bash</code> in the home directory</li>
+<li>Now open <code>.bashrc</code> file in any text editor and these lines at the end</li>
+</ul>
+
+<p><br>
+<hr></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#6272a4"># enable programmable completion features (you don&#39;t need to enable</span>
+<span style="color:#6272a4"># this, if it&#39;s already enabled in /etc/bash.bashrc and /etc/profile</span>
+<span style="color:#6272a4"># sources /etc/bash.bashrc).</span>
+<span style="color:#ff79c6">if</span> ! <span style="color:#8be9fd;font-style:italic">shopt</span> -oq posix; <span style="color:#ff79c6">then</span>
+  <span style="color:#ff79c6">if</span> <span style="color:#ff79c6">[</span> -f /usr/share/bash-completion/bash_completion <span style="color:#ff79c6">]</span>; <span style="color:#ff79c6">then</span>
+    . /usr/share/bash-completion/bash_completion
+  <span style="color:#ff79c6">elif</span> <span style="color:#ff79c6">[</span> -f /etc/bash_completion <span style="color:#ff79c6">]</span>; <span style="color:#ff79c6">then</span>
+    . /etc/bash_completion
+  <span style="color:#ff79c6">fi</span>
+<span style="color:#ff79c6">fi</span>
+
+<span style="color:#6272a4"># Enable tab completion</span>
+<span style="color:#8be9fd;font-style:italic">source</span> ~/git-completion.bash
+
+<span style="color:#6272a4"># colors!</span>
+<span style="color:#8be9fd;font-style:italic">green</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;\[\033[0;32m\]&#34;</span>
+<span style="color:#8be9fd;font-style:italic">blue</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;\[\033[0;34m\]&#34;</span>
+<span style="color:#8be9fd;font-style:italic">purple</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;\[\033[0;35m\]&#34;</span>
+<span style="color:#8be9fd;font-style:italic">reset</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;\[\033[0m\]&#34;</span>
+
+<span style="color:#6272a4"># Change command prompt</span>
+<span style="color:#8be9fd;font-style:italic">source</span> ~/git-prompt.sh
+<span style="color:#8be9fd;font-style:italic">export</span> <span style="color:#8be9fd;font-style:italic">GIT_PS1_SHOWDIRTYSTATE</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">1</span>
+<span style="color:#6272a4"># &#39;\u&#39; adds the name of the current user to the prompt</span>
+<span style="color:#6272a4"># &#39;\$(__git_ps1)&#39; adds git-related stuff</span>
+<span style="color:#6272a4"># &#39;\W&#39; adds the name of the current directory</span>
+<span style="color:#8be9fd;font-style:italic">export</span> <span style="color:#8be9fd;font-style:italic">PS1</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$purple</span><span style="color:#f1fa8c">\u</span><span style="color:#8be9fd;font-style:italic">$green</span><span style="color:#f1fa8c">\$(__git_ps1)</span><span style="color:#8be9fd;font-style:italic">$blue</span><span style="color:#f1fa8c"> \W </span>$<span style="color:#f1fa8c"> </span><span style="color:#8be9fd;font-style:italic">$reset</span><span style="color:#f1fa8c">&#34;</span></code></pre></div>
+<hr>
+
+<p>Acknowledgements : <a href="https://in.udacity.com/course/how-to-use-git-and-github--ud775">https://in.udacity.com/course/how-to-use-git-and-github--ud775</a></p>
+
+      </div>
+
+      <footer>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sangeet259" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Hello Friend</p>
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-125667904-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  </body>
+
+</html>

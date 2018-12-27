@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="SANGEET KUMAR MISHRA">
+    <meta name="description" content="Sangeet Kumar Mishra&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="https://sangeet259.github.io/">
+    <title>
+  GSoC Final Post · sangeet259
+</title>
+
+    <link rel="canonical" href="https://sangeet259.github.io/posts/gcoc-final-post/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" integrity="sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://sangeet259.github.io/images/logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://sangeet259.github.io/images/logo.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.53" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://sangeet259.github.io/">
+      sangeet259
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeet259.github.io/about/">ABOUT</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeet259.github.io/posts/">BLOG</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeet259.github.io/values/">VALUES</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeet259.github.io/quotes/">QUOTES</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeet259.github.io/resume.pdf">RÉSUMÉ</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">GSoC Final Post</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2018-08-12T19:03:31&#43;05:30'>
+                August 12, 2018
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              8 minutes read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://sangeet259.github.io/categories/blog/">Blog</a>
+      <span class="separator">•</span>
+    <a href="https://sangeet259.github.io/categories/gsoc/">GSoC</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://sangeet259.github.io/tags/gsoc/">gsoc</a>
+      <span class="separator">•</span>
+    <a href="https://sangeet259.github.io/tags/psf/">psf</a>
+      <span class="separator">•</span>
+    <a href="https://sangeet259.github.io/tags/mercurial/">mercurial</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+
+<h1 id="hg-grep-the-google-summer-of-code-project">HG Grep | The Google Summer of Code Project</h1>
+
+<h2 id="mercurial-python-software-foundation">Mercurial | Python Software Foundation</h2>
+
+<p><strong>Mentors</strong> : Yuya Nishihara, Pulkit Goyal, Jordi GH, Kevin Bullock, Sean Farley</p>
+
+<p>I did my project under <code>Python Software Foundation</code> and <code>Mercurial</code>. My project in the GSoC’18 dealt with the grepping aspect of Mecurial</p>
+
+<p>Now, before diving into it, making some things clear from the title.</p>
+
+<h3 id="what-is-google-summer-of-code">What is Google Summer of Code ?</h3>
+
+<p><center><img src="https://cdn-images-1.medium.com/max/800/1*LmIMc8mqJLQTRtFtOKdPVg.png" alt="gsoc-img" /></center></p>
+
+<p><strong>Google Summer of Code</strong> is program to promote open-source development. It is organised by Google every summer since last decade. It runs for 12 weeks from mid May to Mid August. Students contribute to open-source repositories and get paid by Google in return.</p>
+
+<h3 id="what-is-mercurial">What is Mercurial ?</h3>
+
+<p><center><img src="https://cdn-images-1.medium.com/max/800/1*WMxyzi8OyGI-_Yys9_YIPw.png" alt="" /></center></p>
+
+<p><center><strong>The Mercurial Version Control System</strong></center></p>
+
+<p><strong>Mercurial</strong> is a distributed revision-control tool for software developers. There are other SCMs like Git, SVN, perforce.</p>
+
+<h3 id="grep-command">Grep Command</h3>
+
+<p>Grep is a command-line utility for searching plain-text data sets for lines that match a regular expression.</p>
+
+<h3 id="hg-grep-command">Hg Grep command</h3>
+
+<p>Mercurial’s grep gives the power you need to grep on a repository, that is you can also search history, specific versions of specific files and much more. More on hg grep in a later section.</p>
+
+<h3 id="the-project">The Project</h3>
+
+<blockquote>
+<p>Improvising and Fixing Mercurial’s grep command
+The entire proposal can be found at : <a href="https://www.bit.ly/gsocprop">https://www.bit.ly/gsocprop</a></p>
+</blockquote>
+
+<p>There were certain aspects of Mercurial’s grepping system that were either buggy or not what people wanted it to be like.</p>
+
+<p>You can read the entire plan at : <a href="https://www.mercurial-scm.org/wiki/GrepPlan">https://www.mercurial-scm.org/wiki/GrepPlan</a></p>
+
+<h3 id="the-all-flag-problem">The all flag problem</h3>
+
+<p>Before visiting the problem, let’s first discuss what this flag does/supposed to do :</p>
+
+<ul>
+<li>Look at diffs, not file contents</li>
+<li>Look at all diffs, not stop at the first hit</li>
+<li>A tool for seeing when a change was introduced (+) or removed (-)</li>
+</ul>
+
+<p><strong>The problem and the solution</strong>
+Issue : <a href="https://bz.mercurial-scm.org/show_bug.cgi?id=3885">https://bz.mercurial-scm.org/show_bug.cgi?id=3885</a></p>
+
+<p>Everything was fine when you pass the revisions in reverse revlog order, but the <code>--all</code> flag gave erroneous output when the revisions are passed in a revlog order , ie bottom to top :: <code>-r 0:tip</code></p>
+
+<p>I debugged into it and after a thorough scrutiny I realised few things:</p>
+
+<p>There are no removals in the output of revlog ordered <code>grep --all</code>
+Even in case of additions, they are just not correct
+I realised this was due to the empty pstate (parent state) dictionary that was being passed. And this dictionary was empty because at the end of each revision we are simply deleting the <strong>matches[rev]</strong>. So in the next revision it’s passing <strong>[]</strong> as <code>pstate</code>, as the computation of diff via <code>difflib.SequenceMatcher()</code> requires comparing the previous state with this state, it’s simply showing that the previous state is empty and to get the current state, you just need to add everything from the current state to the pstate. This is the reason why there are no removals in the output and the discrepancy even in the additions.</p>
+
+<p>To solve this we need to simply keep the matches and not delete it. But as Jordi told, there will be a huge memory leak which we can not afford, so I came up with another solution of keeping the matches dictionary only till the end of this window and clearing it up once the window ends. I did not make any changes to the line<code>del revfiles[rev]</code> . So we will know when a window ends when this revfiles dict gets empty.</p>
+
+<p>Hence this :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">del</span> revfiles[rev]
+<span style="color:#ff79c6">if</span> <span style="color:#ff79c6">not</span> revfiles:
+  matches<span style="color:#ff79c6">.</span>clear()
+Thus the issue was fixed<span style="color:#ff79c6">.</span></code></pre></div>
+<blockquote>
+<p>A more detailed read :
+<a href="http://sangeet259.github.io/2018/03/26/demonstrating-the-problem-with-forward-ordered-grep-all-in-mercurial.html">http://sangeet259.github.io/2018/03/26/demonstrating-the-problem-with-forward-ordered-grep-all-in-mercurial.html</a></p>
+
+<p><a href="https://phab.mercurial-scm.org/rHGa2a6755a3defe471113eb9b259dcd8fd5f20566c">https://phab.mercurial-scm.org/rHGa2a6755a3defe471113eb9b259dcd8fd5f20566c</a></p>
+</blockquote>
+
+<p><strong>Additional work related to it:</strong></p>
+
+<ul>
+<li>adding a &ndash;diff flag</li>
+<li>deprecating the &ndash;all flag</li>
+</ul>
+
+<ol>
+<li><strong>Adding a diff flag:</strong>
+The name all for the flag &ndash;all makes no sense at all. There is nothing all about it. So I introduced another flag -all . It works exactly same as <code>all</code>. I also added some major tests related to it, which were there for the all flag.</li>
+</ol>
+
+<blockquote>
+<p><a href="https://phab.mercurial-scm.org/rHG7fbb5d76c55598c8d361ce7c70482301f0887cfb">https://phab.mercurial-scm.org/rHG7fbb5d76c55598c8d361ce7c70482301f0887cfb</a></p>
+</blockquote>
+
+<ol>
+<li><strong>Deprecating the &ndash;all flag</strong></li>
+</ol>
+
+<p>Since <code>diff</code> flag was introduced, we should move to diff flag from all, deprecating it in the process.</p>
+
+<blockquote>
+<p><a href="https://phab.mercurial-scm.org/rHG7fbb5d76c55598c8d361ce7c70482301f0887cfb">https://phab.mercurial-scm.org/rHG7fbb5d76c55598c8d361ce7c70482301f0887cfb</a></p>
+</blockquote>
+
+<h2 id="the-changing-and-fixing-of-default-of-hg-grep">The changing and fixing of default of hg grep</h2>
+
+<p><strong>The problem :</strong></p>
+
+<p>This searches all filelogs in reverse revlogs order, via walkchangerevs, and for each filelog outputs the first revision in which the target regexp is found. File contents are searched, not diffs, and all filelogs are searched, not just those in the current manifest.</p>
+
+<p>This behaviour has been in place for a long time, but it’s confusing and not very useful.</p>
+
+<p>One of the most common thing people want to do is grep the current directory, but only files under hg control. Currently, this is inconvenient and at best requires doing something like <code>hg files -0 | xargs -0grep</code> in order to accomplish this.</p>
+
+<p>This was an smoother work and I divided the entire work into few parts.</p>
+
+<p>Initially I had sent a big patch, solving the issue. But Yuya suggested that this may not be good approach as we may have some untested code paths due to the huge chuck of if else block that was introduce.</p>
+
+<blockquote>
+<p><a href="https://phab.mercurial-scm.org/D2938">https://phab.mercurial-scm.org/D2938</a></p>
+</blockquote>
+
+<p>Then I split up the work into patches:</p>
+
+<ul>
+<li>enable passing “wdir()” as a revision to -r flag</li>
+<li>adding a allfiles flag</li>
+<li>adding multirev support to allfiles flag</li>
+<li>adding support for individual files in allfiles mode</li>
+<li>changing the default behaviour</li>
+</ul>
+
+<p><strong>[1]. Enable passing “wdir()” as a revision to -r flag</strong></p>
+
+<p>So earlier if you tried passing “wdir()” to the -r flag, it used to give a WdirUnsupported error. With this patch when you pass wdir() to the -r flag, it catches the WdirUnsupported error and falls back to an alternate path.</p>
+
+<p>So now the files need not be necessarily commited to a changeset in order to be grepped upon. And this was the basic premises of the entire changing of default behaviour.</p>
+
+<blockquote>
+<p><a href="https://phab.mercurial-scm.org/rHG16f93a3b8b05aae9391f26a8b908bfa716456757">https://phab.mercurial-scm.org/rHG16f93a3b8b05aae9391f26a8b908bfa716456757</a></p>
+</blockquote>
+
+<p><strong>[2]. Adding an allfiles flag</strong></p>
+
+<p>Untill now, you could only grep on the files that were changed in the particular revision. But to search on the current state of all files in the present working directory we need all the files from the passed changeset. This patch made that possible.</p>
+
+<blockquote>
+<p><a href="https://phab.mercurial-scm.org/rHGb8f45fc27370dc7df283c47f71927c10462197fb">https://phab.mercurial-scm.org/rHGb8f45fc27370dc7df283c47f71927c10462197fb</a></p>
+</blockquote>
+
+<p><strong>[3]. Adding multirev support to allfiles flag</strong></p>
+
+<p>So, up untill now you could only have a single revision passed along with the &ndash;allfiles flag. Here I changed that behaviour, by not skipping files that have been already been seen previously.</p>
+
+<blockquote>
+<p><a href="https://phab.mercurial-scm.org/rHGf3f109971359e16ff5ade45821b697329a326183">https://phab.mercurial-scm.org/rHGf3f109971359e16ff5ade45821b697329a326183</a></p>
+</blockquote>
+
+<p><strong>[4]. Adding support for individual files in allfiles mode</strong></p>
+
+<p>Previously (up untill now), suppose you want to search a pattern in a specific file or a specfic set of files, in a specific revision or a set of revisions, there was no way of doing that, if those revisions weren’t responsible for any change in the files specified. But with the coming of allfiles flag, it was possible to have this functionailty. This patch, facilated that.</p>
+
+<blockquote>
+<p><a href="https://phab.mercurial-scm.org/rHG9ef10437bb88c27645796b95c6ab78e12c307117">https://phab.mercurial-scm.org/rHG9ef10437bb88c27645796b95c6ab78e12c307117</a></p>
+</blockquote>
+
+<p><strong>[5]. Changing the default behaviour</strong></p>
+
+<p>Here I caught the default state, ie no revisions passed, no diff flag. And then specified the parameters that need to be set, in order to simulate what we want the default to be. Specifically, it should be searching the wdir and it should consider all the files.</p>
+
+<p>A small demo of the behaviour.</p>
+
+<p><u><strong>OLD BEHAVIOUR</strong></u></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hg init a
+$ <span style="color:#8be9fd;font-style:italic">cd</span> a
+$ <span style="color:#8be9fd;font-style:italic">echo</span> “some text”&gt;&gt;file1
+$ hg add file1
+$ hg commit -m “adds file1”
+$ hg mv file1 file2
+$ hg grep “some”
+file2:1:some text
+file1:0:some text</code></pre></div>
+<p>This behaviour is undesirable since file1 is not in the current history and was
+renamed as file2, so the second result was redundant and confusing.</p>
+
+<p><u><strong>NEW BEHAVIOUR</strong></u></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hg init a
+$ <span style="color:#8be9fd;font-style:italic">cd</span> a
+$ <span style="color:#8be9fd;font-style:italic">echo</span> “some text”&gt;&gt;file1
+$ hg add file1
+$ hg commit -m “adds file1”
+$ hg mv file1 file2
+$ hg grep “some”
+file2:2147483647:some text</code></pre></div>
+<blockquote>
+<p><a href="https://phab.mercurial-scm.org/rHG9ef10437bb88c27645796b95c6ab78e12c307117">https://phab.mercurial-scm.org/rHG9ef10437bb88c27645796b95c6ab78e12c307117</a></p>
+</blockquote>
+
+<h2 id="some-other-works">Some other works</h2>
+
+<p><strong>I also worked on some other interesting things apart from grep.</strong></p>
+
+<p><strong>They were:</strong></p>
+
+<ul>
+<li><strong>Adding multiline support for commit messages (closed)</strong></li>
+<li><strong>Some documentation fixes</strong></li>
+<li><strong>Enabling the passing of revision numbers instead of commit ids in histedit’s rule editor</strong></li>
+</ul>
+
+<p>The first one on the list was more a hack, and it was (rightfully) closed.</p>
+
+<p>Making some documentation changes/fixes is a great way of starting any interaction with the developer of any project. That was the way I started my started interacting with the mercurial devs.</p>
+
+<ul>
+<li><strong>Revision Numbers in histedit’s ruleeditor</strong></li>
+</ul>
+
+<p>This was the one that has helped me personally the most. So histedit is an extrension which let’s you edit history in Mercurial. When you type hg histedit an editor pops up, where you can set the rules for the new history.</p>
+
+<p>But the big drawback was that you couldn’t pass any revset. This patches cathes the Exception and fecilitates identifying the revsets.</p>
+
+<blockquote>
+<p><a href="https://phab.mercurial-scm.org/rHG3d3cff1f6bdea90a620bd1bff87b459809bbcfb2">https://phab.mercurial-scm.org/rHG3d3cff1f6bdea90a620bd1bff87b459809bbcfb2</a></p>
+</blockquote>
+
+<p><strong>Working with Mercurial, I learned a lot of things, a few of them :</strong></p>
+
+<ul>
+<li>Minimising code duplication and writing neat and efficent code adhering to certain set standards</li>
+<li>Eficiently debugging an issue with a debugger</li>
+<li>Writing tests for the codes</li>
+<li>Interacting with developers and communication</li>
+<li>OOP implemenation</li>
+</ul>
+
+<p>At last I would like thank <a href="https://www.linkedin.com/in/pulkitg25">Pulkit</a> for helping me keep progress with the timeline, and encouragement. <a href="https://savannah.gnu.org/users/jordigh">Jordi</a> for his suggestion of PUDB . <a href="https://twitter.com/yujauja?lang=en">Yuya</a> for reviewing my codes and pointing out my silly mistakes. And the entire Mercurial community for clearing my noob doubts when they arose.</p>
+
+<p>The connection that has been with <code>Mercurial</code>, is more than just a summer of code. I will always be active in the channel, fixing up some bugs, and helping new comers to <code>Mercurial</code>.</p>
+
+<p>Cheers! 🍺</p>
+
+      </div>
+
+      <footer>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sangeet259" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Hello Friend</p>
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-125667904-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  </body>
+
+</html>

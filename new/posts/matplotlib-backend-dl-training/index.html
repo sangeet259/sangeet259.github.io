@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="SANGEET KUMAR MISHRA">
+    <meta name="description" content="Sangeet Kumar Mishra&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="https://sangeet259.github.io/">
+    <title>
+  Matplotlib Backened change during Training a DL Model · sangeet259
+</title>
+
+    <link rel="canonical" href="https://sangeet259.github.io/posts/matplotlib-backend-dl-training/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" integrity="sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://sangeet259.github.io/images/logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://sangeet259.github.io/images/logo.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.53" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://sangeet259.github.io/">
+      sangeet259
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeet259.github.io/about/">ABOUT</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeet259.github.io/posts/">BLOG</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeet259.github.io/values/">VALUES</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeet259.github.io/quotes/">QUOTES</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeet259.github.io/resume.pdf">RÉSUMÉ</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Matplotlib Backened change during Training a DL Model</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2018-01-07T19:03:31&#43;05:30'>
+                January 7, 2018
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2 minutes read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://sangeet259.github.io/categories/blog/">Blog</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://sangeet259.github.io/tags/deep-learning/">deep learning</a>
+      <span class="separator">•</span>
+    <a href="https://sangeet259.github.io/tags/hacks/">hacks</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+
+<h2 id="matplotlib-backened-change-during-training-a-dl-model">Matplotlib Backened change during Training a DL Model</h2>
+
+<p>If you are training something on remote server where you dont have root access and get an error like your python is not configured for tkinter.
+This is nothing but maybe somewhere in your pipe</p>
+
+<p>Then you&rsquo;re options are :</p>
+
+<ul>
+<li>First install tkinter, note that since you do not have sudo priviledge, you have to install <code>tcl8.6-dev</code> and  <code>tk8.6-dev</code> from source too.</li>
+<li>Install Python from source again : <a href="https://passingcuriosity.com/2015/installing-python-from-source/">Here</a> is a great link describing the process</li>
+<li>In the last step you have to explicitly pass where your tkinter files are located during the <code>./configure</code>.</li>
+</ul>
+
+<p>After this you should</p>
+
+<p>be fine. But there is another way to bypass this stuff.
+I am assuming that you really isn&rsquo;t using GUI and sticking to terminal, in that case you don&rsquo;t need tkinter at all, why install it.
+As I said, it&rsquo;s the matplotlib that&rsquo;s the culprit here, so what you can do is change it&rsquo;s backend from tkinter (TkAgg) to antigrain(Agg).
+Then we won&rsquo;t need tkinter at all.</p>
+
+<p>Here&rsquo;s how to do that :</p>
+
+<ul>
+<li>Find where is your matplotlib file is located :
+<code>sh
+&gt;&gt;&gt; import matplotlib
+&gt;&gt;&gt; matplotlib.matplotlib_fname()
+'/home/foo/.config/matplotlib/matplotlibrc'
+</code></li>
+<li>If there is no file create one in &lsquo;/home/foo/.config/matplotlib/matplotlibrc&rsquo;</li>
+</ul>
+
+<p>In that file just change this (or if created enter just this) : <code>backend      : Agg</code></p>
+
+<p>Save it and run !</p>
+
+<p>🎉
+You should be rolling !!</p>
+
+<p>References:</p>
+
+<ul>
+<li><a href="https://matplotlib.org/faq/usage_faq.html#what-is-a-backend">https://matplotlib.org/faq/usage_faq.html#what-is-a-backend</a></li>
+<li><a href="https://gist.github.com/Nesffer/5fb3d6d4cd3e0cb65624">https://gist.github.com/Nesffer/5fb3d6d4cd3e0cb65624</a></li>
+<li><a href="https://stackoverflow.com/questions/4931376/generating-matplotlib-graphs-without-a-running-x-server/4935945#4935945">https://stackoverflow.com/questions/4931376/generating-matplotlib-graphs-without-a-running-x-server/4935945#4935945</a></li>
+</ul>
+
+      </div>
+
+      <footer>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sangeet259" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Hello Friend</p>
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-125667904-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  </body>
+
+</html>
