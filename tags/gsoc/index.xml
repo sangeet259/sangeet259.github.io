@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gsoc on sangeet259</title>
-    <link>https://sangeeet259.github.io/tags/gsoc/</link>
+    <link>sangeeet259.github.io/tags/gsoc/</link>
     <description>Recent content in Gsoc on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 12 Aug 2018 19:03:31 +0530</lastBuildDate>
     
-	<atom:link href="https://sangeeet259.github.io/tags/gsoc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="sangeeet259.github.io/tags/gsoc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>GSoC Final Post</title>
-      <link>https://sangeeet259.github.io/posts/gcoc-final-post/</link>
+      <link>sangeeet259.github.io/posts/gcoc-final-post/</link>
       <pubDate>Sun, 12 Aug 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeeet259.github.io/posts/gcoc-final-post/</guid>
+      <guid>sangeeet259.github.io/posts/gcoc-final-post/</guid>
       <description>HG Grep | The Google Summer of Code Project Mercurial | Python Software Foundation Mentors : Yuya Nishihara, Pulkit Goyal, Jordi GH, Kevin Bullock, Sean Farley
 I did my project under Python Software Foundation and Mercurial. My project in the GSoC’18 dealt with the grepping aspect of Mecurial
 Now, before diving into it, making some things clear from the title.
@@ -26,10 +26,10 @@ Google Summer of Code is program to promote open-source development.</descriptio
     
     <item>
       <title>GSoC Blog Post 7</title>
-      <link>https://sangeeet259.github.io/posts/gcoc-post-7/</link>
+      <link>sangeeet259.github.io/posts/gcoc-post-7/</link>
       <pubDate>Wed, 08 Aug 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeeet259.github.io/posts/gcoc-post-7/</guid>
+      <guid>sangeeet259.github.io/posts/gcoc-post-7/</guid>
       <description>GSoC Blog post #7 This week I worked on passing multiple revisions to the –allfiles flag.
 The PR can be found at https://phab.mercurial-scm.org/D3976
 It’s assumed that if you are passing multiple revisions to –allfiles, you want hits from all of them. This was the behaviour that was chose after a discussion with Yuya.
@@ -39,10 +39,10 @@ It made sure it just check the files only once by maintaining a dictionary calle
     
     <item>
       <title>GSoC Blog Post 6</title>
-      <link>https://sangeeet259.github.io/posts/gcoc-post-6/</link>
+      <link>sangeeet259.github.io/posts/gcoc-post-6/</link>
       <pubDate>Tue, 24 Jul 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeeet259.github.io/posts/gcoc-post-6/</guid>
+      <guid>sangeeet259.github.io/posts/gcoc-post-6/</guid>
       <description>GSoC Blog post #6 At the beginning of this week, my previous commit was revert and set to config = False, meaning that it is hidden behind that config option. That’s because it was a period of code freeze in mercurial as the next release is due in some days, so unless a feature is completely tested it can’t be released.
 Link to the revision: https://phab.mercurial-scm.org/D3919
 Next Yuya told me to work on passing multiple revisions with –all-files mode.</description>
@@ -50,10 +50,10 @@ Next Yuya told me to work on passing multiple revisions with –all-files mode.<
     
     <item>
       <title>GSoC Blog Post 5</title>
-      <link>https://sangeeet259.github.io/posts/gcoc-post-5/</link>
+      <link>sangeeet259.github.io/posts/gcoc-post-5/</link>
       <pubDate>Mon, 09 Jul 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeeet259.github.io/posts/gcoc-post-5/</guid>
+      <guid>sangeeet259.github.io/posts/gcoc-post-5/</guid>
       <description>GSOC Blog Post #5 This time I was working on changing the default of the grep command to a new behaviour.
 With this patch grep searches on the working directory by default and looks for all files tracked by the working directory and greps on them
 ==========================Demonstration================
@@ -63,10 +63,10 @@ $ hg init a $ cd a $ echo &amp;#34;some text&amp;#34;&amp;gt;&amp;gt;file1 $ hg 
     
     <item>
       <title>GSoC Blog Post 4</title>
-      <link>https://sangeeet259.github.io/posts/gcoc-post-4/</link>
+      <link>sangeeet259.github.io/posts/gcoc-post-4/</link>
       <pubDate>Wed, 27 Jun 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeeet259.github.io/posts/gcoc-post-4/</guid>
+      <guid>sangeeet259.github.io/posts/gcoc-post-4/</guid>
       <description>GSoC Blog Post #4 Another Fortnight gone by, and perhaps this was the time when we got most work done.
 This time around I added two new features to mercurial.
 They are: The allfiles mode
@@ -75,20 +75,20 @@ This would work on a single revision and get all the files that were there in th
     
     <item>
       <title>GSoC Blog Post 3</title>
-      <link>https://sangeeet259.github.io/posts/gcoc-post-3/</link>
+      <link>sangeeet259.github.io/posts/gcoc-post-3/</link>
       <pubDate>Mon, 11 Jun 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeeet259.github.io/posts/gcoc-post-3/</guid>
+      <guid>sangeeet259.github.io/posts/gcoc-post-3/</guid>
       <description>GSoC Blog Post 3 These two weeks I was involved in fixing the –wdir(). Yuya had asked me to not create an entire separate if/else block as that might lead to untested code paths.
 So I was trying to work out another way. While I was trying to figure out a way to do this I realised the code had changed a bit since my last patch, and it nows throws WdirUnsupported exception.</description>
     </item>
     
     <item>
       <title>GSoC Blog Post 2</title>
-      <link>https://sangeeet259.github.io/posts/gsoc-post-2/</link>
+      <link>sangeeet259.github.io/posts/gsoc-post-2/</link>
       <pubDate>Mon, 28 May 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeeet259.github.io/posts/gsoc-post-2/</guid>
+      <guid>sangeeet259.github.io/posts/gsoc-post-2/</guid>
       <description>So it is two weeks into the coding period and I thankfully haven’t fallen much behind my own set timeline.
 The tasks that I had set this week were fixing the&amp;ndash;all flag and fix the working directory grep. Thankfully I had done major of this work during/after submission. The fix of the &amp;ndash;all was tested and merged and is a part of the stable version of hg now.
 The best part of the issue was that fixing it took just changing two lines.</description>
@@ -96,20 +96,20 @@ The best part of the issue was that fixing it took just changing two lines.</des
     
     <item>
       <title>Demonstrating the problem with forward ordered grep --all</title>
-      <link>https://sangeeet259.github.io/posts/mercurial-grep-all-issue/</link>
+      <link>sangeeet259.github.io/posts/mercurial-grep-all-issue/</link>
       <pubDate>Sun, 13 May 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeeet259.github.io/posts/mercurial-grep-all-issue/</guid>
+      <guid>sangeeet259.github.io/posts/mercurial-grep-all-issue/</guid>
       <description>Demonstrating the problem with forward ordered grep --all So if you do a hg grep &amp;quot;pattern&amp;quot; --all, you would get all the lines along with revision numbers showing when this pattern appeared or disappeared from the repository. Cool, that’s what we want.
 And by default, it does a reverse revlog search. That is, it starts from the latest revision and goes all the way upto the oldest one. And accordingly shows you the result.</description>
     </item>
     
     <item>
       <title>Proposal acceptance and community bonding period</title>
-      <link>https://sangeeet259.github.io/posts/gsoc-proposal-acceptance/</link>
+      <link>sangeeet259.github.io/posts/gsoc-proposal-acceptance/</link>
       <pubDate>Sun, 13 May 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeeet259.github.io/posts/gsoc-proposal-acceptance/</guid>
+      <guid>sangeeet259.github.io/posts/gsoc-proposal-acceptance/</guid>
       <description>Proposal acceptance and community bonding period Two weeks into the summer break and the gsoc coding period is about to begin.  It all started in February when I started looking for organisations to contribute for the Google Summer of Code 2018. I knew the language was going to be Python, so straight I was into the PSF Sub Orgs. The next challenge was to select the sub org, I thought of going for core software development and not some specialised field.</description>
     </item>
     
