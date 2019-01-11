@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sangeet259.github.io/til/today-i-learned/</loc>
+    <lastmod>2019-01-11T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sangeet259.github.io/til/xclip-in-fish/</loc>
+    <lastmod>2019-01-11T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sangeet259.github.io/quotes/</loc>
     <lastmod>2018-10-31T21:45:29+05:30</lastmod>
   </url>
@@ -88,6 +98,11 @@
   </url>
   
   <url>
+    <loc>https://sangeet259.github.io/</loc>
+    <lastmod>2019-01-11T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sangeet259.github.io/about/</loc>
   </url>
   
@@ -123,7 +138,13 @@
   
   <url>
     <loc>https://sangeet259.github.io/tags/devops/</loc>
-    <lastmod>2018-01-26T19:03:31+05:30</lastmod>
+    <lastmod>2019-01-11T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sangeet259.github.io/tags/fish/</loc>
+    <lastmod>2019-01-11T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -142,6 +163,12 @@
   <url>
     <loc>https://sangeet259.github.io/tags/hacks/</loc>
     <lastmod>2018-01-07T19:03:31+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sangeet259.github.io/tags/intropost/</loc>
+    <lastmod>2019-01-11T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -194,8 +221,14 @@
   </url>
   
   <url>
-    <loc>https://sangeet259.github.io/</loc>
-    <lastmod>2018-10-31T21:45:29+05:30</lastmod>
+    <loc>https://sangeet259.github.io/categories/til/</loc>
+    <lastmod>2019-01-11T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sangeet259.github.io/til/</loc>
+    <lastmod>2019-01-11T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   

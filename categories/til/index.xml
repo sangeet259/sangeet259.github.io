@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Til on sangeet259</title>
+    <link>https://sangeet259.github.io/categories/til/</link>
+    <description>Recent content in Til on sangeet259</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 11 Jan 2019 00:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://sangeet259.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Trying out Today I Learned posts</title>
+      <link>https://sangeet259.github.io/til/today-i-learned/</link>
+      <pubDate>Fri, 11 Jan 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/til/today-i-learned/</guid>
+      <description>Hey There! Greeting of the season!
+I am planning to start a TIL Section in my blog where I write some tit-bits I learn here and there over the time of the day, mostly Googling and Stack-Overlfow-ing :sweat-smile:
+So Check this section out for more!
+Cheers 🍺</description>
+    </item>
+    
+    <item>
+      <title>XClip in Fish Shell</title>
+      <link>https://sangeet259.github.io/til/xclip-in-fish/</link>
+      <pubDate>Fri, 11 Jan 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/til/xclip-in-fish/</guid>
+      <description>Wondered if you could just copy the output of a bash command to clipboard and paste it somewhere.
+XClip is here for your rescue. The Fish Shell 3.0 now supports xclip.
+How to use : * For copying * $pwd | xclip * Paste it * $cd (xclip -o)
+PS: In fish to execute a string as a command use paranthesis &amp;ldquo;( )&amp;rdquo; instead of backticks &amp;ldquo; ` ` &amp;ldquo;. Just add alias in the fish config :</description>
+    </item>
+    
+  </channel>
+</rss>
