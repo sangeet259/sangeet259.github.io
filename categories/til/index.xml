@@ -6,10 +6,23 @@
     <description>Recent content in Til on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 11 Jan 2019 00:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 21 Jan 2019 00:00:00 +0530</lastBuildDate>
     
 	<atom:link href="https://sangeet259.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTTP in HTTPS proxy</title>
+      <link>https://sangeet259.github.io/til/http-in-https/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/til/http-in-https/</guid>
+      <description>Whenever I set an https_proxy I am tempted to something like :
+https_proxy=https://172.16.2.30:8080/
+Notice the &amp;ldquo;https://&amp;rdquo; , sadly that&amp;rsquo;s not how it works, you have to set it &amp;ldquo;http://&amp;rdquo; only.
+I have previously been caught in problem due to this. The lates one was when I used the https:// in the docker proxy configuration.
+Thankfully this stackoverflow answer saved the day : https://stackoverflow.com/a/51648635/6507303</description>
+    </item>
     
     <item>
       <title>Trying out Today I Learned posts</title>
@@ -31,8 +44,8 @@ Cheers 🍺</description>
       <guid>https://sangeet259.github.io/til/xclip-in-fish/</guid>
       <description>Wondered if you could just copy the output of a bash command to clipboard and paste it somewhere.
 XClip is here for your rescue. The Fish Shell 3.0 now supports xclip.
-How to use : * For copying * $pwd | xclip * Paste it * $cd (xclip -o)
-PS: In fish to execute a string as a command use paranthesis &amp;ldquo;( )&amp;rdquo; instead of backticks &amp;ldquo; ` ` &amp;ldquo;. Just add alias in the fish config :</description>
+How to use :
+ For copying  $pwd | xclip  Paste it  $cd (xclip -o)   PS: In fish to execute a string as a command use paranthesis &amp;quot;( )&amp;quot; instead of backticks &amp;ldquo; ` ` &amp;ldquo;.</description>
     </item>
     
   </channel>

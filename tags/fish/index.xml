@@ -19,8 +19,8 @@
       <guid>https://sangeet259.github.io/til/xclip-in-fish/</guid>
       <description>Wondered if you could just copy the output of a bash command to clipboard and paste it somewhere.
 XClip is here for your rescue. The Fish Shell 3.0 now supports xclip.
-How to use : * For copying * $pwd | xclip * Paste it * $cd (xclip -o)
-PS: In fish to execute a string as a command use paranthesis &amp;ldquo;( )&amp;rdquo; instead of backticks &amp;ldquo; ` ` &amp;ldquo;. Just add alias in the fish config :</description>
+How to use :
+ For copying  $pwd | xclip  Paste it  $cd (xclip -o)   PS: In fish to execute a string as a command use paranthesis &amp;quot;( )&amp;quot; instead of backticks &amp;ldquo; ` ` &amp;ldquo;.</description>
     </item>
     
   </channel>
