@@ -6,10 +6,21 @@
     <description>Recent content in Mercurial on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Aug 2018 19:03:31 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 22 Jan 2019 00:00:00 +0530</lastBuildDate>
     
 	<atom:link href="https://sangeet259.github.io/tags/mercurial/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using Evolve from source</title>
+      <link>https://sangeet259.github.io/posts/evolve-from-source/</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/posts/evolve-from-source/</guid>
+      <description>I was working on Evolve. I made some changes to it&amp;rsquo;s codebase, at this point it becomes very important to me to see the effect of the changes that I make, because unlike others who just trust their code and directly run tests on the code.
+I don&amp;rsquo;t run tests unless I see the working of the code I write.
+Doing this for Mercurial repo was easier, I didn&amp;rsquo;t have to do much.</description>
+    </item>
     
     <item>
       <title>GSoC Final Post</title>

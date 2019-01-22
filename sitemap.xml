@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sangeet259.github.io/posts/evolve-from-source/</loc>
+    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sangeet259.github.io/til/http-in-https/</loc>
     <lastmod>2019-01-21T00:00:00+05:30</lastmod>
   </url>
@@ -104,7 +109,7 @@
   
   <url>
     <loc>https://sangeet259.github.io/</loc>
-    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
+    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
   </url>
   
   <url>
@@ -119,13 +124,13 @@
   
   <url>
     <loc>https://sangeet259.github.io/categories/blog/</loc>
-    <lastmod>2018-08-12T19:03:31+05:30</lastmod>
+    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://sangeet259.github.io/categories/</loc>
-    <lastmod>2018-08-12T19:03:31+05:30</lastmod>
+    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -143,13 +148,19 @@
   
   <url>
     <loc>https://sangeet259.github.io/tags/devops/</loc>
-    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
+    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://sangeet259.github.io/tags/docker/</loc>
     <lastmod>2019-01-21T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sangeet259.github.io/tags/extensions/</loc>
+    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -191,7 +202,7 @@
   
   <url>
     <loc>https://sangeet259.github.io/tags/mercurial/</loc>
-    <lastmod>2018-08-12T19:03:31+05:30</lastmod>
+    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -202,8 +213,14 @@
   </url>
   
   <url>
+    <loc>https://sangeet259.github.io/tags/octobus/</loc>
+    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://sangeet259.github.io/posts/</loc>
-    <lastmod>2018-08-12T19:03:31+05:30</lastmod>
+    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
