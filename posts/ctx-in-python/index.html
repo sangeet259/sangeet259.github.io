@@ -11,10 +11,10 @@
 
     <base href="https://sangeet259.github.io/">
     <title>
-  Obligatory Hello World post · sangeet259
+  Understanding Context Managers in Python · sangeet259
 </title>
 
-    <link rel="canonical" href="https://sangeet259.github.io/posts/first-jekyll-post/">
+    <link rel="canonical" href="https://sangeet259.github.io/posts/ctx-in-python/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
@@ -89,19 +89,19 @@
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Obligatory Hello World post</h1>
+          <h1 class="title">Understanding Context Managers in Python</h1>
         </div>
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
               <i class="fas fa-calendar"></i>
-              <time datetime='2017-11-14T19:03:31&#43;05:30'>
-                November 14, 2017
+              <time datetime='2019-02-03T00:00:00&#43;05:30'>
+                February 3, 2019
               </time>
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              One minute read
+              2 minutes read
             </span>
           </div>
           <div class="categories">
@@ -110,9 +110,7 @@
 
           <div class="tags">
   <i class="fas fa-tag"></i>
-    <a href="https://sangeet259.github.io/tags/jekyll/">jekyll</a>
-      <span class="separator">•</span>
-    <a href="https://sangeet259.github.io/tags/blog/">blog</a></div>
+    <a href="https://sangeet259.github.io/tags/python/">python</a></div>
 
         </div>
       </header>
@@ -120,16 +118,76 @@
       <div>
         
 
-<h2 id="hellooo-world-br">Hellooo World !<br></h2>
+<p>So I was working on the evolve command next (<code>hg next</code>).
+Here my work was with context managers,
+although I had used context managers before this time I wanted to know a bit more about them.</p>
 
-<p>Okay So it&rsquo;s already noon and I am setting up up my portfolio. While I already had a portfolio built in the summer as part of the SF Web Team Selections , but that one looked very childish and lacked professionalism. I was still sticking around with it until I saw <a href="http://orkohunter.net/">Himanshu Mishra&rsquo;s</a> and <a href="https://dibyadas.github.io/">Dibya Das&rsquo;s</a> portfolio . I was amazed that how simplistic these guys had made their portfolio.<br>
-Straight to the point , No Flashy !.<br>
-&mdash;-<br>
-So I decided to build my portfolio on their lines. Then one day <a href="https://rakeshbal99.github.io">Rakesh</a> showed me <a href="https://github.com/rohitrango">Rohit Jena&rsquo;s</a> portfolio , and I was like  , yes this is what I wanted , not too flashy and beautiful . I found that he used the <a href="https://github.com/daattali/beautiful-jekyll">Beutiful Jekyll Theme</a>. But it still needed a bit of work to be used directly. So I asked him if I can use his work , and he was kind enough :) .<br>
-So now I am finishing set up with this site and leaving to study Solid Mechanics as there is a test tomorrow  !<br>
-&mdash;-<br>
-<br>
-Tada!</p>
+<p>So I read this blog on Context Managers : <a href="https://jeffknupp.com/blog/2016/03/07/python-with-context-managers/">https://jeffknupp.com/blog/2016/03/07/python-with-context-managers/</a></p>
+
+<h1 id="few-takeways">Few takeways:</h1>
+
+<ul>
+<li><strong>Used to manage resources</strong></li>
+<li><strong>One of the most famous use : Handling file descriptors</strong></li>
+</ul>
+
+<blockquote>
+<p>How does a file descriptor leak ?</p>
+
+<p>By not closing the opened files. There is (usually) a limit to the number of file descriptors a process can be assigned. On UNIX-like systems, <code>$ ulimit -n</code> should give you the value of that upper limit. (It&rsquo;s 1024 on my PC)</p>
+</blockquote>
+
+<ul>
+<li><strong>The general syntax :</strong>
+<code>python
+with something_that_returns_a_context_manager() as my_resource:
+do_something(my_resource)
+...
+print('done using my_resource')
+</code></li>
+</ul>
+
+<p>Now what returns a context manager ?
+* Lock objects in threading
+* subprocess.Popen
+* pathlib.Path</p>
+
+<h3 id="basically-any-object-that-needs-to-have-close-called-on-it-after-use-is-or-should-be-a-context-manager">Basically any object that needs to have close called on it after use is (or should be) a context manager.</h3>
+
+<h2 id="how-to-create-a-context-manager">How to create a context manager?</h2>
+
+<h3 id="the-basic-way">The Basic Way</h3>
+
+<p>Define a class that contains two special methods: <code>__enter__()</code> and <code>__exit__()</code>.
+ <code>__enter__()</code> returns the resource to be managed (like a file object in the case of <code>open()</code> ). <code>__exit__()</code> does the cleanup work and doesn&rsquo;t return anything.</p>
+
+<p>Let&rsquo;s define an <code>Open()</code> context manager using this approach:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">class</span> <span style="color:#50fa7b">OpenFile</span>():
+    <span style="color:#ff79c6">def</span> __init__(self,file_name, mode):
+        self<span style="color:#ff79c6">.</span>file_name <span style="color:#ff79c6">=</span> file_name
+        self<span style="color:#ff79c6">.</span>mode <span style="color:#ff79c6">=</span> mode
+    <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">__enter</span>(self):
+        self<span style="color:#ff79c6">.</span>opened_file <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">open</span>(self<span style="color:#ff79c6">.</span>file_name, self<span style="color:#ff79c6">.</span>mode)
+        <span style="color:#ff79c6">return</span> self<span style="color:#ff79c6">.</span>opened_file
+    <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">__exit</span>(self):
+        self<span style="color:#ff79c6">.</span>opened_file<span style="color:#ff79c6">.</span>close()</code></pre></div>
+<h3 id="the-contextlib-way">The contextlib way</h3>
+
+<p>Since context managers are so useful there is a Standard Module dedicated to them : <strong><code>contextlib</code></strong></p>
+
+<p>There is a nice shortcut to define context managers using the <code>@contextmanager</code> decorator.
+To use <code>@contextmaneger</code> to define context manager:
+* Decorate a generator that yields exactly once.
+* Everything before the call to yield is considered the code for <code>__enter__()</code>.
+* Everything after is the code for <code>__exit__()</code>.</p>
+
+<p>Let&rsquo;s rewrite the above <strong><code>OpenFile</code></strong> class using <code>@contextmanager</code> decorator.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">@contextmanager
+<span style="color:#ff79c6">def</span> <span style="color:#50fa7b">OpenFile</span>(filename, mode):
+    file_ <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">open</span>(filename, mode)
+    <span style="color:#ff79c6">yield</span> file_
+    file_<span style="color:#ff79c6">.</span>close()</code></pre></div>
+<p>Also you can use <code>ContextDecorator</code> to create decorators that in turn will be used to create context managers. Phew!!</p>
 
       </div>
 

@@ -6,10 +6,21 @@
     <description>Recent content in Python on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 Dec 2017 19:03:31 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 03 Feb 2019 00:00:00 +0530</lastBuildDate>
     
 	<atom:link href="https://sangeet259.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Understanding Context Managers in Python</title>
+      <link>https://sangeet259.github.io/posts/ctx-in-python/</link>
+      <pubDate>Sun, 03 Feb 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/posts/ctx-in-python/</guid>
+      <description>So I was working on the evolve command next (hg next). Here my work was with context managers, although I had used context managers before this time I wanted to know a bit more about them.
+So I read this blog on Context Managers : https://jeffknupp.com/blog/2016/03/07/python-with-context-managers/
+Few takeways:  Used to manage resources One of the most famous use : Handling file descriptors   How does a file descriptor leak ?</description>
+    </item>
     
     <item>
       <title>Being Pythonic</title>
