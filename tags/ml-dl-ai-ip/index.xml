@@ -6,21 +6,10 @@
     <description>Recent content in Ml Dl Ai Ip on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 Dec 2017 19:03:31 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 14 Nov 2017 19:03:31 +0530</lastBuildDate>
     
 	<atom:link href="https://sangeet259.github.io/tags/ml-dl-ai-ip/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Setting Up OpenCV</title>
-      <link>https://sangeet259.github.io/posts/opencv-setup/</link>
-      <pubDate>Thu, 07 Dec 2017 19:03:31 +0530</pubDate>
-      
-      <guid>https://sangeet259.github.io/posts/opencv-setup/</guid>
-      <description>I was trying to use the Tensorflow&amp;rsquo;s newly released Object Detection API on my webcam. I realised I couldn&amp;rsquo;t open webcam, OpenCV which was bundled with ROS was throwing all sorts of errors, I Googled and tried many hacky solution but all in vain.
-Now that my end sems were over I decided to install it fresh.
-This site : https://www.learnopencv.com/install-opencv3-on-ubuntu/ is a great walktrough through the installation process. It&amp;rsquo;s absolutely complete.</description>
-    </item>
     
     <item>
       <title>Setting Up CUDA</title>

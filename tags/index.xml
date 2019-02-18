@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Colab</title>
+      <link>https://sangeet259.github.io/tags/colab/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/colab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Customization</title>
       <link>https://sangeet259.github.io/tags/customization/</link>
       <pubDate>Fri, 26 Jan 2018 19:03:31 +0530</pubDate>
@@ -30,18 +39,18 @@
     </item>
     
     <item>
-      <title>Deep Learning</title>
-      <link>https://sangeet259.github.io/tags/deep-learning/</link>
-      <pubDate>Sun, 07 Jan 2018 19:03:31 +0530</pubDate>
+      <title>Data</title>
+      <link>https://sangeet259.github.io/tags/data/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/tags/deep-learning/</guid>
+      <guid>https://sangeet259.github.io/tags/data/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Devops</title>
       <link>https://sangeet259.github.io/tags/devops/</link>
-      <pubDate>Tue, 22 Jan 2019 00:00:00 +0530</pubDate>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0530</pubDate>
       
       <guid>https://sangeet259.github.io/tags/devops/</guid>
       <description></description>
@@ -50,7 +59,7 @@
     <item>
       <title>Docker</title>
       <link>https://sangeet259.github.io/tags/docker/</link>
-      <pubDate>Mon, 21 Jan 2019 00:00:00 +0530</pubDate>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0530</pubDate>
       
       <guid>https://sangeet259.github.io/tags/docker/</guid>
       <description></description>
@@ -71,6 +80,15 @@
       <pubDate>Fri, 11 Jan 2019 00:00:00 +0530</pubDate>
       
       <guid>https://sangeet259.github.io/tags/fish/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gpu</title>
+      <link>https://sangeet259.github.io/tags/gpu/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/gpu/</guid>
       <description></description>
     </item>
     
@@ -111,6 +129,24 @@
     </item>
     
     <item>
+      <title>Jupyter</title>
+      <link>https://sangeet259.github.io/tags/jupyter/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/jupyter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Keras</title>
+      <link>https://sangeet259.github.io/tags/keras/</link>
+      <pubDate>Wed, 06 Feb 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/keras/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Mercurial</title>
       <link>https://sangeet259.github.io/tags/mercurial/</link>
       <pubDate>Tue, 22 Jan 2019 00:00:00 +0530</pubDate>
@@ -122,9 +158,18 @@
     <item>
       <title>Ml Dl Ai Ip</title>
       <link>https://sangeet259.github.io/tags/ml-dl-ai-ip/</link>
-      <pubDate>Thu, 07 Dec 2017 19:03:31 +0530</pubDate>
+      <pubDate>Tue, 14 Nov 2017 19:03:31 +0530</pubDate>
       
       <guid>https://sangeet259.github.io/tags/ml-dl-ai-ip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mldlaiip</title>
+      <link>https://sangeet259.github.io/tags/mldlaiip/</link>
+      <pubDate>Wed, 06 Feb 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/mldlaiip/</guid>
       <description></description>
     </item>
     
@@ -158,7 +203,7 @@
     <item>
       <title>Python</title>
       <link>https://sangeet259.github.io/tags/python/</link>
-      <pubDate>Sun, 03 Feb 2019 00:00:00 +0530</pubDate>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0530</pubDate>
       
       <guid>https://sangeet259.github.io/tags/python/</guid>
       <description></description>
@@ -170,6 +215,15 @@
       <pubDate>Thu, 07 Dec 2017 19:03:31 +0530</pubDate>
       
       <guid>https://sangeet259.github.io/tags/setup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tensorflow</title>
+      <link>https://sangeet259.github.io/tags/tensorflow/</link>
+      <pubDate>Mon, 04 Feb 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/tags/tensorflow/</guid>
       <description></description>
     </item>
     

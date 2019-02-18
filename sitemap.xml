@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sangeet259.github.io/til/proxy-for-docker-files/</loc>
+    <lastmod>2019-02-18T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sangeet259.github.io/til/function-search-across-project/</loc>
+    <lastmod>2019-02-16T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sangeet259.github.io/til/cat-ce-vs-sparse-cat-ce/</loc>
+    <lastmod>2019-02-06T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sangeet259.github.io/til/key-in-min_max/</loc>
+    <lastmod>2019-02-05T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sangeet259.github.io/posts/eager-execution-in-tensorflow/</loc>
+    <lastmod>2019-02-04T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sangeet259.github.io/posts/ctx-in-python/</loc>
     <lastmod>2019-02-03T00:00:00+05:30</lastmod>
   </url>
@@ -10,6 +35,11 @@
   <url>
     <loc>https://sangeet259.github.io/posts/evolve-from-source/</loc>
     <lastmod>2019-01-22T00:00:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sangeet259.github.io/til/files-in-colab/</loc>
+    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
   </url>
   
   <url>
@@ -114,7 +144,7 @@
   
   <url>
     <loc>https://sangeet259.github.io/</loc>
-    <lastmod>2019-02-03T00:00:00+05:30</lastmod>
+    <lastmod>2019-02-18T00:00:00+05:30</lastmod>
   </url>
   
   <url>
@@ -129,13 +159,19 @@
   
   <url>
     <loc>https://sangeet259.github.io/categories/blog/</loc>
-    <lastmod>2019-02-03T00:00:00+05:30</lastmod>
+    <lastmod>2019-02-04T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://sangeet259.github.io/categories/</loc>
-    <lastmod>2019-02-03T00:00:00+05:30</lastmod>
+    <lastmod>2019-02-04T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sangeet259.github.io/tags/colab/</loc>
+    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -146,20 +182,20 @@
   </url>
   
   <url>
-    <loc>https://sangeet259.github.io/tags/deep-learning/</loc>
-    <lastmod>2018-01-07T19:03:31+05:30</lastmod>
+    <loc>https://sangeet259.github.io/tags/data/</loc>
+    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://sangeet259.github.io/tags/devops/</loc>
-    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
+    <lastmod>2019-02-18T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://sangeet259.github.io/tags/docker/</loc>
-    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
+    <lastmod>2019-02-18T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -172,6 +208,12 @@
   <url>
     <loc>https://sangeet259.github.io/tags/fish/</loc>
     <lastmod>2019-01-11T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sangeet259.github.io/tags/gpu/</loc>
+    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -206,6 +248,18 @@
   </url>
   
   <url>
+    <loc>https://sangeet259.github.io/tags/jupyter/</loc>
+    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sangeet259.github.io/tags/keras/</loc>
+    <lastmod>2019-02-06T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://sangeet259.github.io/tags/mercurial/</loc>
     <lastmod>2019-01-22T00:00:00+05:30</lastmod>
     <priority>0</priority>
@@ -213,7 +267,13 @@
   
   <url>
     <loc>https://sangeet259.github.io/tags/ml-dl-ai-ip/</loc>
-    <lastmod>2017-12-07T19:03:31+05:30</lastmod>
+    <lastmod>2017-11-14T19:03:31+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sangeet259.github.io/tags/mldlaiip/</loc>
+    <lastmod>2019-02-06T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -225,7 +285,7 @@
   
   <url>
     <loc>https://sangeet259.github.io/posts/</loc>
-    <lastmod>2019-02-03T00:00:00+05:30</lastmod>
+    <lastmod>2019-02-04T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -243,7 +303,7 @@
   
   <url>
     <loc>https://sangeet259.github.io/tags/python/</loc>
-    <lastmod>2019-02-03T00:00:00+05:30</lastmod>
+    <lastmod>2019-02-05T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -260,14 +320,20 @@
   </url>
   
   <url>
+    <loc>https://sangeet259.github.io/tags/tensorflow/</loc>
+    <lastmod>2019-02-04T00:00:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://sangeet259.github.io/categories/til/</loc>
-    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
+    <lastmod>2019-02-18T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://sangeet259.github.io/til/</loc>
-    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
+    <lastmod>2019-02-18T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   

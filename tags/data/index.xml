@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data on sangeet259</title>
+    <link>https://sangeet259.github.io/tags/data/</link>
+    <description>Recent content in Data on sangeet259</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 21 Jan 2019 00:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://sangeet259.github.io/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Accessing Files in Colab</title>
+      <link>https://sangeet259.github.io/til/files-in-colab/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/til/files-in-colab/</guid>
+      <description>To access your Google Drive files in Colab. You first need to mount it in your notebook.
+Here&amp;rsquo;s how to do that:
+from google.colab import drive drive.mount(&amp;#39;/content/drive&amp;#39;) After this you would be asked for authorisation and provided with a token, copy and paste that token back to mount your notebook at /content/drive/ My Drive.
+From this point onward you can use cd and ls to explore your drive and go where the data is.</description>
+    </item>
+    
+  </channel>
+</rss>

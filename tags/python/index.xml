@@ -6,10 +6,22 @@
     <description>Recent content in Python on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 03 Feb 2019 00:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0530</lastBuildDate>
     
 	<atom:link href="https://sangeet259.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Key in Min/Max function in Python</title>
+      <link>https://sangeet259.github.io/til/key-in-min_max/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://sangeet259.github.io/til/key-in-min_max/</guid>
+      <description>So I was browsing TensorFlow doc on the Dataset API, when I stumbled across something which eventually led me to learn this:
+You can pass a key function(or a lambda) to the min/max function in Python.
+Here is a sweet example:
+def sumDigit(num): sum = 0 while(num): sum += num % 10 num = int(num / 10) return sum # using min(arg1, arg2, *args, key) print(&amp;#39;Minimum is:&amp;#39;, min(100, 321, 267, 59, 40, key=sumDigit)) # using min(iterable, key) num = [15, 300, 2700, 821, 52, 10, 6] print(&amp;#39;Minimum is:&amp;#39;, min(num, key=sumDigit)) Source : https://www.</description>
+    </item>
     
     <item>
       <title>Understanding Context Managers in Python</title>
