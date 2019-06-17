@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Extensions on sangeet259</title>
-    <link>https://sangeet259.github.io/tags/extensions/</link>
+    <link>https://sangeetmishra.in/tags/extensions/</link>
     <description>Recent content in Extensions on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 22 Jan 2019 00:00:00 +0530</lastBuildDate>
     
-	<atom:link href="https://sangeet259.github.io/tags/extensions/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sangeetmishra.in/tags/extensions/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using Evolve from source</title>
-      <link>https://sangeet259.github.io/posts/evolve-from-source/</link>
+      <link>https://sangeetmishra.in/posts/evolve-from-source/</link>
       <pubDate>Tue, 22 Jan 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/evolve-from-source/</guid>
+      <guid>https://sangeetmishra.in/posts/evolve-from-source/</guid>
       <description>I was working on Evolve. I made some changes to it&amp;rsquo;s codebase, at this point it becomes very important to me to see the effect of the changes that I make, because unlike others who just trust their code and directly run tests on the code.
 I don&amp;rsquo;t run tests unless I see the working of the code I write.
 Doing this for Mercurial repo was easier, I didn&amp;rsquo;t have to do much.</description>

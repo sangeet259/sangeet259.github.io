@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on sangeet259</title>
-    <link>https://sangeet259.github.io/posts/</link>
+    <link>https://sangeetmishra.in/posts/</link>
     <description>Recent content in Posts on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 04 Feb 2019 00:00:00 +0530</lastBuildDate>
     
-	<atom:link href="https://sangeet259.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sangeetmishra.in/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Trying out Eager Execution</title>
-      <link>https://sangeet259.github.io/posts/eager-execution-in-tensorflow/</link>
+      <link>https://sangeetmishra.in/posts/eager-execution-in-tensorflow/</link>
       <pubDate>Mon, 04 Feb 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/eager-execution-in-tensorflow/</guid>
+      <guid>https://sangeetmishra.in/posts/eager-execution-in-tensorflow/</guid>
       <description>So there was a Data Science competition and after a long long time, I was doing something in Deep Learning. I was looking at colab when I saw this term &amp;ldquo;Eager Execution&amp;rdquo; popping up.
 So there I was trying to figure out what it was. Here in this article I try to summarise what I learnt from various sources.
 What it is? It&amp;rsquo;s a new imperative. The pythonic way of using tensorflow.</description>
@@ -24,10 +24,10 @@ What it is? It&amp;rsquo;s a new imperative. The pythonic way of using tensorflo
     
     <item>
       <title>Understanding Context Managers in Python</title>
-      <link>https://sangeet259.github.io/posts/ctx-in-python/</link>
+      <link>https://sangeetmishra.in/posts/ctx-in-python/</link>
       <pubDate>Sun, 03 Feb 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/ctx-in-python/</guid>
+      <guid>https://sangeetmishra.in/posts/ctx-in-python/</guid>
       <description>So I was working on the evolve command next (hg next). Here my work was with context managers, although I had used context managers before this time I wanted to know a bit more about them.
 So I read this blog on Context Managers : https://jeffknupp.com/blog/2016/03/07/python-with-context-managers/
 Few takeways:  Used to manage resources One of the most famous use : Handling file descriptors   How does a file descriptor leak ?</description>
@@ -35,10 +35,10 @@ Few takeways:  Used to manage resources One of the most famous use : Handling fi
     
     <item>
       <title>Using Evolve from source</title>
-      <link>https://sangeet259.github.io/posts/evolve-from-source/</link>
+      <link>https://sangeetmishra.in/posts/evolve-from-source/</link>
       <pubDate>Tue, 22 Jan 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/evolve-from-source/</guid>
+      <guid>https://sangeetmishra.in/posts/evolve-from-source/</guid>
       <description>I was working on Evolve. I made some changes to it&amp;rsquo;s codebase, at this point it becomes very important to me to see the effect of the changes that I make, because unlike others who just trust their code and directly run tests on the code.
 I don&amp;rsquo;t run tests unless I see the working of the code I write.
 Doing this for Mercurial repo was easier, I didn&amp;rsquo;t have to do much.</description>
@@ -46,10 +46,10 @@ Doing this for Mercurial repo was easier, I didn&amp;rsquo;t have to do much.</d
     
     <item>
       <title>GSoC Final Post</title>
-      <link>https://sangeet259.github.io/posts/gcoc-final-post/</link>
+      <link>https://sangeetmishra.in/posts/gcoc-final-post/</link>
       <pubDate>Sun, 12 Aug 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/gcoc-final-post/</guid>
+      <guid>https://sangeetmishra.in/posts/gcoc-final-post/</guid>
       <description>HG Grep | The Google Summer of Code Project Mercurial | Python Software Foundation Mentors : Yuya Nishihara, Pulkit Goyal, Jordi GH, Kevin Bullock, Sean Farley
 I did my project under Python Software Foundation and Mercurial. My project in the GSoC’18 dealt with the grepping aspect of Mecurial
 Now, before diving into it, making some things clear from the title.
@@ -59,10 +59,10 @@ Google Summer of Code is program to promote open-source development.</descriptio
     
     <item>
       <title>GSoC Blog Post 7</title>
-      <link>https://sangeet259.github.io/posts/gcoc-post-7/</link>
+      <link>https://sangeetmishra.in/posts/gcoc-post-7/</link>
       <pubDate>Wed, 08 Aug 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/gcoc-post-7/</guid>
+      <guid>https://sangeetmishra.in/posts/gcoc-post-7/</guid>
       <description>GSoC Blog post #7 This week I worked on passing multiple revisions to the –allfiles flag.
 The PR can be found at https://phab.mercurial-scm.org/D3976
 It’s assumed that if you are passing multiple revisions to –allfiles, you want hits from all of them. This was the behaviour that was chose after a discussion with Yuya.
@@ -72,10 +72,10 @@ It made sure it just check the files only once by maintaining a dictionary calle
     
     <item>
       <title>GSoC Blog Post 6</title>
-      <link>https://sangeet259.github.io/posts/gcoc-post-6/</link>
+      <link>https://sangeetmishra.in/posts/gcoc-post-6/</link>
       <pubDate>Tue, 24 Jul 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/gcoc-post-6/</guid>
+      <guid>https://sangeetmishra.in/posts/gcoc-post-6/</guid>
       <description>GSoC Blog post #6 At the beginning of this week, my previous commit was revert and set to config = False, meaning that it is hidden behind that config option. That’s because it was a period of code freeze in mercurial as the next release is due in some days, so unless a feature is completely tested it can’t be released.
 Link to the revision: https://phab.mercurial-scm.org/D3919
 Next Yuya told me to work on passing multiple revisions with –all-files mode.</description>
@@ -83,10 +83,10 @@ Next Yuya told me to work on passing multiple revisions with –all-files mode.<
     
     <item>
       <title>GSoC Blog Post 5</title>
-      <link>https://sangeet259.github.io/posts/gcoc-post-5/</link>
+      <link>https://sangeetmishra.in/posts/gcoc-post-5/</link>
       <pubDate>Mon, 09 Jul 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/gcoc-post-5/</guid>
+      <guid>https://sangeetmishra.in/posts/gcoc-post-5/</guid>
       <description>GSOC Blog Post #5 This time I was working on changing the default of the grep command to a new behaviour.
 With this patch grep searches on the working directory by default and looks for all files tracked by the working directory and greps on them
 ==========================Demonstration================
@@ -96,10 +96,10 @@ $ hg init a $ cd a $ echo &amp;#34;some text&amp;#34;&amp;gt;&amp;gt;file1 $ hg 
     
     <item>
       <title>GSoC Blog Post 4</title>
-      <link>https://sangeet259.github.io/posts/gcoc-post-4/</link>
+      <link>https://sangeetmishra.in/posts/gcoc-post-4/</link>
       <pubDate>Wed, 27 Jun 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/gcoc-post-4/</guid>
+      <guid>https://sangeetmishra.in/posts/gcoc-post-4/</guid>
       <description>GSoC Blog Post #4 Another Fortnight gone by, and perhaps this was the time when we got most work done.
 This time around I added two new features to mercurial.
 They are: The allfiles mode
@@ -108,20 +108,20 @@ This would work on a single revision and get all the files that were there in th
     
     <item>
       <title>GSoC Blog Post 3</title>
-      <link>https://sangeet259.github.io/posts/gcoc-post-3/</link>
+      <link>https://sangeetmishra.in/posts/gcoc-post-3/</link>
       <pubDate>Mon, 11 Jun 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/gcoc-post-3/</guid>
+      <guid>https://sangeetmishra.in/posts/gcoc-post-3/</guid>
       <description>GSoC Blog Post 3 These two weeks I was involved in fixing the –wdir(). Yuya had asked me to not create an entire separate if/else block as that might lead to untested code paths.
 So I was trying to work out another way. While I was trying to figure out a way to do this I realised the code had changed a bit since my last patch, and it nows throws WdirUnsupported exception.</description>
     </item>
     
     <item>
       <title>GSoC Blog Post 2</title>
-      <link>https://sangeet259.github.io/posts/gsoc-post-2/</link>
+      <link>https://sangeetmishra.in/posts/gsoc-post-2/</link>
       <pubDate>Mon, 28 May 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/gsoc-post-2/</guid>
+      <guid>https://sangeetmishra.in/posts/gsoc-post-2/</guid>
       <description>So it is two weeks into the coding period and I thankfully haven’t fallen much behind my own set timeline.
 The tasks that I had set this week were fixing the&amp;ndash;all flag and fix the working directory grep. Thankfully I had done major of this work during/after submission. The fix of the &amp;ndash;all was tested and merged and is a part of the stable version of hg now.
 The best part of the issue was that fixing it took just changing two lines.</description>
@@ -129,29 +129,29 @@ The best part of the issue was that fixing it took just changing two lines.</des
     
     <item>
       <title>Demonstrating the problem with forward ordered grep --all</title>
-      <link>https://sangeet259.github.io/posts/mercurial-grep-all-issue/</link>
+      <link>https://sangeetmishra.in/posts/mercurial-grep-all-issue/</link>
       <pubDate>Sun, 13 May 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/mercurial-grep-all-issue/</guid>
+      <guid>https://sangeetmishra.in/posts/mercurial-grep-all-issue/</guid>
       <description>Demonstrating the problem with forward ordered grep --all So if you do a hg grep &amp;quot;pattern&amp;quot; --all, you would get all the lines along with revision numbers showing when this pattern appeared or disappeared from the repository. Cool, that’s what we want.
 And by default, it does a reverse revlog search. That is, it starts from the latest revision and goes all the way upto the oldest one. And accordingly shows you the result.</description>
     </item>
     
     <item>
       <title>Proposal acceptance and community bonding period</title>
-      <link>https://sangeet259.github.io/posts/gsoc-proposal-acceptance/</link>
+      <link>https://sangeetmishra.in/posts/gsoc-proposal-acceptance/</link>
       <pubDate>Sun, 13 May 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/gsoc-proposal-acceptance/</guid>
+      <guid>https://sangeetmishra.in/posts/gsoc-proposal-acceptance/</guid>
       <description>Proposal acceptance and community bonding period Two weeks into the summer break and the gsoc coding period is about to begin.  It all started in February when I started looking for organisations to contribute for the Google Summer of Code 2018. I knew the language was going to be Python, so straight I was into the PSF Sub Orgs. The next challenge was to select the sub org, I thought of going for core software development and not some specialised field.</description>
     </item>
     
     <item>
       <title>Custom Bash</title>
-      <link>https://sangeet259.github.io/posts/custom-bash-config/</link>
+      <link>https://sangeetmishra.in/posts/custom-bash-config/</link>
       <pubDate>Fri, 26 Jan 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/custom-bash-config/</guid>
+      <guid>https://sangeetmishra.in/posts/custom-bash-config/</guid>
       <description>Every time I re-install Ubnutu I have to search the web for the custom shell and git promp configurations. They are really handy for git completions.
   This time I thought to just put it down here.
 Steps :
@@ -160,10 +160,10 @@ Steps :
     
     <item>
       <title>Matplotlib Backened change during Training a DL Model</title>
-      <link>https://sangeet259.github.io/posts/matplotlib-backend-dl-training/</link>
+      <link>https://sangeetmishra.in/posts/matplotlib-backend-dl-training/</link>
       <pubDate>Sun, 07 Jan 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/matplotlib-backend-dl-training/</guid>
+      <guid>https://sangeetmishra.in/posts/matplotlib-backend-dl-training/</guid>
       <description>Matplotlib Backened change during Training a DL Model If you are training something on remote server where you dont have root access and get an error like your python is not configured for tkinter. This is nothing but maybe somewhere in your pipe
 Then you&amp;rsquo;re options are :
  First install tkinter, note that since you do not have sudo priviledge, you have to install tcl8.6-dev and tk8.6-dev from source too.</description>
@@ -171,20 +171,20 @@ Then you&amp;rsquo;re options are :
     
     <item>
       <title>Being Pythonic</title>
-      <link>https://sangeet259.github.io/posts/being-pythonic/</link>
+      <link>https://sangeetmishra.in/posts/being-pythonic/</link>
       <pubDate>Thu, 07 Dec 2017 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/being-pythonic/</guid>
+      <guid>https://sangeetmishra.in/posts/being-pythonic/</guid>
       <description>I had encountered several times words like map, zip, lambda, *args, **kwargs. This time I decided to look up the web and really get the hang of them. So here I was searching the net. Finally I came across some nice explaations which I pen down here :
  Map, Zip and Lamda :: https://bradmontgomery.net/blog/pythons-zip-map-and-lambda/ **Args and **Kwargs :: https://pythontips.com/2013/08/04/args-and-kwargs-in-python-explained/  </description>
     </item>
     
     <item>
       <title>Setting Up OpenCV</title>
-      <link>https://sangeet259.github.io/posts/opencv-setup/</link>
+      <link>https://sangeetmishra.in/posts/opencv-setup/</link>
       <pubDate>Thu, 07 Dec 2017 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/opencv-setup/</guid>
+      <guid>https://sangeetmishra.in/posts/opencv-setup/</guid>
       <description>I was trying to use the Tensorflow&amp;rsquo;s newly released Object Detection API on my webcam. I realised I couldn&amp;rsquo;t open webcam, OpenCV which was bundled with ROS was throwing all sorts of errors, I Googled and tried many hacky solution but all in vain.
 Now that my end sems were over I decided to install it fresh.
 This site : https://www.learnopencv.com/install-opencv3-on-ubuntu/ is a great walktrough through the installation process. It&amp;rsquo;s absolutely complete.</description>
@@ -192,20 +192,20 @@ This site : https://www.learnopencv.com/install-opencv3-on-ubuntu/ is a great wa
     
     <item>
       <title>Obligatory Hello World post</title>
-      <link>https://sangeet259.github.io/posts/first-jekyll-post/</link>
+      <link>https://sangeetmishra.in/posts/first-jekyll-post/</link>
       <pubDate>Tue, 14 Nov 2017 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/first-jekyll-post/</guid>
+      <guid>https://sangeetmishra.in/posts/first-jekyll-post/</guid>
       <description>Hellooo World !
  Okay So it&amp;rsquo;s already noon and I am setting up up my portfolio. While I already had a portfolio built in the summer as part of the SF Web Team Selections , but that one looked very childish and lacked professionalism. I was still sticking around with it until I saw Himanshu Mishra&amp;rsquo;s and Dibya Das&amp;rsquo;s portfolio . I was amazed that how simplistic these guys had made their portfolio.</description>
     </item>
     
     <item>
       <title>Setting Up CUDA</title>
-      <link>https://sangeet259.github.io/posts/cuda-setup/</link>
+      <link>https://sangeetmishra.in/posts/cuda-setup/</link>
       <pubDate>Tue, 14 Nov 2017 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/cuda-setup/</guid>
+      <guid>https://sangeetmishra.in/posts/cuda-setup/</guid>
       <description>CUDA Set Up The last time I tried to fiddle with CUDA I got stuck in a login loop and had to reinstall Ubuntu. Last day again I was sitting in front of a fresh installation of Ubuntu and nightmares of last time&amp;rsquo;s Tensorflow GPU setup were all but moments away.
 Anyway I had to do it.
 But surprisingly this time it was short and simple ( simpler would hae been a better choice ).</description>

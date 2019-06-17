@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Keras on sangeet259</title>
-    <link>https://sangeet259.github.io/tags/keras/</link>
+    <link>https://sangeetmishra.in/tags/keras/</link>
     <description>Recent content in Keras on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 06 Feb 2019 00:00:00 +0530</lastBuildDate>
     
-	<atom:link href="https://sangeet259.github.io/tags/keras/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sangeetmishra.in/tags/keras/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Categorical Cross Entropy vs Sparse Categorical Cross Entropy</title>
-      <link>https://sangeet259.github.io/til/cat-ce-vs-sparse-cat-ce/</link>
+      <link>https://sangeetmishra.in/til/cat-ce-vs-sparse-cat-ce/</link>
       <pubDate>Wed, 06 Feb 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/til/cat-ce-vs-sparse-cat-ce/</guid>
+      <guid>https://sangeetmishra.in/til/cat-ce-vs-sparse-cat-ce/</guid>
       <description>I was looking for a loss function when browsing through Keras documentation I found two loss functions. The first one categorical_cross_entropy was familiar, however I saw something I had never used before it was sparsed_categorical_cross_entropy.
 The difference : Depends on the structure of your targets !
 If your targets are one-hot encoded, you have to use categorical_crossentropy. Examples of one-hot encoding:
