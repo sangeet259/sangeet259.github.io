@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>python on sangeet259</title>
-    <link>https://sangeetmishra.in/tags/python/</link>
+    <link>https://sangeet259.github.io/tags/python/</link>
     <description>Recent content in python on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 22 Feb 2019 00:00:00 +0530</lastBuildDate>
     
-	<atom:link href="https://sangeetmishra.in/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sangeet259.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python Site Packages vs Dist Packages</title>
-      <link>https://sangeetmishra.in/til/python-site-vs-dist-packages/</link>
+      <link>https://sangeet259.github.io/til/python-site-vs-dist-packages/</link>
       <pubDate>Fri, 22 Feb 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeetmishra.in/til/python-site-vs-dist-packages/</guid>
+      <guid>https://sangeet259.github.io/til/python-site-vs-dist-packages/</guid>
       <description>There are certain locations Python looks for installed packages. You can find out the locations :
 import sys print &amp;#39;\n&amp;#39;.join(sys.path)/usr/lib/python2.7 /usr/lib/python2.7/plat-x86_64-linux-gnu /usr/lib/python2.7/lib-tk /usr/lib/python2.7/lib-old /usr/lib/python2.7/lib-dynload /home/sangeet/.local/lib/python2.7/site-packages /usr/local/lib/python2.7/dist-packages /usr/lib/python2.7/dist-packages dist-package in specific to Debian/Ubuntu distros. The modules that comes from a Debian Package manager are installed in the dist-packages. /usr/lib/python2.7/dist-packages
 Since pip also comes from a Debian package manager, they too use &amp;lsquo;dist-packages&amp;rsquo; in Debian/Ubuntu. But their path is &amp;lsquo;a bit&amp;rsquo; different. /usr/local/lib/python2.</description>
@@ -24,10 +24,10 @@ Since pip also comes from a Debian package manager, they too use &amp;lsquo;dist
     
     <item>
       <title>Key in Min/Max function in Python</title>
-      <link>https://sangeetmishra.in/til/key-in-min_max/</link>
+      <link>https://sangeet259.github.io/til/key-in-min_max/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeetmishra.in/til/key-in-min_max/</guid>
+      <guid>https://sangeet259.github.io/til/key-in-min_max/</guid>
       <description>So I was browsing TensorFlow doc on the Dataset API, when I stumbled across something which eventually led me to learn this:
 You can pass a key function(or a lambda) to the min/max function in Python.
 Here is a sweet example:
@@ -36,10 +36,10 @@ def sumDigit(num): sum = 0 while(num): sum += num % 10 num = int(num / 10) retur
     
     <item>
       <title>Understanding Context Managers in Python</title>
-      <link>https://sangeetmishra.in/posts/ctx-in-python/</link>
+      <link>https://sangeet259.github.io/posts/ctx-in-python/</link>
       <pubDate>Sun, 03 Feb 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeetmishra.in/posts/ctx-in-python/</guid>
+      <guid>https://sangeet259.github.io/posts/ctx-in-python/</guid>
       <description>So I was working on the evolve command next (hg next). Here my work was with context managers, although I had used context managers before this time I wanted to know a bit more about them.
 So I read this blog on Context Managers : https://jeffknupp.com/blog/2016/03/07/python-with-context-managers/
 Few takeways:  Used to manage resources One of the most famous use : Handling file descriptors   How does a file descriptor leak ?</description>
@@ -47,10 +47,10 @@ Few takeways:  Used to manage resources One of the most famous use : Handling fi
     
     <item>
       <title>Being Pythonic</title>
-      <link>https://sangeetmishra.in/posts/being-pythonic/</link>
+      <link>https://sangeet259.github.io/posts/being-pythonic/</link>
       <pubDate>Thu, 07 Dec 2017 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeetmishra.in/posts/being-pythonic/</guid>
+      <guid>https://sangeet259.github.io/posts/being-pythonic/</guid>
       <description>I had encountered several times words like map, zip, lambda, *args, **kwargs. This time I decided to look up the web and really get the hang of them. So here I was searching the net. Finally I came across some nice explaations which I pen down here :
  Map, Zip and Lamda :: https://bradmontgomery.net/blog/pythons-zip-map-and-lambda/ **Args and **Kwargs :: https://pythontips.com/2013/08/04/args-and-kwargs-in-python-explained/  </description>
     </item>

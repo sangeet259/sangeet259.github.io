@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jekyll on sangeet259</title>
-    <link>https://sangeetmishra.in/tags/jekyll/</link>
+    <link>https://sangeet259.github.io/tags/jekyll/</link>
     <description>Recent content in jekyll on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 14 Nov 2017 19:03:31 +0530</lastBuildDate>
     
-	<atom:link href="https://sangeetmishra.in/tags/jekyll/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sangeet259.github.io/tags/jekyll/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Obligatory Hello World post</title>
-      <link>https://sangeetmishra.in/posts/first-jekyll-post/</link>
+      <link>https://sangeet259.github.io/posts/first-jekyll-post/</link>
       <pubDate>Tue, 14 Nov 2017 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeetmishra.in/posts/first-jekyll-post/</guid>
+      <guid>https://sangeet259.github.io/posts/first-jekyll-post/</guid>
       <description>Hellooo World !
  Okay So it&amp;rsquo;s already noon and I am setting up up my portfolio. While I already had a portfolio built in the summer as part of the SF Web Team Selections , but that one looked very childish and lacked professionalism. I was still sticking around with it until I saw Himanshu Mishra&amp;rsquo;s and Dibya Das&amp;rsquo;s portfolio . I was amazed that how simplistic these guys had made their portfolio.</description>
     </item>

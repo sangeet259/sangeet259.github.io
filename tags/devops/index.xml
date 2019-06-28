@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>devops on sangeet259</title>
-    <link>https://sangeetmishra.in/tags/devops/</link>
+    <link>https://sangeet259.github.io/tags/devops/</link>
     <description>Recent content in devops on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 18 Feb 2019 00:00:00 +0530</lastBuildDate>
     
-	<atom:link href="https://sangeetmishra.in/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sangeet259.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Set Proxy for all the Docker files</title>
-      <link>https://sangeetmishra.in/til/proxy-for-docker-files/</link>
+      <link>https://sangeet259.github.io/til/proxy-for-docker-files/</link>
       <pubDate>Mon, 18 Feb 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeetmishra.in/til/proxy-for-docker-files/</guid>
+      <guid>https://sangeet259.github.io/til/proxy-for-docker-files/</guid>
       <description>So I was using a docker container. Docker was already infmaous in my eyes because the way it sets up proxy. I remember wasting a lot of time initially only to find out that you have to create som proxy-conf.d file in order to enable proxy usange in docker.
 Now came using Docker Images. So I had this image where I had a pip install running, when I docker-compose up-ed, there seemed some glitch, but it was familiar, it striked me, it was PROXY issue !</description>
     </item>
     
     <item>
       <title>Project Level Methods/Function search in Sublime Text</title>
-      <link>https://sangeetmishra.in/til/function-search-across-project/</link>
+      <link>https://sangeet259.github.io/til/function-search-across-project/</link>
       <pubDate>Sat, 16 Feb 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeetmishra.in/til/function-search-across-project/</guid>
+      <guid>https://sangeet259.github.io/til/function-search-across-project/</guid>
       <description>There are some features in sublime that I absolutely love.
 Three of them : 1. ctrl + P : Opens up a input field where you can search for files across the entire project. 2. ctrl + R : Search for a method/function in the current opened file. 3. ctrl + shift + R : Search for method/function across the entire project.</description>
     </item>
     
     <item>
       <title>Using Evolve from source</title>
-      <link>https://sangeetmishra.in/posts/evolve-from-source/</link>
+      <link>https://sangeet259.github.io/posts/evolve-from-source/</link>
       <pubDate>Tue, 22 Jan 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeetmishra.in/posts/evolve-from-source/</guid>
+      <guid>https://sangeet259.github.io/posts/evolve-from-source/</guid>
       <description>I was working on Evolve. I made some changes to it&amp;rsquo;s codebase, at this point it becomes very important to me to see the effect of the changes that I make, because unlike others who just trust their code and directly run tests on the code.
 I don&amp;rsquo;t run tests unless I see the working of the code I write.
 Doing this for Mercurial repo was easier, I didn&amp;rsquo;t have to do much.</description>
@@ -44,10 +44,10 @@ Doing this for Mercurial repo was easier, I didn&amp;rsquo;t have to do much.</d
     
     <item>
       <title>HTTP in HTTPS proxy</title>
-      <link>https://sangeetmishra.in/til/http-in-https/</link>
+      <link>https://sangeet259.github.io/til/http-in-https/</link>
       <pubDate>Mon, 21 Jan 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeetmishra.in/til/http-in-https/</guid>
+      <guid>https://sangeet259.github.io/til/http-in-https/</guid>
       <description>Whenever I set an https_proxy, I am tempted to do something like :
 https_proxy=https://172.16.2.30:8080/
 Notice the &amp;ldquo;https://&amp;rdquo; , sadly that&amp;rsquo;s not how it works, you have to set it &amp;ldquo;http://&amp;rdquo; only.
@@ -57,10 +57,10 @@ Thankfully this stackoverflow answer saved the day : https://stackoverflow.com/a
     
     <item>
       <title>XClip in Fish Shell</title>
-      <link>https://sangeetmishra.in/til/xclip-in-fish/</link>
+      <link>https://sangeet259.github.io/til/xclip-in-fish/</link>
       <pubDate>Fri, 11 Jan 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeetmishra.in/til/xclip-in-fish/</guid>
+      <guid>https://sangeet259.github.io/til/xclip-in-fish/</guid>
       <description>Wondered if you could just copy the output of a bash command to clipboard and paste it somewhere.
 XClip is here for your rescue. The Fish Shell 3.0 now supports xclip.
 How to use :
@@ -69,10 +69,10 @@ How to use :
     
     <item>
       <title>Custom Bash</title>
-      <link>https://sangeetmishra.in/posts/custom-bash-config/</link>
+      <link>https://sangeet259.github.io/posts/custom-bash-config/</link>
       <pubDate>Fri, 26 Jan 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeetmishra.in/posts/custom-bash-config/</guid>
+      <guid>https://sangeet259.github.io/posts/custom-bash-config/</guid>
       <description>Every time I re-install Ubnutu I have to search the web for the custom shell and git promp configurations. They are really handy for git completions.
   This time I thought to just put it down here.
 Steps :
@@ -81,10 +81,10 @@ Steps :
     
     <item>
       <title>Setting Up OpenCV</title>
-      <link>https://sangeetmishra.in/posts/opencv-setup/</link>
+      <link>https://sangeet259.github.io/posts/opencv-setup/</link>
       <pubDate>Thu, 07 Dec 2017 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeetmishra.in/posts/opencv-setup/</guid>
+      <guid>https://sangeet259.github.io/posts/opencv-setup/</guid>
       <description>I was trying to use the Tensorflow&amp;rsquo;s newly released Object Detection API on my webcam. I realised I couldn&amp;rsquo;t open webcam, OpenCV which was bundled with ROS was throwing all sorts of errors, I Googled and tried many hacky solution but all in vain.
 Now that my end sems were over I decided to install it fresh.
 This site : https://www.learnopencv.com/install-opencv3-on-ubuntu/ is a great walktrough through the installation process. It&amp;rsquo;s absolutely complete.</description>
@@ -92,10 +92,10 @@ This site : https://www.learnopencv.com/install-opencv3-on-ubuntu/ is a great wa
     
     <item>
       <title>Setting Up CUDA</title>
-      <link>https://sangeetmishra.in/posts/cuda-setup/</link>
+      <link>https://sangeet259.github.io/posts/cuda-setup/</link>
       <pubDate>Tue, 14 Nov 2017 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeetmishra.in/posts/cuda-setup/</guid>
+      <guid>https://sangeet259.github.io/posts/cuda-setup/</guid>
       <description>CUDA Set Up The last time I tried to fiddle with CUDA I got stuck in a login loop and had to reinstall Ubuntu. Last day again I was sitting in front of a fresh installation of Ubuntu and nightmares of last time&amp;rsquo;s Tensorflow GPU setup were all but moments away.
 Anyway I had to do it.
 But surprisingly this time it was short and simple ( simpler would hae been a better choice ).</description>

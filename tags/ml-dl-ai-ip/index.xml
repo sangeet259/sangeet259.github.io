@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ml dl ai ip on sangeet259</title>
-    <link>https://sangeetmishra.in/tags/ml-dl-ai-ip/</link>
+    <link>https://sangeet259.github.io/tags/ml-dl-ai-ip/</link>
     <description>Recent content in ml dl ai ip on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 14 Nov 2017 19:03:31 +0530</lastBuildDate>
     
-	<atom:link href="https://sangeetmishra.in/tags/ml-dl-ai-ip/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sangeet259.github.io/tags/ml-dl-ai-ip/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Setting Up CUDA</title>
-      <link>https://sangeetmishra.in/posts/cuda-setup/</link>
+      <link>https://sangeet259.github.io/posts/cuda-setup/</link>
       <pubDate>Tue, 14 Nov 2017 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeetmishra.in/posts/cuda-setup/</guid>
+      <guid>https://sangeet259.github.io/posts/cuda-setup/</guid>
       <description>CUDA Set Up The last time I tried to fiddle with CUDA I got stuck in a login loop and had to reinstall Ubuntu. Last day again I was sitting in front of a fresh installation of Ubuntu and nightmares of last time&amp;rsquo;s Tensorflow GPU setup were all but moments away.
 Anyway I had to do it.
 But surprisingly this time it was short and simple ( simpler would hae been a better choice ).</description>
