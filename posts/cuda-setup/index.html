@@ -37,7 +37,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="generator" content="Hugo 0.55.6" />
   </head>
 
   <body class=" ">
@@ -151,36 +151,36 @@ Few Pointers to keep in mind ::</p>
 <li>So go to CUDA Toolkit Archive and download the toolkit version 8 from the list. Proceed and download the <code>.deb (local)</code> file.</li>
 <li>Install the .deb package || At the end of the installation you will most probably get this error
 /sbin/ldconfig.real: /usr/lib/nvidia-375/libEGL.so.1 is not a symbolic link</li>
-<li>The fix to this is is simply renaming some files :::
-<code>
-$ sudo mv /usr/lib/nvidia-375/libEGL.so.1 /usr/lib/nvidia-375/libEGL.so.1.org
+
+<li><p>The fix to this is is simply renaming some files :::</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">$ sudo mv /usr/lib/nvidia-375/libEGL.so.1 /usr/lib/nvidia-375/libEGL.so.1.org
 $ sudo mv /usr/lib32/nvidia-375/libEGL.so.1 /usr/lib32/nvidia-375/libEGL.so.1.org
 $ sudo ln -s /usr/lib/nvidia-375/libEGL.so.375.39 /usr/lib/nvidia-375/libEGL.so.1
-$ sudo ln -s /usr/lib32/nvidia-375/libEGL.so.375.39 /usr/lib32/nvidia-375/libEGL.so.1
-</code></li>
-<li>For sanity installation the .deb package again.</li>
-<li>Now you have to add the path variables to the .bashrc file
-<code>
-export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-</code>
-Make sure that the installation was done in  <code>/usr/local/cuda-8.0</code>  only, if it were anywhere else accordingly change that.</li>
-<li>Now go to cuDNN downloads and sign up to download the appropriate version , note that cuDNN 7 is supported by TF as of now.</li>
-<li>Download the cuDNN v6.0 Library for Linux , even if there is a .deb versio nfor ubuntu go for this ! Why ? Because it worked for me !!</li>
+$ sudo ln -s /usr/lib32/nvidia-375/libEGL.so.375.39 /usr/lib32/nvidia-375/libEGL.so.1</pre></div></li>
+
+<li><p>For sanity installation the .deb package again.</p></li>
+
+<li><p>Now you have to add the path variables to the .bashrc file</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}</pre></div>
+<p>Make sure that the installation was done in  <code>/usr/local/cuda-8.0</code>  only, if it were anywhere else accordingly change that.</p></li>
+
+<li><p>Now go to cuDNN downloads and sign up to download the appropriate version , note that cuDNN 7 is supported by TF as of now.</p></li>
+
+<li><p>Download the cuDNN v6.0 Library for Linux , even if there is a .deb versio nfor ubuntu go for this ! Why ? Because it worked for me !!</p></li>
 </ul>
 
 <ol>
 <li>Navigate to your <cudnnpath> directory containing the cuDNN Tar file.</li>
 <li>Unzip the cuDNN package.
 <code>$ tar -xzvf cudnn-9.0-linux-x64-v7.tgz</code></li>
-<li>Copy the following files into the CUDA Toolkit directory. Use these 👇
-<code>
-$ sudo cp -P include/cudnn.h /usr/local/cuda-8.0/include/
+
+<li><p>Copy the following files into the CUDA Toolkit directory. Use these 👇</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">$ sudo cp -P include/cudnn.h /usr/local/cuda-8.0/include/
 $ sudo cp -P lib64/libcudnn* /usr/local/cuda-8.0/lib64/
-$ sudo chmod a+r /usr/lib/x86_64-linux-gnu/libcudnn*
-</code>
-That’s it ! <br>
-Do not meddle with your graphics driver, I did that twice once via <code>tty mode</code> and once via <code>additional drivers</code> option. Both the time I got stuck in a login loop.</li>
+$ sudo chmod a+r /usr/lib/x86_64-linux-gnu/libcudnn*</pre></div>
+<p>That’s it ! <br>
+Do not meddle with your graphics driver, I did that twice once via <code>tty mode</code> and once via <code>additional drivers</code> option. Both the time I got stuck in a login loop.</p></li>
 </ol>
 
       </div>

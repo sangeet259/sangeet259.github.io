@@ -37,7 +37,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="generator" content="Hugo 0.55.6" />
   </head>
 
   <body class=" ">
@@ -135,12 +135,11 @@ A simple <code>./hg &lt;command&gt;</code> was sufficient.</p>
 <li>Clone Evolve : <code>hg clone https://www.mercurial-scm.org/repo/evolve/</code></li>
 <li><strong>Let&rsquo;s say</strong> the repo is at <code>/home/sangeet/evolve/</code></li>
 <li>Next go to your hgrc file (it&rsquo;s your wish if you go for the global hgrc or any local hgrc in some other hg repo)  (I go for the global one)</li>
-<li>Add this:
-<code>
-[extensions]
-evolve = /home/sangeet/Octobus/evolve/hgext3rd/evolve
-</code>
-<strong>Note</strong> : Please DO NOT put the path in quotes, doing so will give you import errors !</li>
+
+<li><p>Add this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">[extensions]
+evolve = /home/sangeet/Octobus/evolve/hgext3rd/evolve</pre></div>
+<p><strong>Note</strong> : Please DO NOT put the path in quotes, doing so will give you import errors !</p></li>
 </ol>
 
 <p>Now you can make changes to evolve at /home/sangeet/Octobus/evolve/hgext3rd/evolve.</p>

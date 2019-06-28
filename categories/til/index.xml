@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Til on sangeet259</title>
+    <title>TIL on sangeet259</title>
     <link>https://sangeetmishra.in/categories/til/</link>
-    <description>Recent content in Til on sangeet259</description>
+    <description>Recent content in TIL on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 22 Feb 2019 00:00:00 +0530</lastBuildDate>
     
 	<atom:link href="https://sangeetmishra.in/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python Site Packages vs Dist Packages</title>
+      <link>https://sangeetmishra.in/til/python-site-vs-dist-packages/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://sangeetmishra.in/til/python-site-vs-dist-packages/</guid>
+      <description>There are certain locations Python looks for installed packages. You can find out the locations :
+import sys print &amp;#39;\n&amp;#39;.join(sys.path)/usr/lib/python2.7 /usr/lib/python2.7/plat-x86_64-linux-gnu /usr/lib/python2.7/lib-tk /usr/lib/python2.7/lib-old /usr/lib/python2.7/lib-dynload /home/sangeet/.local/lib/python2.7/site-packages /usr/local/lib/python2.7/dist-packages /usr/lib/python2.7/dist-packages dist-package in specific to Debian/Ubuntu distros. The modules that comes from a Debian Package manager are installed in the dist-packages. /usr/lib/python2.7/dist-packages
+Since pip also comes from a Debian package manager, they too use &amp;lsquo;dist-packages&amp;rsquo; in Debian/Ubuntu. But their path is &amp;lsquo;a bit&amp;rsquo; different. /usr/local/lib/python2.</description>
+    </item>
     
     <item>
       <title>Set Proxy for all the Docker files</title>

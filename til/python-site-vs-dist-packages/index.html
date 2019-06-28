@@ -10,9 +10,11 @@
     <meta name="keywords" content="blog,developer,personal">
 
     <base href="https://sangeetmishra.in/">
-    <title>sangeet259</title>
+    <title>
+  Python Site Packages vs Dist Packages · sangeet259
+</title>
 
-    <link rel="canonical" href="https://sangeetmishra.in/404.html">
+    <link rel="canonical" href="https://sangeetmishra.in/til/python-site-vs-dist-packages/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
@@ -83,12 +85,39 @@
 
       <div class="content">
         
-  <section class="container centered">
-  <div class="error">
-    <h1>404</h1>
-    <h2>Page Not Found</h2>
-    <p>Sorry, this page does not exist.<br />You can head back to <a href="https://sangeetmishra.in/">homepage</a>.</p>
-  </div>
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Python Site Packages vs Dist Packages</h1>
+    </header>
+
+    <p>There are certain locations Python looks for installed packages.
+You can find out the locations :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">import</span> sys
+<span style="color:#ff79c6">print</span> <span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">\n</span><span style="color:#f1fa8c">&#39;</span><span style="color:#ff79c6">.</span>join(sys<span style="color:#ff79c6">.</span>path)</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/usr/lib/python2.7
+/usr/lib/python2.7/plat-x86_64-linux-gnu
+/usr/lib/python2.7/lib-tk
+/usr/lib/python2.7/lib-old
+/usr/lib/python2.7/lib-dynload
+/home/sangeet/.local/lib/python2.7/site-packages
+/usr/local/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages</code></pre></div>
+<p>dist-package in specific to Debian/Ubuntu distros.
+The modules that comes from a Debian Package manager are installed in the dist-packages.
+<code>/usr/lib/python2.7/dist-packages</code></p>
+
+<p>Since pip also comes from a Debian package manager, they too use &lsquo;dist-packages&rsquo; in Debian/Ubuntu. But their path is &lsquo;a bit&rsquo; different.
+<code>/usr/local/lib/python2.7/dist-packages</code></p>
+
+<p>But if you install Python from source, that Python will use site-packages instead of dist-packages.</p>
+
+<p>This dist-package logic exists to separate the two installations separate, because there are many Ubuntu/Debian utilities which relies on the Python that comes pre-packaged.</p>
+
+<p>References:
+* <a href="https://stackoverflow.com/a/9388115/6507303">https://stackoverflow.com/a/9388115/6507303</a>
+* <a href="https://leemendelowitz.github.io/blog/how-does-python-find-packages.html">https://leemendelowitz.github.io/blog/how-does-python-find-packages.html</a></p>
+
+  </article>
 </section>
 
 

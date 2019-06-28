@@ -37,7 +37,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="generator" content="Hugo 0.55.6" />
   </head>
 
   <body class=" ">
@@ -138,15 +138,11 @@ although I had used context managers before this time I wanted to know a bit mor
 </blockquote>
 
 <ul>
-<li><strong>The general syntax :</strong>
-<code>python
-with something_that_returns_a_context_manager() as my_resource:
+<li><p><strong>The general syntax :</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">with</span> something_that_returns_a_context_manager() <span style="color:#ff79c6">as</span> my_resource:
 do_something(my_resource)
-...
-print('done using my_resource')
-</code></li>
-</ul>
-
+<span style="color:#ff79c6">...</span>
+<span style="color:#ff79c6">print</span>(<span style="color:#f1fa8c">&#39;done using my_resource&#39;</span>)</code></pre></div>
 <p>Now what returns a context manager ?
 * Lock objects in threading
 * subprocess.Popen
@@ -159,18 +155,20 @@ print('done using my_resource')
 <h3 id="the-basic-way">The Basic Way</h3>
 
 <p>Define a class that contains two special methods: <code>__enter__()</code> and <code>__exit__()</code>.
- <code>__enter__()</code> returns the resource to be managed (like a file object in the case of <code>open()</code> ). <code>__exit__()</code> does the cleanup work and doesn&rsquo;t return anything.</p>
+<code>__enter__()</code> returns the resource to be managed (like a file object in the case of <code>open()</code> ). <code>__exit__()</code> does the cleanup work and doesn&rsquo;t return anything.</p>
 
 <p>Let&rsquo;s define an <code>Open()</code> context manager using this approach:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">class</span> <span style="color:#50fa7b">OpenFile</span>():
-    <span style="color:#ff79c6">def</span> __init__(self,file_name, mode):
-        self<span style="color:#ff79c6">.</span>file_name <span style="color:#ff79c6">=</span> file_name
-        self<span style="color:#ff79c6">.</span>mode <span style="color:#ff79c6">=</span> mode
-    <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">__enter</span>(self):
-        self<span style="color:#ff79c6">.</span>opened_file <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">open</span>(self<span style="color:#ff79c6">.</span>file_name, self<span style="color:#ff79c6">.</span>mode)
-        <span style="color:#ff79c6">return</span> self<span style="color:#ff79c6">.</span>opened_file
-    <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">__exit</span>(self):
-        self<span style="color:#ff79c6">.</span>opened_file<span style="color:#ff79c6">.</span>close()</code></pre></div>
+<span style="color:#ff79c6">def</span> __init__(self,file_name, mode):
+    self<span style="color:#ff79c6">.</span>file_name <span style="color:#ff79c6">=</span> file_name
+    self<span style="color:#ff79c6">.</span>mode <span style="color:#ff79c6">=</span> mode
+<span style="color:#ff79c6">def</span> <span style="color:#50fa7b">__enter</span>(self):
+    self<span style="color:#ff79c6">.</span>opened_file <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">open</span>(self<span style="color:#ff79c6">.</span>file_name, self<span style="color:#ff79c6">.</span>mode)
+    <span style="color:#ff79c6">return</span> self<span style="color:#ff79c6">.</span>opened_file
+<span style="color:#ff79c6">def</span> <span style="color:#50fa7b">__exit</span>(self):
+    self<span style="color:#ff79c6">.</span>opened_file<span style="color:#ff79c6">.</span>close()</code></pre></div></li>
+</ul>
+
 <h3 id="the-contextlib-way">The contextlib way</h3>
 
 <p>Since context managers are so useful there is a Standard Module dedicated to them : <strong><code>contextlib</code></strong></p>
