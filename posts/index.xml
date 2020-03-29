@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on sangeet259</title>
@@ -53,8 +53,7 @@ Doing this for Mercurial repo was easier, I didn&amp;rsquo;t have to do much.</d
       <description>HG Grep | The Google Summer of Code Project Mercurial | Python Software Foundation Mentors : Yuya Nishihara, Pulkit Goyal, Jordi GH, Kevin Bullock, Sean Farley
 I did my project under Python Software Foundation and Mercurial. My project in the GSoC’18 dealt with the grepping aspect of Mecurial
 Now, before diving into it, making some things clear from the title.
-What is Google Summer of Code ? 
-Google Summer of Code is program to promote open-source development.</description>
+What is Google Summer of Code ? ![gsoc-img](https://cdn-images-1.medium.com/max/800/1*LmIMc8mqJLQTRtFtOKdPVg.png) Google Summer of Code is program to promote open-source development.</description>
     </item>
     
     <item>
@@ -133,7 +132,7 @@ The best part of the issue was that fixing it took just changing two lines.</des
       <pubDate>Sun, 13 May 2018 19:03:31 +0530</pubDate>
       
       <guid>https://sangeet259.github.io/posts/mercurial-grep-all-issue/</guid>
-      <description>Demonstrating the problem with forward ordered grep --all So if you do a hg grep &amp;quot;pattern&amp;quot; --all, you would get all the lines along with revision numbers showing when this pattern appeared or disappeared from the repository. Cool, that’s what we want.
+      <description>Demonstrating the problem with forward ordered grep --``all So if you do a hg grep &amp;quot;pattern&amp;quot; --all, you would get all the lines along with revision numbers showing when this pattern appeared or disappeared from the repository. Cool, that’s what we want.
 And by default, it does a reverse revlog search. That is, it starts from the latest revision and goes all the way upto the oldest one. And accordingly shows you the result.</description>
     </item>
     
@@ -155,7 +154,7 @@ And by default, it does a reverse revlog search. That is, it starts from the lat
       <description>Every time I re-install Ubnutu I have to search the web for the custom shell and git promp configurations. They are really handy for git completions.
   This time I thought to just put it down here.
 Steps :
- Download : git-prompt.sh Save the above file as git-prompt.sh in the home directory Download : git-completion.bash Save the above file as git-completion.bash in the home directory Now open .bashrc file in any text editor and these lines at the end</description>
+ Download : git-prompt.sh Save the above file as git-prompt.sh in the home directory Download : git-completion.bash Save the above file as git-completion.bash in the home directory Now open .bashrc file in any text editor and these lines at the end   # enable programmable completion features (you don&amp;#39;t need to enable # this, if it&amp;#39;s already enabled in /etc/bash.</description>
     </item>
     
     <item>
@@ -206,7 +205,7 @@ This site : https://www.learnopencv.com/install-opencv3-on-ubuntu/ is a great wa
       <pubDate>Tue, 14 Nov 2017 19:03:31 +0530</pubDate>
       
       <guid>https://sangeet259.github.io/posts/cuda-setup/</guid>
-      <description>CUDA Set Up The last time I tried to fiddle with CUDA I got stuck in a login loop and had to reinstall Ubuntu. Last day again I was sitting in front of a fresh installation of Ubuntu and nightmares of last time&amp;rsquo;s Tensorflow GPU setup were all but moments away.
+      <description>CUDA Set Up  The last time I tried to fiddle with CUDA I got stuck in a login loop and had to reinstall Ubuntu. Last day again I was sitting in front of a fresh installation of Ubuntu and nightmares of last time&amp;rsquo;s Tensorflow GPU setup were all but moments away.
 Anyway I had to do it.
 But surprisingly this time it was short and simple ( simpler would hae been a better choice ).</description>
     </item>

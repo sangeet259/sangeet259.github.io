@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>customization on sangeet259</title>
@@ -20,7 +20,7 @@
       <description>Every time I re-install Ubnutu I have to search the web for the custom shell and git promp configurations. They are really handy for git completions.
   This time I thought to just put it down here.
 Steps :
- Download : git-prompt.sh Save the above file as git-prompt.sh in the home directory Download : git-completion.bash Save the above file as git-completion.bash in the home directory Now open .bashrc file in any text editor and these lines at the end</description>
+ Download : git-prompt.sh Save the above file as git-prompt.sh in the home directory Download : git-completion.bash Save the above file as git-completion.bash in the home directory Now open .bashrc file in any text editor and these lines at the end   # enable programmable completion features (you don&amp;#39;t need to enable # this, if it&amp;#39;s already enabled in /etc/bash.</description>
     </item>
     
   </channel>

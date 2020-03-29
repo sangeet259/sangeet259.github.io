@@ -17,13 +17,13 @@
     <link rel="canonical" href="https://sangeet259.github.io/posts/eager-execution-in-tensorflow/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"   />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"   />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" "anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" "sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" "anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css"   media="screen" />
+      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" "sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" "anonymous" media="screen" />
     
 
     
@@ -37,7 +37,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.68.1" />
   </head>
 
   <body class=" ">
@@ -118,51 +118,37 @@
       </header>
 
       <div>
-        
-
-<p>So there was a Data Science competition and after a long long time, I was doing something in Deep Learning.
+        <p>So there was a Data Science competition and after a long long time, I was doing something in Deep Learning.
 I was looking at colab when I saw this term <strong>&ldquo;Eager Execution&rdquo;</strong> popping up.</p>
-
 <p>So there I was trying to figure out what it was. Here in this article I try to summarise what I learnt from various sources.</p>
-
 <h3 id="what-it-is">What it is?</h3>
-
 <p>It&rsquo;s a new imperative. The pythonic way of using tensorflow. Earlier you had to build graphs in a session and then run the graph to do the computations. Enabling eager makes <code>tf.Tensor</code> objects reference concrete values instead of symbolic handles to nodes in a computational graph.</p>
-
 <h3 id="why-were-there-graphs-at-the-first-place">Why were there graphs at the first place?</h3>
-
 <p>Because graphs are platform indepenedent. You can deploy it better over 100s of machines.</p>
-
-<p>### Why Eager execution?
- One doesn&rsquo;t need a static graph and have an apriori view of the computation graph to get the gradients computed. One can also use autograd (what PyTorch does). AutoGrad lets you differentiate dynamic code. You just build up a trace as you go and walk back the trace to compute the gradients.</p>
-
+<h3 id="why-eager-execution">Why Eager execution?</h3>
+<p>One doesn&rsquo;t need a static graph and have an apriori view of the computation graph to get the gradients computed. One can also use autograd (what PyTorch does). AutoGrad lets you differentiate dynamic code. You just build up a trace as you go and walk back the trace to compute the gradients.</p>
 <p>It helps you analyse and debug your code much  better by printing the value of the tensors and inseting breakpoints.</p>
-
 <p>When eager execution is enabled a tensorflow variable is just a python object.</p>
-
-<p>### How to use?</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"> <span style="color:#ff79c6">import</span> tensorflow <span style="color:#ff79c6">as</span> tf
- tf<span style="color:#ff79c6">.</span>enable_eager_execution()</code></pre></div>
-<p><strong>NOTE:</strong> <code>Once eager execution is enabled it cannot be disabled within the same program.</code></p>
-
-<p>### Interoperating between graph and eager?
- Now since the existing ecosystem in TF is almost entirely graph based, you need way to communicate between eager and graph.</p>
-
-<p>#### Call into graph from eager code:
- <code>tfe.make_template()</code>
- #### Call into eager from graph:
- <code>tfe.py_func()</code></p>
-
-<p>### Good Pratices
- #### Writing Eager Compatible Code:
-* Use <code>tf.keras.layers</code>
-* use <code>tf.keras.Model</code>
-* Use <code>tf.contrib.summary</code>
-* Use <code>tfe.metrics</code>
-* Use object based saving (enabled with eager, resembles pickling in python)</p>
-
-<h3 id="why-you-should-enable-eager-execution">Why you should <code>enable_eager_execution</code>?</h3>
-
+<h3 id="how-to-use">How to use?</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">import</span> tensorflow <span style="color:#ff79c6">as</span> tf
+tf<span style="color:#ff79c6">.</span>enable_eager_execution()
+</code></pre></div><p><strong>NOTE:</strong> <code>Once eager execution is enabled it cannot be disabled within the same program.</code></p>
+<h3 id="interoperating-between-graph-and-eager">Interoperating between graph and eager?</h3>
+<p>Now since the existing ecosystem in TF is almost entirely graph based, you need way to communicate between eager and graph.</p>
+<h4 id="call-into-graph-from-eager-code">Call into graph from eager code:</h4>
+<p><code>tfe.make_template()</code></p>
+<h4 id="call-into-eager-from-graph">Call into eager from graph:</h4>
+<p><code>tfe.py_func()</code></p>
+<h3 id="good-pratices">Good Pratices</h3>
+<h4 id="writing-eager-compatible-code">Writing Eager Compatible Code:</h4>
+<ul>
+<li>Use <code>tf.keras.layers</code></li>
+<li>use <code>tf.keras.Model</code></li>
+<li>Use <code>tf.contrib.summary</code></li>
+<li>Use <code>tfe.metrics</code></li>
+<li>Use object based saving (enabled with eager, resembles pickling in python)</li>
+</ul>
+<h3 id="why-you-should-enable_eager_execution">Why you should <code>enable_eager_execution</code>?</h3>
 <ul>
 <li>Being new to ML and having to build graphs in TF can be frustrating, I myself moved form TF to PyTorch for this</li>
 <li>Being a researcher, eager gives one the ability to quickly iterate over models</li>

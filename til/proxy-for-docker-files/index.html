@@ -17,13 +17,13 @@
     <link rel="canonical" href="https://sangeet259.github.io/til/proxy-for-docker-files/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"   />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"   />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" "anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" "sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" "anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css"   media="screen" />
+      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" "sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" "anonymous" media="screen" />
     
 
     
@@ -37,7 +37,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.68.1" />
   </head>
 
   <body class=" ">
@@ -93,12 +93,9 @@
 
     <p>So I was using a docker container.
 Docker was already infmaous in my eyes because the way it sets up proxy. I remember wasting a lot of time initially only to find out that you have to create som <code>proxy-conf.d</code> file in order to enable proxy usange in docker.</p>
-
 <p>Now came using Docker Images. So I had this image where I had a pip install running, when I <code>docker-compose up</code>-ed, there seemed some glitch, but it was familiar, it striked me, it was PROXY issue !!</p>
-
 <p>So I searched on how to enable proxy inside docker containers, so as to enable them use the network.
 Some answers I got were telling me to use <code>ENV</code> command and then pass a normal bash line setting the <code>http_proxy</code> and others. But an immediate drawback struck me, it is using the proxy of it&rsquo;s host system, and it&rsquo;s hard coded, now if share this container with someone she has to check the proxy, change/remove it. Damn ! Too much work.</p>
-
 <p>Fortunately the Docker team has introduce setting proxy in <code>~/.docker/cofig.json</code>.
 All I had to do was, place this in that file:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
@@ -112,11 +109,9 @@ All I had to do was, place this in that file:</p>
      <span style="color:#ff79c6">&#34;noProxy&#34;</span>: <span style="color:#f1fa8c">&#34;10.*.*.*, localhost, 127.0.0.1&#34;</span>
    }
  }
-}</code></pre></div>
-<p>And it worked like charm, the pip and apt command in other images were working.
-You don&rsquo;t have to <code>ENV https_proxy 'http://ip:3128'
-</code> in all the Docker Files!</p>
-
+}
+</code></pre></div><p>And it worked like charm, the pip and apt command in other images were working.
+You don&rsquo;t have to <code>ENV https_proxy 'http://ip:3128'</code> in all the Docker Files!</p>
 <p>Hurray !! 🎉</p>
 
   </article>

@@ -17,13 +17,13 @@
     <link rel="canonical" href="https://sangeet259.github.io/posts/opencv-setup/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"   />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"   />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" "anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" "sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" "anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css"   media="screen" />
+      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" "sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" "anonymous" media="screen" />
     
 
     
@@ -37,7 +37,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.68.1" />
   </head>
 
   <body class=" ">
@@ -122,36 +122,27 @@
       <div>
         <p>I was trying to use the Tensorflow&rsquo;s newly released Object Detection API on my webcam.
 I realised I couldn&rsquo;t open webcam, OpenCV which was bundled with ROS was throwing all sorts of errors, I Googled and tried many hacky solution but all in vain.</p>
-
 <p>Now that my end sems were over I decided to install it fresh.</p>
-
 <p>This site : <a href="https://www.learnopencv.com/install-opencv3-on-ubuntu/">https://www.learnopencv.com/install-opencv3-on-ubuntu/</a> is a great walktrough through the installation process.
 It&rsquo;s absolutely complete.</p>
-
 <p>There the author had used a virtualenv to work on.</p>
-
 <p>Now I had done this for both Python2 and Python3 !
 Now when I opened my webcam in Python2 it worked like charm, but as soon  as I changed the &lsquo;2&rsquo; to &lsquo;3&rsquo; it again crashed !!</p>
-
 <p>Now I decided to follow the instructions exaclty and created a virtual env !
 Then I followed the steps and it worked !!</p>
-
 <p>Now why my normal installation wasn&rsquo;t working ??</p>
-
 <p>Using</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find /usr/local/lib/ -type f -name <span style="color:#f1fa8c">&#34;cv2*.so&#34;</span></code></pre></div>
-<p>I found that the installed OpenCV for Python3 was at</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/usr/local/lib/python3.5/dist-packages/cv2.cpython-35m-x86_64-linux-gnu.so</code></pre></div>
-<p>But when I inspected what <code>.so</code> file python was importing I found it was trying to use the <code>.so</code> file at</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/home/sangeet/.local/lib/python3.5/site-packages/cv2/cv2.cpython-35m-x86_64-linux-gnu.so</code></pre></div>
-<p>Then I tried creating a symlink between the two, but since both the files had the same name it couldn&rsquo;t be done.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">find /usr/local/lib/ -type f -name <span style="color:#f1fa8c">&#34;cv2*.so&#34;</span>
+</code></pre></div><p>I found that the installed OpenCV for Python3 was at</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/usr/local/lib/python3.5/dist-packages/cv2.cpython-35m-x86_64-linux-gnu.so
+</code></pre></div><p>But when I inspected what <code>.so</code> file python was importing I found it was trying to use the <code>.so</code> file at</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/home/sangeet/.local/lib/python3.5/site-packages/cv2/cv2.cpython-35m-x86_64-linux-gnu.so
+</code></pre></div><p>Then I tried creating a symlink between the two, but since both the files had the same name it couldn&rsquo;t be done.</p>
 <p>Then out of hope I copied the file from</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/usr/local/lib/python3.5/dist-packages/cv2.cpython-35m-x86_64-linux-gnu.so</code></pre></div>
-<p>to</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/home/sangeet/.local/lib/python3.5/site-packages/cv2/cv2.cpython-35m-x86_64-linux-gnu.so</code></pre></div>
-<p>and simply overwrite it !!</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/usr/local/lib/python3.5/dist-packages/cv2.cpython-35m-x86_64-linux-gnu.so
+</code></pre></div><p>to</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/home/sangeet/.local/lib/python3.5/site-packages/cv2/cv2.cpython-35m-x86_64-linux-gnu.so
+</code></pre></div><p>and simply overwrite it !!</p>
 <p>Pheww.. It worked !!</p>
 
       </div>

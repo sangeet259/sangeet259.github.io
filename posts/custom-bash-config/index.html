@@ -17,13 +17,13 @@
     <link rel="canonical" href="https://sangeet259.github.io/posts/custom-bash-config/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"   />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"   />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" "anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" "sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" "anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css"   media="screen" />
+      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" "sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" "anonymous" media="screen" />
     
 
     
@@ -37,7 +37,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.68.1" />
   </head>
 
   <body class=" ">
@@ -120,17 +120,11 @@
       <div>
         <p>Every time I re-install Ubnutu I have to search the web for the custom shell and git promp configurations.
 They are really handy for git completions.</p>
-
 <hr>
-
-<p><img src="https://i.imgur.com/JMom25J.png" alt="img" /></p>
-
+<p><img src="https://i.imgur.com/JMom25J.png" alt="img"></p>
 <hr>
-
 <p>This time I thought to just put it down here.</p>
-
 <p>Steps :</p>
-
 <ul>
 <li>Download : <a href="https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh">git-prompt.sh</a></li>
 <li>Save the above file as <code>git-prompt.sh</code> in the home directory</li>
@@ -138,9 +132,8 @@ They are really handy for git completions.</p>
 <li>Save the above file as <code>git-completion.bash</code> in the home directory</li>
 <li>Now open <code>.bashrc</code> file in any text editor and these lines at the end</li>
 </ul>
-
-<p><br>
-<hr></p>
+<br>
+<hr>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#6272a4"># enable programmable completion features (you don&#39;t need to enable</span>
 <span style="color:#6272a4"># this, if it&#39;s already enabled in /etc/bash.bashrc and /etc/profile</span>
 <span style="color:#6272a4"># sources /etc/bash.bashrc).</span>
@@ -167,11 +160,9 @@ They are really handy for git completions.</p>
 <span style="color:#6272a4"># &#39;\u&#39; adds the name of the current user to the prompt</span>
 <span style="color:#6272a4"># &#39;\$(__git_ps1)&#39; adds git-related stuff</span>
 <span style="color:#6272a4"># &#39;\W&#39; adds the name of the current directory</span>
-<span style="color:#8be9fd;font-style:italic">export</span> <span style="color:#8be9fd;font-style:italic">PS1</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$purple</span><span style="color:#f1fa8c">\u</span><span style="color:#8be9fd;font-style:italic">$green</span><span style="color:#f1fa8c">\$(__git_ps1)</span><span style="color:#8be9fd;font-style:italic">$blue</span><span style="color:#f1fa8c"> \W </span>$<span style="color:#f1fa8c"> </span><span style="color:#8be9fd;font-style:italic">$reset</span><span style="color:#f1fa8c">&#34;</span></code></pre></div>
-<hr>
-
-<p>Acknowledgements : <a href="https://in.udacity.com/course/how-to-use-git-and-github--ud775">https://in.udacity.com/course/how-to-use-git-and-github--ud775</a></p>
-
+<span style="color:#8be9fd;font-style:italic">export</span> <span style="color:#8be9fd;font-style:italic">PS1</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$purple</span><span style="color:#f1fa8c">\u</span><span style="color:#8be9fd;font-style:italic">$green</span><span style="color:#f1fa8c">\$(__git_ps1)</span><span style="color:#8be9fd;font-style:italic">$blue</span><span style="color:#f1fa8c"> \W </span>$<span style="color:#f1fa8c"> </span><span style="color:#8be9fd;font-style:italic">$reset</span><span style="color:#f1fa8c">&#34;</span>
+</code></pre></div><hr>
+Acknowledgements : https://in.udacity.com/course/how-to-use-git-and-github--ud775
       </div>
 
       <footer>

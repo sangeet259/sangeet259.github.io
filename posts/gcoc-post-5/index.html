@@ -17,13 +17,13 @@
     <link rel="canonical" href="https://sangeet259.github.io/posts/gcoc-post-5/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"   />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"   />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" "anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" "sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" "anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css"   media="screen" />
+      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" "sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" "anonymous" media="screen" />
     
 
     
@@ -37,7 +37,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.68.1" />
   </head>
 
   <body class=" ">
@@ -122,17 +122,11 @@
       </header>
 
       <div>
-        
-
-<h1 id="gsoc-blog-post-5">GSOC Blog Post #5</h1>
-
+        <h1 id="gsoc-blog-post-5">GSOC Blog Post #5</h1>
 <p>This time I was working on changing the default of the grep command to a new behaviour.</p>
-
 <p>With this patch grep searches on the working directory by default
 and looks for all files tracked by the working directory and greps on them</p>
-
 <p>==========================Demonstration================</p>
-
 <p><strong>OLD BEHAVIOUR</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hg init a
 $ <span style="color:#8be9fd;font-style:italic">cd</span> a
@@ -142,10 +136,9 @@ $ hg commit -m <span style="color:#f1fa8c">&#34;adds file1&#34;</span>
 $ hg mv file1 file2
 $ hg grep <span style="color:#f1fa8c">&#34;some&#34;</span>
 file2:1:some text
-file1:0:some text</code></pre></div>
-<p>This behaviour is undesirable since file1 is not in the current history and was
+file1:0:some text
+</code></pre></div><p>This behaviour is undesirable since file1 is not in the current history and was
 renamed as file2, so the second result was redundant and confusing</p>
-
 <p><strong>NEW BEHAVIOUR</strong></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hg init a
 $ <span style="color:#8be9fd;font-style:italic">cd</span> a
@@ -154,13 +147,10 @@ $ hg add file1
 $ hg commit -m <span style="color:#f1fa8c">&#34;adds file1&#34;</span>
 $ hg mv file1 file2
 $ hg grep <span style="color:#f1fa8c">&#34;some&#34;</span>
-file2:2147483647:some text</code></pre></div>
-<p>======================================================</p>
-
+file2:2147483647:some text
+</code></pre></div><p>======================================================</p>
 <p>The change can be seen in the line of the respective snippets, in the second case file1 is no more present in the repo and so is not searched again.</p>
-
 <p>Link to the Differential Revision:: <a href="https://phab.mercurial-scm.org/D3826">https://phab.mercurial-scm.org/D3826</a></p>
-
 <p>I then wrote the test demonstrating the same, next I plan to enable passing revs and multiple revisions to grep.</p>
 
       </div>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fish on sangeet259</title>
@@ -20,7 +20,7 @@
       <description>Wondered if you could just copy the output of a bash command to clipboard and paste it somewhere.
 XClip is here for your rescue. The Fish Shell 3.0 now supports xclip.
 How to use :
- For copying  $pwd | xclip  Paste it  $cd (xclip -o)   PS: In fish to execute a string as a command use paranthesis &amp;quot;( )&amp;quot; instead of backticks &amp;ldquo; ` ` &amp;ldquo;.</description>
+ For copying  $pwd | xclip   Paste it  $cd (xclip -o)    PS: In fish to execute a string as a command use paranthesis &amp;quot;( )&amp;quot; instead of backticks &amp;quot; ` ` &amp;ldquo;.</description>
     </item>
     
   </channel>

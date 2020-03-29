@@ -17,13 +17,13 @@
     <link rel="canonical" href="https://sangeet259.github.io/posts/ctx-in-python/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"   />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"   />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" "anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" "sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" "anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css"   media="screen" />
+      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" "sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" "anonymous" media="screen" />
     
 
     
@@ -37,7 +37,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.68.1" />
   </head>
 
   <body class=" ">
@@ -116,76 +116,65 @@
       </header>
 
       <div>
-        
-
-<p>So I was working on the evolve command next (<code>hg next</code>).
+        <p>So I was working on the evolve command next (<code>hg next</code>).
 Here my work was with context managers,
 although I had used context managers before this time I wanted to know a bit more about them.</p>
-
 <p>So I read this blog on Context Managers : <a href="https://jeffknupp.com/blog/2016/03/07/python-with-context-managers/">https://jeffknupp.com/blog/2016/03/07/python-with-context-managers/</a></p>
-
 <h1 id="few-takeways">Few takeways:</h1>
-
 <ul>
 <li><strong>Used to manage resources</strong></li>
 <li><strong>One of the most famous use : Handling file descriptors</strong></li>
 </ul>
-
 <blockquote>
 <p>How does a file descriptor leak ?</p>
-
+</blockquote>
+<blockquote>
 <p>By not closing the opened files. There is (usually) a limit to the number of file descriptors a process can be assigned. On UNIX-like systems, <code>$ ulimit -n</code> should give you the value of that upper limit. (It&rsquo;s 1024 on my PC)</p>
 </blockquote>
-
 <ul>
-<li><p><strong>The general syntax :</strong></p>
+<li><strong>The general syntax :</strong></li>
+</ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">with</span> something_that_returns_a_context_manager() <span style="color:#ff79c6">as</span> my_resource:
-do_something(my_resource)
-<span style="color:#ff79c6">...</span>
-<span style="color:#ff79c6">print</span>(<span style="color:#f1fa8c">&#39;done using my_resource&#39;</span>)</code></pre></div>
-<p>Now what returns a context manager ?
-* Lock objects in threading
-* subprocess.Popen
-* pathlib.Path</p>
-
+    do_something(my_resource)
+    <span style="color:#ff79c6">...</span>
+    <span style="color:#ff79c6">print</span>(<span style="color:#f1fa8c">&#39;done using my_resource&#39;</span>)
+</code></pre></div><p>Now what returns a context manager ?</p>
+<ul>
+<li>Lock objects in threading</li>
+<li>subprocess.Popen</li>
+<li>pathlib.Path</li>
+</ul>
 <h3 id="basically-any-object-that-needs-to-have-close-called-on-it-after-use-is-or-should-be-a-context-manager">Basically any object that needs to have close called on it after use is (or should be) a context manager.</h3>
-
 <h2 id="how-to-create-a-context-manager">How to create a context manager?</h2>
-
 <h3 id="the-basic-way">The Basic Way</h3>
-
 <p>Define a class that contains two special methods: <code>__enter__()</code> and <code>__exit__()</code>.
 <code>__enter__()</code> returns the resource to be managed (like a file object in the case of <code>open()</code> ). <code>__exit__()</code> does the cleanup work and doesn&rsquo;t return anything.</p>
-
 <p>Let&rsquo;s define an <code>Open()</code> context manager using this approach:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">class</span> <span style="color:#50fa7b">OpenFile</span>():
-<span style="color:#ff79c6">def</span> __init__(self,file_name, mode):
-    self<span style="color:#ff79c6">.</span>file_name <span style="color:#ff79c6">=</span> file_name
-    self<span style="color:#ff79c6">.</span>mode <span style="color:#ff79c6">=</span> mode
-<span style="color:#ff79c6">def</span> <span style="color:#50fa7b">__enter</span>(self):
-    self<span style="color:#ff79c6">.</span>opened_file <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">open</span>(self<span style="color:#ff79c6">.</span>file_name, self<span style="color:#ff79c6">.</span>mode)
-    <span style="color:#ff79c6">return</span> self<span style="color:#ff79c6">.</span>opened_file
-<span style="color:#ff79c6">def</span> <span style="color:#50fa7b">__exit</span>(self):
-    self<span style="color:#ff79c6">.</span>opened_file<span style="color:#ff79c6">.</span>close()</code></pre></div></li>
-</ul>
-
-<h3 id="the-contextlib-way">The contextlib way</h3>
-
+    <span style="color:#ff79c6">def</span> __init__(self,file_name, mode):
+        self<span style="color:#ff79c6">.</span>file_name <span style="color:#ff79c6">=</span> file_name
+        self<span style="color:#ff79c6">.</span>mode <span style="color:#ff79c6">=</span> mode
+    <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">__enter</span>(self):
+        self<span style="color:#ff79c6">.</span>opened_file <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">open</span>(self<span style="color:#ff79c6">.</span>file_name, self<span style="color:#ff79c6">.</span>mode)
+        <span style="color:#ff79c6">return</span> self<span style="color:#ff79c6">.</span>opened_file
+    <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">__exit</span>(self):
+        self<span style="color:#ff79c6">.</span>opened_file<span style="color:#ff79c6">.</span>close()
+</code></pre></div><h3 id="the-contextlib-way">The contextlib way</h3>
 <p>Since context managers are so useful there is a Standard Module dedicated to them : <strong><code>contextlib</code></strong></p>
-
 <p>There is a nice shortcut to define context managers using the <code>@contextmanager</code> decorator.
-To use <code>@contextmaneger</code> to define context manager:
-* Decorate a generator that yields exactly once.
-* Everything before the call to yield is considered the code for <code>__enter__()</code>.
-* Everything after is the code for <code>__exit__()</code>.</p>
-
+To use <code>@contextmaneger</code> to define context manager:</p>
+<ul>
+<li>Decorate a generator that yields exactly once.</li>
+<li>Everything before the call to yield is considered the code for <code>__enter__()</code>.</li>
+<li>Everything after is the code for <code>__exit__()</code>.</li>
+</ul>
 <p>Let&rsquo;s rewrite the above <strong><code>OpenFile</code></strong> class using <code>@contextmanager</code> decorator.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">@contextmanager
 <span style="color:#ff79c6">def</span> <span style="color:#50fa7b">OpenFile</span>(filename, mode):
     file_ <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">open</span>(filename, mode)
     <span style="color:#ff79c6">yield</span> file_
-    file_<span style="color:#ff79c6">.</span>close()</code></pre></div>
-<p>Also you can use <code>ContextDecorator</code> to create decorators that in turn will be used to create context managers. Phew!!</p>
+    file_<span style="color:#ff79c6">.</span>close()
+</code></pre></div><p>Also you can use <code>ContextDecorator</code> to create decorators that in turn will be used to create context managers. Phew!!</p>
 
       </div>
 

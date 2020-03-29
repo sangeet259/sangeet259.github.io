@@ -17,13 +17,13 @@
     <link rel="canonical" href="https://sangeet259.github.io/posts/gcoc-post-4/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"   />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"   />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" "anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" "sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" "anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css"   media="screen" />
+      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" "sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" "anonymous" media="screen" />
     
 
     
@@ -37,7 +37,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.68.1" />
   </head>
 
   <body class=" ">
@@ -122,28 +122,18 @@
       </header>
 
       <div>
-        
-
-<h1 id="gsoc-blog-post-4">GSoC Blog Post #4</h1>
-
+        <h1 id="gsoc-blog-post-4">GSoC Blog Post #4</h1>
 <p>Another Fortnight gone by, and perhaps this was the time when we got most work done.</p>
-
 <p>This time around I added two new features to mercurial.</p>
-
 <p>They are: The allfiles mode</p>
-
 <p>This would work on a single revision and get all the files that were
 there in that revision. So it’s like grepping on a previous state.
 Using this with wdir() :: hg grep -r &ldquo;wdir()&rdquo; &ndash;allfiles is what the
 default behaviour is desired for grep.</p>
-
 <p>Link to PR : <a href="https://phab.mercurial-scm.org/D3728">https://phab.mercurial-scm.org/D3728</a></p>
-
 <p>Then I also added the diff mode: This is a duplicate of the exisitng all flag. Since &ndash;all searches diffs, there diff is a better name for it.
 The &ndash;all flag is still here for backward compatibility reasons.</p>
-
 <p>Link to PR : <a href="https://phab.mercurial-scm.org/D3763">https://phab.mercurial-scm.org/D3763</a></p>
-
 <p>I am working on two more patches right now, will be posting about that in the next blog.</p>
 
       </div>

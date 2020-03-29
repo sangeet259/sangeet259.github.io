@@ -17,13 +17,13 @@
     <link rel="canonical" href="https://sangeet259.github.io/posts/gsoc-post-2/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"   />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"   />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" "anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" "sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" "anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css"   media="screen" />
+      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" "sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" "anonymous" media="screen" />
     
 
     
@@ -37,7 +37,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.68.1" />
   </head>
 
   <body class=" ">
@@ -121,21 +121,13 @@
 
       <div>
         <p>So it is two weeks into the coding period and I thankfully haven’t fallen much behind my own set timeline.</p>
-
 <p>The tasks that I had set this week were fixing the&ndash;all flag and fix the working directory grep. Thankfully I had done major of this work during/after submission. The fix of the &ndash;all was tested and merged and is a part of the stable version of hg now.</p>
-
 <p>The best part of the issue was that fixing it took just changing two lines. The point is that it’s not the number of lines you that matter, it’s the impact that the code has. I must admit that I might have just got this accidentally. And this is the beauty of open source, that issue was open for five years and was one of the bottlenecks of my GSoC project. This reminds me of a quote (Linus Law) “Given enough eyeballs, all bugs are shallow”.</p>
-
 <p>I wrote a detailed blog on this subject you can read more about it :</p>
-
 <p><a href="http://sangeetmishra.me/2018/03/26/demonstrating-the-problem-with-forward-ordered-grep-all-in-mercurial.html">Link to blog</a></p>
-
 <p>I had a video chat with my mentors Jordi and Pulkit. We discussed how to go ahead and work on the remaining of the Grep Plan. Jordi pointed out that making grep accept revision ranges and work on the working directory might be challenging. He assigned me this task till the first evaluations.</p>
-
 <p>I already have a patch in the working directory, but there is a lot of scope for improvement on that, I am working currently on making it support the argumentwdir() in the -r flag.</p>
-
 <p>The way I plan to do is catch it as an exception and handle it separately. This was concluded by a discussion with Yuya Nishihara. There are still other problems that I think may lay ahead. I am also having some doubts lately which I had been asking on the #mercurial, and have got suggestions from the community.</p>
-
 <p>In short, the first two weeks as Google Summer of Code student has been great. Looking forward to the upcoming weeks and more commits.</p>
 
       </div>

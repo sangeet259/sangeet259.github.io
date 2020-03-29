@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>docker on sangeet259</title>
@@ -29,7 +29,7 @@ Now came using Docker Images. So I had this image where I had a pip install runn
       <guid>https://sangeet259.github.io/til/http-in-https/</guid>
       <description>Whenever I set an https_proxy, I am tempted to do something like :
 https_proxy=https://172.16.2.30:8080/
-Notice the &amp;ldquo;https://&amp;rdquo; , sadly that&amp;rsquo;s not how it works, you have to set it &amp;ldquo;http://&amp;rdquo; only.
+Notice the &amp;ldquo;https://&amp;quot; , sadly that&amp;rsquo;s not how it works, you have to set it &amp;ldquo;http://&amp;quot; only.
 I have previously been caught in problems due to this. The latest one was when I used the https:// in the docker proxy configuration.
 Thankfully this stackoverflow answer saved the day : https://stackoverflow.com/a/51648635/6507303</description>
     </item>

@@ -17,13 +17,13 @@
     <link rel="canonical" href="https://sangeet259.github.io/til/files-in-colab/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"   />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"   />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" "anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" "sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" "anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css"   media="screen" />
+      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" "sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" "anonymous" media="screen" />
     
 
     
@@ -37,7 +37,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.68.1" />
   </head>
 
   <body class=" ">
@@ -92,12 +92,10 @@
     </header>
 
     <p>To access your Google Drive files in Colab. You first need to mount it in your notebook.</p>
-
 <p>Here&rsquo;s how to do that:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ff79c6">from</span> google.colab <span style="color:#ff79c6">import</span> drive
-drive<span style="color:#ff79c6">.</span>mount(<span style="color:#f1fa8c">&#39;/content/drive&#39;</span>)</code></pre></div>
-<p>After this you would be asked for authorisation and provided with a token, copy and paste that token back to mount your notebook at <code>/content/drive/ My Drive</code>.</p>
-
+drive<span style="color:#ff79c6">.</span>mount(<span style="color:#f1fa8c">&#39;/content/drive&#39;</span>)
+</code></pre></div><p>After this you would be asked for authorisation and provided with a token, copy and paste that token back to mount your notebook at <code>/content/drive/ My Drive</code>.</p>
 <p>From this point onward you can use <code>cd</code> and <code>ls</code> to explore your drive and go where the data is.</p>
 
   </article>

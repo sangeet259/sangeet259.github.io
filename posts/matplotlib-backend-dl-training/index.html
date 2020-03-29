@@ -17,13 +17,13 @@
     <link rel="canonical" href="https://sangeet259.github.io/posts/matplotlib-backend-dl-training/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"   />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"   />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" "sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" "anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" "sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" "anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css"   media="screen" />
+      <link rel="stylesheet" href="https://sangeet259.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" "sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" "anonymous" media="screen" />
     
 
     
@@ -37,7 +37,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="generator" content="Hugo 0.68.1" />
   </head>
 
   <body class=" ">
@@ -118,52 +118,39 @@
       </header>
 
       <div>
-        
-
-<h2 id="matplotlib-backened-change-during-training-a-dl-model">Matplotlib Backened change during Training a DL Model</h2>
-
+        <h2 id="matplotlib-backened-change-during-training-a-dl-model">Matplotlib Backened change during Training a DL Model</h2>
 <p>If you are training something on remote server where you dont have root access and get an error like your python is not configured for tkinter.
 This is nothing but maybe somewhere in your pipe</p>
-
 <p>Then you&rsquo;re options are :</p>
-
 <ul>
 <li>First install tkinter, note that since you do not have sudo priviledge, you have to install <code>tcl8.6-dev</code> and  <code>tk8.6-dev</code> from source too.</li>
 <li>Install Python from source again : <a href="https://passingcuriosity.com/2015/installing-python-from-source/">Here</a> is a great link describing the process</li>
 <li>In the last step you have to explicitly pass where your tkinter files are located during the <code>./configure</code>.</li>
 </ul>
-
 <p>After this you should</p>
-
 <p>be fine. But there is another way to bypass this stuff.
 I am assuming that you really isn&rsquo;t using GUI and sticking to terminal, in that case you don&rsquo;t need tkinter at all, why install it.
 As I said, it&rsquo;s the matplotlib that&rsquo;s the culprit here, so what you can do is change it&rsquo;s backend from tkinter (TkAgg) to antigrain(Agg).
 Then we won&rsquo;t need tkinter at all.</p>
-
 <p>Here&rsquo;s how to do that :</p>
-
 <ul>
-<li>Find where is your matplotlib file is located :
-<code>sh
-&gt;&gt;&gt; import matplotlib
-&gt;&gt;&gt; matplotlib.matplotlib_fname()
-'/home/foo/.config/matplotlib/matplotlibrc'
-</code>
-* If there is no file create one in &lsquo;/home/foo/.config/matplotlib/matplotlibrc&rsquo;
-
-In that file just change this (or if created enter just this) : <code>backend      : Agg</code>
-
-Save it and run !
-
-🎉
-You should be rolling !!
-<br />
-
-References:
-
-* <a href="https://matplotlib.org/faq/usage_faq.html#what-is-a-backend">https://matplotlib.org/faq/usage_faq.html#what-is-a-backend</a>
-* <a href="https://gist.github.com/Nesffer/5fb3d6d4cd3e0cb65624">https://gist.github.com/Nesffer/5fb3d6d4cd3e0cb65624</a>
-* <a href="https://stackoverflow.com/questions/4931376/generating-matplotlib-graphs-without-a-running-x-server/4935945#4935945">https://stackoverflow.com/questions/4931376/generating-matplotlib-graphs-without-a-running-x-server/4935945#4935945</a></li>
+<li>Find where is your matplotlib file is located :</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">&gt;&gt;&gt; import matplotlib
+&gt;&gt;&gt; matplotlib.matplotlib_fname<span style="color:#ff79c6">()</span>
+<span style="color:#f1fa8c">&#39;/home/foo/.config/matplotlib/matplotlibrc&#39;</span>
+</code></pre></div><ul>
+<li>If there is no file create one in &lsquo;/home/foo/.config/matplotlib/matplotlibrc&rsquo;</li>
+</ul>
+<p>In that file just change this (or if created enter just this) : <code>backend      : Agg</code></p>
+<p>Save it and run !</p>
+<p>🎉
+You should be rolling !!</p>
+<p>References:</p>
+<ul>
+<li><a href="https://matplotlib.org/faq/usage_faq.html#what-is-a-backend">https://matplotlib.org/faq/usage_faq.html#what-is-a-backend</a></li>
+<li><a href="https://gist.github.com/Nesffer/5fb3d6d4cd3e0cb65624">https://gist.github.com/Nesffer/5fb3d6d4cd3e0cb65624</a></li>
+<li><a href="https://stackoverflow.com/questions/4931376/generating-matplotlib-graphs-without-a-running-x-server/4935945#4935945">https://stackoverflow.com/questions/4931376/generating-matplotlib-graphs-without-a-running-x-server/4935945#4935945</a></li>
 </ul>
 
       </div>

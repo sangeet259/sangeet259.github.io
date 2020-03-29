@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sangeet259</title>
@@ -6,7 +6,7 @@
     <description>Recent content on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 22 Feb 2019 00:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 31 Oct 2018 21:45:29 +0530</lastBuildDate>
     
 	<atom:link href="https://sangeet259.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,8 +18,8 @@
       
       <guid>https://sangeet259.github.io/til/python-site-vs-dist-packages/</guid>
       <description>There are certain locations Python looks for installed packages. You can find out the locations :
-import sys print &amp;#39;\n&amp;#39;.join(sys.path)/usr/lib/python2.7 /usr/lib/python2.7/plat-x86_64-linux-gnu /usr/lib/python2.7/lib-tk /usr/lib/python2.7/lib-old /usr/lib/python2.7/lib-dynload /home/sangeet/.local/lib/python2.7/site-packages /usr/local/lib/python2.7/dist-packages /usr/lib/python2.7/dist-packages dist-package in specific to Debian/Ubuntu distros. The modules that comes from a Debian Package manager are installed in the dist-packages. /usr/lib/python2.7/dist-packages
-Since pip also comes from a Debian package manager, they too use &amp;lsquo;dist-packages&amp;rsquo; in Debian/Ubuntu. But their path is &amp;lsquo;a bit&amp;rsquo; different. /usr/local/lib/python2.</description>
+import sys print &amp;#39;\n&amp;#39;.join(sys.path) /usr/lib/python2.7 /usr/lib/python2.7/plat-x86_64-linux-gnu /usr/lib/python2.7/lib-tk /usr/lib/python2.7/lib-old /usr/lib/python2.7/lib-dynload /home/sangeet/.local/lib/python2.7/site-packages /usr/local/lib/python2.7/dist-packages /usr/lib/python2.7/dist-packages dist-package in specific to Debian/Ubuntu distros. The modules that comes from a Debian Package manager are installed in the dist-packages. /usr/lib/python2.7/dist-packages
+Since pip also comes from a Debian package manager, they too use &amp;lsquo;dist-packages&amp;rsquo; in Debian/Ubuntu. But their path is &amp;lsquo;a bit&amp;rsquo; different.</description>
     </item>
     
     <item>
@@ -39,7 +39,8 @@ Now came using Docker Images. So I had this image where I had a pip install runn
       
       <guid>https://sangeet259.github.io/til/function-search-across-project/</guid>
       <description>There are some features in sublime that I absolutely love.
-Three of them : 1. ctrl + P : Opens up a input field where you can search for files across the entire project. 2. ctrl + R : Search for a method/function in the current opened file. 3. ctrl + shift + R : Search for method/function across the entire project.</description>
+Three of them :
+ ctrl + P : Opens up a input field where you can search for files across the entire project. ctrl + R : Search for a method/function in the current opened file. ctrl + shift + R : Search for method/function across the entire project.  </description>
     </item>
     
     <item>
@@ -119,7 +120,7 @@ From this point onward you can use cd and ls to explore your drive and go where 
       <guid>https://sangeet259.github.io/til/http-in-https/</guid>
       <description>Whenever I set an https_proxy, I am tempted to do something like :
 https_proxy=https://172.16.2.30:8080/
-Notice the &amp;ldquo;https://&amp;rdquo; , sadly that&amp;rsquo;s not how it works, you have to set it &amp;ldquo;http://&amp;rdquo; only.
+Notice the &amp;ldquo;https://&amp;quot; , sadly that&amp;rsquo;s not how it works, you have to set it &amp;ldquo;http://&amp;quot; only.
 I have previously been caught in problems due to this. The latest one was when I used the https:// in the docker proxy configuration.
 Thankfully this stackoverflow answer saved the day : https://stackoverflow.com/a/51648635/6507303</description>
     </item>
@@ -145,7 +146,7 @@ Cheers 🍺</description>
       <description>Wondered if you could just copy the output of a bash command to clipboard and paste it somewhere.
 XClip is here for your rescue. The Fish Shell 3.0 now supports xclip.
 How to use :
- For copying  $pwd | xclip  Paste it  $cd (xclip -o)   PS: In fish to execute a string as a command use paranthesis &amp;quot;( )&amp;quot; instead of backticks &amp;ldquo; ` ` &amp;ldquo;.</description>
+ For copying  $pwd | xclip   Paste it  $cd (xclip -o)    PS: In fish to execute a string as a command use paranthesis &amp;quot;( )&amp;quot; instead of backticks &amp;quot; ` ` &amp;ldquo;.</description>
     </item>
     
     <item>
@@ -155,10 +156,10 @@ How to use :
       
       <guid>https://sangeet259.github.io/quotes/</guid>
       <description>Curated list of some of my all time favourite quotes
-&amp;#34;Success comes from moving from one failure to other without the loss of enthusiasm&amp;#34; Anonymous tags: motivation, failure
-&amp;#34;We do not learn from experience... we learn from reflecting on experience.&amp;#34; John Dewey  tags: life
-&amp;#34;Price is what you pay. Value is what you get.&amp;#34; Warren Buffet tags: equality, society
-“Be the change that you wish to see in the world.</description>
+ &amp;#34;Success comes from moving from one failure to other without the loss of enthusiasm&amp;#34; Anonymous tags: motivation, failure
+ &amp;#34;We do not learn from experience... we learn from reflecting on experience.&amp;#34; John Dewey tags: life
+ &amp;#34;Price is what you pay. Value is what you get.&amp;#34; Warren Buffet tags: equality, society
+ “Be the change that you wish to see in the world.</description>
     </item>
     
     <item>
@@ -170,8 +171,7 @@ How to use :
       <description>HG Grep | The Google Summer of Code Project Mercurial | Python Software Foundation Mentors : Yuya Nishihara, Pulkit Goyal, Jordi GH, Kevin Bullock, Sean Farley
 I did my project under Python Software Foundation and Mercurial. My project in the GSoC’18 dealt with the grepping aspect of Mecurial
 Now, before diving into it, making some things clear from the title.
-What is Google Summer of Code ? 
-Google Summer of Code is program to promote open-source development.</description>
+What is Google Summer of Code ? ![gsoc-img](https://cdn-images-1.medium.com/max/800/1*LmIMc8mqJLQTRtFtOKdPVg.png) Google Summer of Code is program to promote open-source development.</description>
     </item>
     
     <item>
@@ -250,7 +250,7 @@ The best part of the issue was that fixing it took just changing two lines.</des
       <pubDate>Sun, 13 May 2018 19:03:31 +0530</pubDate>
       
       <guid>https://sangeet259.github.io/posts/mercurial-grep-all-issue/</guid>
-      <description>Demonstrating the problem with forward ordered grep --all So if you do a hg grep &amp;quot;pattern&amp;quot; --all, you would get all the lines along with revision numbers showing when this pattern appeared or disappeared from the repository. Cool, that’s what we want.
+      <description>Demonstrating the problem with forward ordered grep --``all So if you do a hg grep &amp;quot;pattern&amp;quot; --all, you would get all the lines along with revision numbers showing when this pattern appeared or disappeared from the repository. Cool, that’s what we want.
 And by default, it does a reverse revlog search. That is, it starts from the latest revision and goes all the way upto the oldest one. And accordingly shows you the result.</description>
     </item>
     
@@ -272,7 +272,7 @@ And by default, it does a reverse revlog search. That is, it starts from the lat
       <description>Every time I re-install Ubnutu I have to search the web for the custom shell and git promp configurations. They are really handy for git completions.
   This time I thought to just put it down here.
 Steps :
- Download : git-prompt.sh Save the above file as git-prompt.sh in the home directory Download : git-completion.bash Save the above file as git-completion.bash in the home directory Now open .bashrc file in any text editor and these lines at the end</description>
+ Download : git-prompt.sh Save the above file as git-prompt.sh in the home directory Download : git-completion.bash Save the above file as git-completion.bash in the home directory Now open .bashrc file in any text editor and these lines at the end   # enable programmable completion features (you don&amp;#39;t need to enable # this, if it&amp;#39;s already enabled in /etc/bash.</description>
     </item>
     
     <item>
@@ -323,7 +323,7 @@ This site : https://www.learnopencv.com/install-opencv3-on-ubuntu/ is a great wa
       <pubDate>Tue, 14 Nov 2017 19:03:31 +0530</pubDate>
       
       <guid>https://sangeet259.github.io/posts/cuda-setup/</guid>
-      <description>CUDA Set Up The last time I tried to fiddle with CUDA I got stuck in a login loop and had to reinstall Ubuntu. Last day again I was sitting in front of a fresh installation of Ubuntu and nightmares of last time&amp;rsquo;s Tensorflow GPU setup were all but moments away.
+      <description>CUDA Set Up  The last time I tried to fiddle with CUDA I got stuck in a login loop and had to reinstall Ubuntu. Last day again I was sitting in front of a fresh installation of Ubuntu and nightmares of last time&amp;rsquo;s Tensorflow GPU setup were all but moments away.
 Anyway I had to do it.
 But surprisingly this time it was short and simple ( simpler would hae been a better choice ).</description>
     </item>
@@ -334,7 +334,8 @@ But surprisingly this time it was short and simple ( simpler would hae been a be
       <pubDate>Mon, 10 Apr 2017 00:00:00 +0530</pubDate>
       
       <guid>https://sangeet259.github.io/values/</guid>
-      <description>| | Be compassionate, for everyone you meet is fighting a different demon
+      <description>| | Be the best citizen you can :
+ Do Not Litter , Manage Waste Properly Save Water, Save Energy  | | Be compassionate, for everyone you meet is fighting a different demon
 | | Do not fear mistakes
 | | 90% honesty is always the best policy
 | | Failure empowers you to help others
@@ -349,9 +350,12 @@ Inspirations
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sangeet259.github.io/about/</guid>
-      <description>Hi again, my name is Sangeet, I am an Machine Learning and Open Source enthusiast, contributor and developer hailing from Jajpur, Odisha, India. Lately I have been into learning a bit finance, mostly for self help.
- I am pursuing my Bachelor of Technology degree in Civil Engineering from Indian Institute of Technology Kharagpur (IIT-KGP) in Kharagpur, India.
- I am a programmer and a ML/DL developer and enthusiast.  Also, I am a quizzer, I love to spend hours browsing trivia and jumping from wikipedia articles to news shorts.</description>
+      <description>🙌 Bonjour Visitor!
+🎓
+I am Sangeet and currently I am in my final year of Engineering at IIT Kharagpur. Majoring in Civil Engineering.
+
+I will be joining JP Morgan Chase and Co. as a Quantitative Researcher in June 2020 in Mumbai. My interest lies in Programming, Data Science and Quantitative Finance.
+I hail from Jajpur, Odisha. I did my schooling in Bokaro and Bhubaneswar before getting into IIT Kharagpur in July 2016.</description>
     </item>
     
   </channel>

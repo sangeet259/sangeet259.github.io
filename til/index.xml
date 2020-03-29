@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tils on sangeet259</title>
@@ -18,8 +18,8 @@
       
       <guid>https://sangeet259.github.io/til/python-site-vs-dist-packages/</guid>
       <description>There are certain locations Python looks for installed packages. You can find out the locations :
-import sys print &amp;#39;\n&amp;#39;.join(sys.path)/usr/lib/python2.7 /usr/lib/python2.7/plat-x86_64-linux-gnu /usr/lib/python2.7/lib-tk /usr/lib/python2.7/lib-old /usr/lib/python2.7/lib-dynload /home/sangeet/.local/lib/python2.7/site-packages /usr/local/lib/python2.7/dist-packages /usr/lib/python2.7/dist-packages dist-package in specific to Debian/Ubuntu distros. The modules that comes from a Debian Package manager are installed in the dist-packages. /usr/lib/python2.7/dist-packages
-Since pip also comes from a Debian package manager, they too use &amp;lsquo;dist-packages&amp;rsquo; in Debian/Ubuntu. But their path is &amp;lsquo;a bit&amp;rsquo; different. /usr/local/lib/python2.</description>
+import sys print &amp;#39;\n&amp;#39;.join(sys.path) /usr/lib/python2.7 /usr/lib/python2.7/plat-x86_64-linux-gnu /usr/lib/python2.7/lib-tk /usr/lib/python2.7/lib-old /usr/lib/python2.7/lib-dynload /home/sangeet/.local/lib/python2.7/site-packages /usr/local/lib/python2.7/dist-packages /usr/lib/python2.7/dist-packages dist-package in specific to Debian/Ubuntu distros. The modules that comes from a Debian Package manager are installed in the dist-packages. /usr/lib/python2.7/dist-packages
+Since pip also comes from a Debian package manager, they too use &amp;lsquo;dist-packages&amp;rsquo; in Debian/Ubuntu. But their path is &amp;lsquo;a bit&amp;rsquo; different.</description>
     </item>
     
     <item>
@@ -39,7 +39,8 @@ Now came using Docker Images. So I had this image where I had a pip install runn
       
       <guid>https://sangeet259.github.io/til/function-search-across-project/</guid>
       <description>There are some features in sublime that I absolutely love.
-Three of them : 1. ctrl + P : Opens up a input field where you can search for files across the entire project. 2. ctrl + R : Search for a method/function in the current opened file. 3. ctrl + shift + R : Search for method/function across the entire project.</description>
+Three of them :
+ ctrl + P : Opens up a input field where you can search for files across the entire project. ctrl + R : Search for a method/function in the current opened file. ctrl + shift + R : Search for method/function across the entire project.  </description>
     </item>
     
     <item>
@@ -86,7 +87,7 @@ From this point onward you can use cd and ls to explore your drive and go where 
       <guid>https://sangeet259.github.io/til/http-in-https/</guid>
       <description>Whenever I set an https_proxy, I am tempted to do something like :
 https_proxy=https://172.16.2.30:8080/
-Notice the &amp;ldquo;https://&amp;rdquo; , sadly that&amp;rsquo;s not how it works, you have to set it &amp;ldquo;http://&amp;rdquo; only.
+Notice the &amp;ldquo;https://&amp;quot; , sadly that&amp;rsquo;s not how it works, you have to set it &amp;ldquo;http://&amp;quot; only.
 I have previously been caught in problems due to this. The latest one was when I used the https:// in the docker proxy configuration.
 Thankfully this stackoverflow answer saved the day : https://stackoverflow.com/a/51648635/6507303</description>
     </item>
@@ -112,7 +113,7 @@ Cheers 🍺</description>
       <description>Wondered if you could just copy the output of a bash command to clipboard and paste it somewhere.
 XClip is here for your rescue. The Fish Shell 3.0 now supports xclip.
 How to use :
- For copying  $pwd | xclip  Paste it  $cd (xclip -o)   PS: In fish to execute a string as a command use paranthesis &amp;quot;( )&amp;quot; instead of backticks &amp;ldquo; ` ` &amp;ldquo;.</description>
+ For copying  $pwd | xclip   Paste it  $cd (xclip -o)    PS: In fish to execute a string as a command use paranthesis &amp;quot;( )&amp;quot; instead of backticks &amp;quot; ` ` &amp;ldquo;.</description>
     </item>
     
   </channel>
