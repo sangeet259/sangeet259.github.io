@@ -103,15 +103,15 @@ All I had to do was, place this in that file:</p>
  {
    <span style="color:#ff79c6">&#34;default&#34;</span>:
    {
-     <span style="color:#ff79c6">&#34;httpProxy&#34;</span>: <span style="color:#f1fa8c">&#34;http://172.16.2.30:8080&#34;</span>,
-     <span style="color:#ff79c6">&#34;httpsProxy&#34;</span>: <span style="color:#f1fa8c">&#34;http://172.16.2.30:8080&#34;</span>,
-     <span style="color:#ff79c6">&#34;ftpProxy&#34;</span>: <span style="color:#f1fa8c">&#34;http://172.16.2.30:8080&#34;</span>,
+     <span style="color:#ff79c6">&#34;httpProxy&#34;</span>: <span style="color:#f1fa8c">&#34;https://172.16.2.30:8080&#34;</span>,
+     <span style="color:#ff79c6">&#34;httpsProxy&#34;</span>: <span style="color:#f1fa8c">&#34;https://172.16.2.30:8080&#34;</span>,
+     <span style="color:#ff79c6">&#34;ftpProxy&#34;</span>: <span style="color:#f1fa8c">&#34;https://172.16.2.30:8080&#34;</span>,
      <span style="color:#ff79c6">&#34;noProxy&#34;</span>: <span style="color:#f1fa8c">&#34;10.*.*.*, localhost, 127.0.0.1&#34;</span>
    }
  }
 }
 </code></pre></div><p>And it worked like charm, the pip and apt command in other images were working.
-You don&rsquo;t have to <code>ENV https_proxy 'http://ip:3128'</code> in all the Docker Files!</p>
+You don&rsquo;t have to <code>ENV https_proxy 'https://ip:3128'</code> in all the Docker Files!</p>
 <p>Hurray !! 🎉</p>
 
   </article>
