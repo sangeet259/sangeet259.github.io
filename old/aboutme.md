@@ -14,7 +14,7 @@ subtitle: "Artificial intelligence is no match for natural stupidity."
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
-I am pursuing my Bachelor of Technology degree in <strong>Civil Engineering </strong>and Planning to pursue a <strong>Minor in Computer Science & Engineering (CSE) </strong> from <strong>Indian Institute of Technology Kharagpur</strong>  (<a target="_blank" href="https://www.iitkgp.ac.in/">IIT-KGP</a>) in Kharagpur, India.
+I am pursuing my Bachelor of Technology degree in <strong>Civil Engineering </strong>and Planning to pursue a <strong>Minor in Computer Science & Engineering (CSE) </strong> from <strong>Indian Institute of Technology Kharagpur</strong>  (<a target="_blank" href="https:://www.iitkgp.ac.in/">IIT-KGP</a>) in Kharagpur, India.
 </p>
 
 <p class="about-text">

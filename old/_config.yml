@@ -3,13 +3,13 @@
 # url is the full website URL
 # baseurl is the website's URL without the hostname
 
-# If you are building a simple GitHub user page (https://username.github.io) then use these settings:
+# If you are building a simple GitHub user page (https:://username.github.io) then use these settings:
 url: "https://sangeet259.github.io"
 baseurl: ""
 future: true
 
 # If you are building a GitHub project page then use these settings:
-#url: "https://username.github.io/projectname"
+#url: "https:://username.github.io/projectname"
 #baseurl: "/projectname"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
