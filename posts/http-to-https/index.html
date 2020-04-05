@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="SANGEET KUMAR MISHRA">
+    <meta name="description" content="Sangeet Kumar Mishra&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="https://sangeetmishra.in/">
+    <title>
+  HTTP to HTTPS using Cloudfare and some hacks · sangeet259
+</title>
+
+    <link rel="canonical" href="https://sangeetmishra.in/posts/http-to-https/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"  "anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"  "anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://sangeetmishra.in/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css"  "anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://sangeetmishra.in/images/logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://sangeetmishra.in/images/logo.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://sangeetmishra.in/">
+      sangeet259
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/about/">ABOUT</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/til/">TIL</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/posts/">BLOG</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/values/">VALUES</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/quotes/">QUOTES</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/resume.pdf">RÉSUMÉ</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">HTTP to HTTPS using Cloudfare and some hacks</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-04-05T10:07:54&#43;05:30'>
+                April 5, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              3 minutes read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://sangeetmishra.in/categories/blog/">Blog</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://sangeetmishra.in/tags/devops/">devops</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p>It was in December 2018 that I realised that my previous domain <code>sangeetmishra.me</code> had expired and some chinese guy had bought it. (Why !!??). Having all the time in hand, I set out in search of buying and recofiguring a new domain. Finally I zeroed in on sangeetmishra.in. Honestly I liked <code>.me</code> more, but okay, I could settle for a <code>.in</code>. So I went on and bought a license for that domain for three years from bigrock.in. I can&rsquo;t find the exact article that I followed, but this is very close that : <a href="https://medium.com/swlh/how-to-host-your-website-on-github-pages-for-free-3302b0fe8956">https://medium.com/swlh/how-to-host-your-website-on-github-pages-for-free-3302b0fe8956</a>.</p>
+<p>Then I realised that although sangeet259.github.io was redirecting to sangeetmishra.in. The CSS is all messed up. Apparently there was a mixed type respinse issue, which means that the site is being loaded on http but, the css and some other resources were being delivered via http. I also setup the a Cloudare SSL free of cost for the website. But all in vain! I left the site at <code>sangeet259.github.io</code> without using the newly bought domain for almost 1.5 years. This was untill March 2020 end, that I had a lot of time in my hand and wanted to finally fix the issue.</p>
+<p>I contacted <a href="https://rava-dosa.github.io/">Apoorva</a> regarding the issue and after looking at the console he told me to remove the &ldquo;crossorigin&rdquo; attribute from the css stylesheet link from everywhere. I did that, and in addition to that I also removed the &ldquo;integrity&rdquo; attribute from everywhere. (I realised without the crossorigin attribute, the integrity attribute throws error).
+Voila! The CSS on my site was loading properly, but wait a second, it was being all loaded via <code>http</code>. And that subtle &ldquo;Not Secure&rdquo; tag that Chrome shows doesn&rsquo;t make it look nice at all. I left the issue as it is for the time being and came back after a week.
+I realised there is a &ldquo;Enforce HTTPS&rdquo; option that GitHub pages gives you in your repo settings, but for some reason, in my case it was displaying that there is some issue with your hosting and HTTPS can&rsquo;t be enforced. I was puzzled, rechecked the A Records and IPs in BigRock.in dashboard. It was all right and running.
+I then searched for all <code>http://</code> in my HTML codebase and replaced them with <code>https://</code> . This too didn&rsquo;t work.</p>
+<p>I was still getting the same error
+<img src="https://i.imgur.com/Jl2yHtD.png" alt="img">.</p>
+<p>So what I noticed was that all the <a href="https://sangeet259.github.io">https://sangeet259.github.io</a> in my source HTML was being replaced by or being redirected to <a href="http://sangeetmishra.in/">http://sangeetmishra.in/</a>. I couldn&rsquo;t and still haven&rsquo;t been able to understand why it was translating a https url to one with http. But what I did was replace all the <code>https://sangeet259.github.io</code> by <code>https://sangeetmishra.in/</code> (notice HTTPS). So what I did was skip that stupid conversion. So now my site was loading the resources at <code>https://</code>, nice ?, not yet.</p>
+<p>What was still an issue was the the sangeet529.github.io would redirect to <code>http://sangeetmishra.in</code>, although <code>https://</code> was working. I went to my Cloudfare dashboard and set the redirects as follows :
+<img src="https://i.imgur.com/jSa6dwU.png" alt="img"></p>
+<p><img src="https://i.imgur.com/ADcKOsW.png" alt="img">
+Now it is all up and running ! 🏃 🎉</p>
+
+      </div>
+
+      <footer>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sangeet259-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Hi There !</p>
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-106054431-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  </body>
+
+</html>

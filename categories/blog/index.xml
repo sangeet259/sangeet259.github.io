@@ -6,10 +6,19 @@
     <description>Recent content in Blog on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 04 Feb 2019 00:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2020 10:07:54 +0530</lastBuildDate>
     
 	<atom:link href="https://sangeetmishra.in/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTTP to HTTPS using Cloudfare and some hacks</title>
+      <link>https://sangeetmishra.in/posts/http-to-https/</link>
+      <pubDate>Sun, 05 Apr 2020 10:07:54 +0530</pubDate>
+      
+      <guid>https://sangeetmishra.in/posts/http-to-https/</guid>
+      <description>It was in December 2018 that I realised that my previous domain sangeetmishra.me had expired and some chinese guy had bought it. (Why !!??). Having all the time in hand, I set out in search of buying and recofiguring a new domain. Finally I zeroed in on sangeetmishra.in. Honestly I liked .me more, but okay, I could settle for a .in. So I went on and bought a license for that domain for three years from bigrock.</description>
+    </item>
     
     <item>
       <title>Trying out Eager Execution</title>

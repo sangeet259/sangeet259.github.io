@@ -3,8 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sangeetmishra.in/categories/blog/</loc>
+    <lastmod>2020-04-05T10:07:54+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sangeetmishra.in/categories/</loc>
-    <lastmod>2019-02-22T00:00:00+05:30</lastmod>
+    <lastmod>2020-04-05T10:07:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sangeetmishra.in/tags/devops/</loc>
+    <lastmod>2020-04-05T10:07:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sangeetmishra.in/posts/http-to-https/</loc>
+    <lastmod>2020-04-05T10:07:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sangeetmishra.in/posts/</loc>
+    <lastmod>2020-04-05T10:07:54+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sangeetmishra.in/tags/</loc>
+    <lastmod>2020-04-05T10:07:54+05:30</lastmod>
   </url>
   
   <url>
@@ -18,11 +43,6 @@
   </url>
   
   <url>
-    <loc>https://sangeetmishra.in/tags/</loc>
-    <lastmod>2019-02-22T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://sangeetmishra.in/categories/til/</loc>
     <lastmod>2019-02-22T00:00:00+05:30</lastmod>
   </url>
@@ -30,11 +50,6 @@
   <url>
     <loc>https://sangeetmishra.in/til/</loc>
     <lastmod>2019-02-22T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/devops/</loc>
-    <lastmod>2019-02-18T00:00:00+05:30</lastmod>
   </url>
   
   <url>
@@ -70,16 +85,6 @@
   <url>
     <loc>https://sangeetmishra.in/til/key-in-min_max/</loc>
     <lastmod>2019-02-05T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/categories/blog/</loc>
-    <lastmod>2019-02-04T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/posts/</loc>
-    <lastmod>2019-02-04T00:00:00+05:30</lastmod>
   </url>
   
   <url>
