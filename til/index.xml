@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>Tils on sangeet259</title>
-    <link>https://sangeet259.github.io/til/</link>
+    <link>https://sangeetmishra.in/til/</link>
     <description>Recent content in Tils on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 22 Feb 2019 00:00:00 +0530</lastBuildDate>
     
-	<atom:link href="https://sangeet259.github.io/til/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sangeetmishra.in/til/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python Site Packages vs Dist Packages</title>
-      <link>https://sangeet259.github.io/til/python-site-vs-dist-packages/</link>
+      <link>https://sangeetmishra.in/til/python-site-vs-dist-packages/</link>
       <pubDate>Fri, 22 Feb 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/til/python-site-vs-dist-packages/</guid>
+      <guid>https://sangeetmishra.in/til/python-site-vs-dist-packages/</guid>
       <description>There are certain locations Python looks for installed packages. You can find out the locations :
 import sys print &amp;#39;\n&amp;#39;.join(sys.path) /usr/lib/python2.7 /usr/lib/python2.7/plat-x86_64-linux-gnu /usr/lib/python2.7/lib-tk /usr/lib/python2.7/lib-old /usr/lib/python2.7/lib-dynload /home/sangeet/.local/lib/python2.7/site-packages /usr/local/lib/python2.7/dist-packages /usr/lib/python2.7/dist-packages dist-package in specific to Debian/Ubuntu distros. The modules that comes from a Debian Package manager are installed in the dist-packages. /usr/lib/python2.7/dist-packages
 Since pip also comes from a Debian package manager, they too use &amp;lsquo;dist-packages&amp;rsquo; in Debian/Ubuntu. But their path is &amp;lsquo;a bit&amp;rsquo; different.</description>
@@ -24,20 +24,20 @@ Since pip also comes from a Debian package manager, they too use &amp;lsquo;dist
     
     <item>
       <title>Set Proxy for all the Docker files</title>
-      <link>https://sangeet259.github.io/til/proxy-for-docker-files/</link>
+      <link>https://sangeetmishra.in/til/proxy-for-docker-files/</link>
       <pubDate>Mon, 18 Feb 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/til/proxy-for-docker-files/</guid>
+      <guid>https://sangeetmishra.in/til/proxy-for-docker-files/</guid>
       <description>So I was using a docker container. Docker was already infmaous in my eyes because the way it sets up proxy. I remember wasting a lot of time initially only to find out that you have to create som proxy-conf.d file in order to enable proxy usange in docker.
 Now came using Docker Images. So I had this image where I had a pip install running, when I docker-compose up-ed, there seemed some glitch, but it was familiar, it striked me, it was PROXY issue !</description>
     </item>
     
     <item>
       <title>Project Level Methods/Function search in Sublime Text</title>
-      <link>https://sangeet259.github.io/til/function-search-across-project/</link>
+      <link>https://sangeetmishra.in/til/function-search-across-project/</link>
       <pubDate>Sat, 16 Feb 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/til/function-search-across-project/</guid>
+      <guid>https://sangeetmishra.in/til/function-search-across-project/</guid>
       <description>There are some features in sublime that I absolutely love.
 Three of them :
  ctrl + P : Opens up a input field where you can search for files across the entire project. ctrl + R : Search for a method/function in the current opened file. ctrl + shift + R : Search for method/function across the entire project.  </description>
@@ -45,10 +45,10 @@ Three of them :
     
     <item>
       <title>Categorical Cross Entropy vs Sparse Categorical Cross Entropy</title>
-      <link>https://sangeet259.github.io/til/cat-ce-vs-sparse-cat-ce/</link>
+      <link>https://sangeetmishra.in/til/cat-ce-vs-sparse-cat-ce/</link>
       <pubDate>Wed, 06 Feb 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/til/cat-ce-vs-sparse-cat-ce/</guid>
+      <guid>https://sangeetmishra.in/til/cat-ce-vs-sparse-cat-ce/</guid>
       <description>I was looking for a loss function when browsing through Keras documentation I found two loss functions. The first one categorical_cross_entropy was familiar, however I saw something I had never used before it was sparsed_categorical_cross_entropy.
 The difference : Depends on the structure of your targets !
 If your targets are one-hot encoded, you have to use categorical_crossentropy. Examples of one-hot encoding:
@@ -57,10 +57,10 @@ If your targets are one-hot encoded, you have to use categorical_crossentropy. E
     
     <item>
       <title>Key in Min/Max function in Python</title>
-      <link>https://sangeet259.github.io/til/key-in-min_max/</link>
+      <link>https://sangeetmishra.in/til/key-in-min_max/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/til/key-in-min_max/</guid>
+      <guid>https://sangeetmishra.in/til/key-in-min_max/</guid>
       <description>So I was browsing TensorFlow doc on the Dataset API, when I stumbled across something which eventually led me to learn this:
 You can pass a key function(or a lambda) to the min/max function in Python.
 Here is a sweet example:
@@ -69,10 +69,10 @@ def sumDigit(num): sum = 0 while(num): sum += num % 10 num = int(num / 10) retur
     
     <item>
       <title>Accessing Files in Colab</title>
-      <link>https://sangeet259.github.io/til/files-in-colab/</link>
+      <link>https://sangeetmishra.in/til/files-in-colab/</link>
       <pubDate>Mon, 21 Jan 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/til/files-in-colab/</guid>
+      <guid>https://sangeetmishra.in/til/files-in-colab/</guid>
       <description>To access your Google Drive files in Colab. You first need to mount it in your notebook.
 Here&amp;rsquo;s how to do that:
 from google.colab import drive drive.mount(&amp;#39;/content/drive&amp;#39;) After this you would be asked for authorisation and provided with a token, copy and paste that token back to mount your notebook at /content/drive/ My Drive.
@@ -81,10 +81,10 @@ From this point onward you can use cd and ls to explore your drive and go where 
     
     <item>
       <title>HTTP in HTTPS proxy</title>
-      <link>https://sangeet259.github.io/til/http-in-https/</link>
+      <link>https://sangeetmishra.in/til/http-in-https/</link>
       <pubDate>Mon, 21 Jan 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/til/http-in-https/</guid>
+      <guid>https://sangeetmishra.in/til/http-in-https/</guid>
       <description>Whenever I set an https_proxy, I am tempted to do something like :
 https_proxy=https://172.16.2.30:8080/
 Notice the &amp;ldquo;https://&amp;quot; , sadly that&amp;rsquo;s not how it works, you have to set it &amp;ldquo;https://&amp;quot; only.
@@ -94,10 +94,10 @@ Thankfully this stackoverflow answer saved the day : https://stackoverflow.com/a
     
     <item>
       <title>Trying out Today I Learned posts</title>
-      <link>https://sangeet259.github.io/til/today-i-learned/</link>
+      <link>https://sangeetmishra.in/til/today-i-learned/</link>
       <pubDate>Fri, 11 Jan 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/til/today-i-learned/</guid>
+      <guid>https://sangeetmishra.in/til/today-i-learned/</guid>
       <description>Hey There! Greeting of the season!
 I am planning to start a TIL Section in my blog where I write some tit-bits I learn here and there over the time of the day, mostly Googling and Stack-Overlfow-ing :sweat-smile:
 So Check this section out for more!
@@ -106,10 +106,10 @@ Cheers 🍺</description>
     
     <item>
       <title>XClip in Fish Shell</title>
-      <link>https://sangeet259.github.io/til/xclip-in-fish/</link>
+      <link>https://sangeetmishra.in/til/xclip-in-fish/</link>
       <pubDate>Fri, 11 Jan 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/til/xclip-in-fish/</guid>
+      <guid>https://sangeetmishra.in/til/xclip-in-fish/</guid>
       <description>Wondered if you could just copy the output of a bash command to clipboard and paste it somewhere.
 XClip is here for your rescue. The Fish Shell 3.0 now supports xclip.
 How to use :

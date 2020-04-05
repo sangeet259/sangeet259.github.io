@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>tensorflow on sangeet259</title>
-    <link>https://sangeet259.github.io/tags/tensorflow/</link>
+    <link>https://sangeetmishra.in/tags/tensorflow/</link>
     <description>Recent content in tensorflow on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 04 Feb 2019 00:00:00 +0530</lastBuildDate>
     
-	<atom:link href="https://sangeet259.github.io/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sangeetmishra.in/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Trying out Eager Execution</title>
-      <link>https://sangeet259.github.io/posts/eager-execution-in-tensorflow/</link>
+      <link>https://sangeetmishra.in/posts/eager-execution-in-tensorflow/</link>
       <pubDate>Mon, 04 Feb 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/eager-execution-in-tensorflow/</guid>
+      <guid>https://sangeetmishra.in/posts/eager-execution-in-tensorflow/</guid>
       <description>So there was a Data Science competition and after a long long time, I was doing something in Deep Learning. I was looking at colab when I saw this term &amp;ldquo;Eager Execution&amp;rdquo; popping up.
 So there I was trying to figure out what it was. Here in this article I try to summarise what I learnt from various sources.
 What it is? It&amp;rsquo;s a new imperative. The pythonic way of using tensorflow.</description>

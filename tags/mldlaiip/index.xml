@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>mldlaiip on sangeet259</title>
-    <link>https://sangeet259.github.io/tags/mldlaiip/</link>
+    <link>https://sangeetmishra.in/tags/mldlaiip/</link>
     <description>Recent content in mldlaiip on sangeet259</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 06 Feb 2019 00:00:00 +0530</lastBuildDate>
     
-	<atom:link href="https://sangeet259.github.io/tags/mldlaiip/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sangeetmishra.in/tags/mldlaiip/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Categorical Cross Entropy vs Sparse Categorical Cross Entropy</title>
-      <link>https://sangeet259.github.io/til/cat-ce-vs-sparse-cat-ce/</link>
+      <link>https://sangeetmishra.in/til/cat-ce-vs-sparse-cat-ce/</link>
       <pubDate>Wed, 06 Feb 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/til/cat-ce-vs-sparse-cat-ce/</guid>
+      <guid>https://sangeetmishra.in/til/cat-ce-vs-sparse-cat-ce/</guid>
       <description>I was looking for a loss function when browsing through Keras documentation I found two loss functions. The first one categorical_cross_entropy was familiar, however I saw something I had never used before it was sparsed_categorical_cross_entropy.
 The difference : Depends on the structure of your targets !
 If your targets are one-hot encoded, you have to use categorical_crossentropy. Examples of one-hot encoding:
@@ -25,10 +25,10 @@ If your targets are one-hot encoded, you have to use categorical_crossentropy. E
     
     <item>
       <title>Trying out Eager Execution</title>
-      <link>https://sangeet259.github.io/posts/eager-execution-in-tensorflow/</link>
+      <link>https://sangeetmishra.in/posts/eager-execution-in-tensorflow/</link>
       <pubDate>Mon, 04 Feb 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/eager-execution-in-tensorflow/</guid>
+      <guid>https://sangeetmishra.in/posts/eager-execution-in-tensorflow/</guid>
       <description>So there was a Data Science competition and after a long long time, I was doing something in Deep Learning. I was looking at colab when I saw this term &amp;ldquo;Eager Execution&amp;rdquo; popping up.
 So there I was trying to figure out what it was. Here in this article I try to summarise what I learnt from various sources.
 What it is? It&amp;rsquo;s a new imperative. The pythonic way of using tensorflow.</description>
@@ -36,10 +36,10 @@ What it is? It&amp;rsquo;s a new imperative. The pythonic way of using tensorflo
     
     <item>
       <title>Accessing Files in Colab</title>
-      <link>https://sangeet259.github.io/til/files-in-colab/</link>
+      <link>https://sangeetmishra.in/til/files-in-colab/</link>
       <pubDate>Mon, 21 Jan 2019 00:00:00 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/til/files-in-colab/</guid>
+      <guid>https://sangeetmishra.in/til/files-in-colab/</guid>
       <description>To access your Google Drive files in Colab. You first need to mount it in your notebook.
 Here&amp;rsquo;s how to do that:
 from google.colab import drive drive.mount(&amp;#39;/content/drive&amp;#39;) After this you would be asked for authorisation and provided with a token, copy and paste that token back to mount your notebook at /content/drive/ My Drive.
@@ -48,10 +48,10 @@ From this point onward you can use cd and ls to explore your drive and go where 
     
     <item>
       <title>Matplotlib Backened change during Training a DL Model</title>
-      <link>https://sangeet259.github.io/posts/matplotlib-backend-dl-training/</link>
+      <link>https://sangeetmishra.in/posts/matplotlib-backend-dl-training/</link>
       <pubDate>Sun, 07 Jan 2018 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/matplotlib-backend-dl-training/</guid>
+      <guid>https://sangeetmishra.in/posts/matplotlib-backend-dl-training/</guid>
       <description>Matplotlib Backened change during Training a DL Model If you are training something on remote server where you dont have root access and get an error like your python is not configured for tkinter. This is nothing but maybe somewhere in your pipe
 Then you&amp;rsquo;re options are :
  First install tkinter, note that since you do not have sudo priviledge, you have to install tcl8.6-dev and tk8.6-dev from source too.</description>
@@ -59,10 +59,10 @@ Then you&amp;rsquo;re options are :
     
     <item>
       <title>Setting Up OpenCV</title>
-      <link>https://sangeet259.github.io/posts/opencv-setup/</link>
+      <link>https://sangeetmishra.in/posts/opencv-setup/</link>
       <pubDate>Thu, 07 Dec 2017 19:03:31 +0530</pubDate>
       
-      <guid>https://sangeet259.github.io/posts/opencv-setup/</guid>
+      <guid>https://sangeetmishra.in/posts/opencv-setup/</guid>
       <description>I was trying to use the Tensorflow&amp;rsquo;s newly released Object Detection API on my webcam. I realised I couldn&amp;rsquo;t open webcam, OpenCV which was bundled with ROS was throwing all sorts of errors, I Googled and tried many hacky solution but all in vain.
 Now that my end sems were over I decided to install it fresh.
 This site : https://www.learnopencv.com/install-opencv3-on-ubuntu/ is a great walktrough through the installation process. It&amp;rsquo;s absolutely complete.</description>
