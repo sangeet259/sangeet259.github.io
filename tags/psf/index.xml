@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>psf on sangeet259</title>
+    <title>psf on Sangeet</title>
     <link>https://sangeetmishra.in/tags/psf/</link>
-    <description>Recent content in psf on sangeet259</description>
+    <description>Recent content in psf on Sangeet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Aug 2018 19:03:31 +0530</lastBuildDate>
-    
-	<atom:link href="https://sangeetmishra.in/tags/psf/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 12 Aug 2018 19:03:31 +0530</lastBuildDate><atom:link href="https://sangeetmishra.in/tags/psf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GSoC Final Post</title>
       <link>https://sangeetmishra.in/posts/gcoc-final-post/</link>
@@ -20,7 +16,7 @@
       <description>HG Grep | The Google Summer of Code Project Mercurial | Python Software Foundation Mentors : Yuya Nishihara, Pulkit Goyal, Jordi GH, Kevin Bullock, Sean Farley
 I did my project under Python Software Foundation and Mercurial. My project in the GSoC’18 dealt with the grepping aspect of Mecurial
 Now, before diving into it, making some things clear from the title.
-What is Google Summer of Code ? ![gsoc-img](https://cdn-images-1.medium.com/max/800/1*LmIMc8mqJLQTRtFtOKdPVg.png) Google Summer of Code is program to promote open-source development.</description>
+What is Google Summer of Code ? Google Summer of Code is program to promote open-source development.</description>
     </item>
     
     <item>
@@ -109,7 +105,7 @@ And by default, it does a reverse revlog search. That is, it starts from the lat
       <pubDate>Sun, 13 May 2018 19:03:31 +0530</pubDate>
       
       <guid>https://sangeetmishra.in/posts/gsoc-proposal-acceptance/</guid>
-      <description>Proposal acceptance and community bonding period Two weeks into the summer break and the gsoc coding period is about to begin.  It all started in February when I started looking for organisations to contribute for the Google Summer of Code 2018. I knew the language was going to be Python, so straight I was into the PSF Sub Orgs. The next challenge was to select the sub org, I thought of going for core software development and not some specialised field.</description>
+      <description>Proposal acceptance and community bonding period Two weeks into the summer break and the gsoc coding period is about to begin. It all started in February when I started looking for organisations to contribute for the Google Summer of Code 2018. I knew the language was going to be Python, so straight I was into the PSF Sub Orgs. The next challenge was to select the sub org, I thought of going for core software development and not some specialised field.</description>
     </item>
     
   </channel>

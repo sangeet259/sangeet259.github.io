@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GSoC on sangeet259</title>
+    <title>GSoC on Sangeet</title>
     <link>https://sangeetmishra.in/categories/gsoc/</link>
-    <description>Recent content in GSoC on sangeet259</description>
+    <description>Recent content in GSoC on Sangeet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Aug 2018 19:03:31 +0530</lastBuildDate>
-    
-	<atom:link href="https://sangeetmishra.in/categories/gsoc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 12 Aug 2018 19:03:31 +0530</lastBuildDate><atom:link href="https://sangeetmishra.in/categories/gsoc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GSoC Final Post</title>
       <link>https://sangeetmishra.in/posts/gcoc-final-post/</link>
@@ -20,7 +16,7 @@
       <description>HG Grep | The Google Summer of Code Project Mercurial | Python Software Foundation Mentors : Yuya Nishihara, Pulkit Goyal, Jordi GH, Kevin Bullock, Sean Farley
 I did my project under Python Software Foundation and Mercurial. My project in the GSoC’18 dealt with the grepping aspect of Mecurial
 Now, before diving into it, making some things clear from the title.
-What is Google Summer of Code ? ![gsoc-img](https://cdn-images-1.medium.com/max/800/1*LmIMc8mqJLQTRtFtOKdPVg.png) Google Summer of Code is program to promote open-source development.</description>
+What is Google Summer of Code ? Google Summer of Code is program to promote open-source development.</description>
     </item>
     
     <item>
@@ -83,6 +79,17 @@ So I was trying to work out another way. While I was trying to figure out a way 
     </item>
     
     <item>
+      <title>GSoC Blog Post 2</title>
+      <link>https://sangeetmishra.in/posts/gsoc-post-2/</link>
+      <pubDate>Mon, 28 May 2018 19:03:31 +0530</pubDate>
+      
+      <guid>https://sangeetmishra.in/posts/gsoc-post-2/</guid>
+      <description>So it is two weeks into the coding period and I thankfully haven’t fallen much behind my own set timeline.
+The tasks that I had set this week were fixing the&amp;ndash;all flag and fix the working directory grep. Thankfully I had done major of this work during/after submission. The fix of the &amp;ndash;all was tested and merged and is a part of the stable version of hg now.
+The best part of the issue was that fixing it took just changing two lines.</description>
+    </item>
+    
+    <item>
       <title>Demonstrating the problem with forward ordered grep --all</title>
       <link>https://sangeetmishra.in/posts/mercurial-grep-all-issue/</link>
       <pubDate>Sun, 13 May 2018 19:03:31 +0530</pubDate>
@@ -98,7 +105,7 @@ And by default, it does a reverse revlog search. That is, it starts from the lat
       <pubDate>Sun, 13 May 2018 19:03:31 +0530</pubDate>
       
       <guid>https://sangeetmishra.in/posts/gsoc-proposal-acceptance/</guid>
-      <description>Proposal acceptance and community bonding period Two weeks into the summer break and the gsoc coding period is about to begin.  It all started in February when I started looking for organisations to contribute for the Google Summer of Code 2018. I knew the language was going to be Python, so straight I was into the PSF Sub Orgs. The next challenge was to select the sub org, I thought of going for core software development and not some specialised field.</description>
+      <description>Proposal acceptance and community bonding period Two weeks into the summer break and the gsoc coding period is about to begin. It all started in February when I started looking for organisations to contribute for the Google Summer of Code 2018. I knew the language was going to be Python, so straight I was into the PSF Sub Orgs. The next challenge was to select the sub org, I thought of going for core software development and not some specialised field.</description>
     </item>
     
   </channel>

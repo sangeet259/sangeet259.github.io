@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="SANGEET KUMAR MISHRA">
+    <meta name="description" content="Sangeet Kumar Mishra&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="https://sangeetmishra.in/">
+    <title>
+  Setting Up CUDA · sangeet259
+</title>
+
+    <link rel="canonical" href="https://sangeetmishra.in/posts/cuda-setup/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"  "anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"  "anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://sangeetmishra.in/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css"  "anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://sangeetmishra.in/images/logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://sangeetmishra.in/images/logo.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://sangeetmishra.in/">
+      sangeet259
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/about/">ABOUT</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/til/">TIL</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/posts/">BLOG</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/values/">VALUES</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/quotes/">QUOTES</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/resume.pdf">RÉSUMÉ</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Setting Up CUDA</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2017-11-14T19:03:31&#43;05:30'>
+                November 14, 2017
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              3 minutes read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://sangeetmishra.in/categories/blog/">Blog</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://sangeetmishra.in/tags/ml-dl-ai-ip/">ml dl ai ip</a>
+      <span class="separator">•</span>
+    <a href="https://sangeetmishra.in/tags/setup/">setup</a>
+      <span class="separator">•</span>
+    <a href="https://sangeetmishra.in/tags/devops/">devops</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <h2 id="cuda-set-up">CUDA Set Up</h2>
+<hr>
+<p>The last time I tried to fiddle with CUDA I got stuck in a login loop and had to reinstall Ubuntu.
+Last day again I was sitting in front of a fresh installation of Ubuntu and nightmares of last time&rsquo;s Tensorflow GPU setup were all but moments away.</p>
+<p>Anyway I had to do it.</p>
+<p>But surprisingly this time it was short and simple ( simpler would hae been a better choice ).
+So decided to document it in case I or my friends ever need it.
+Aim :: To install Tensrflow GPU version !</p>
+<p>Bottleneck :: How to correctly install nvidia&rsquo;s CUDA Toolkit and cuDNN for that !
+Few Pointers to keep in mind ::</p>
+<ol>
+<li>Visit tensorflow&rsquo;s installation page and install only those version of dependencies that are mentioned.</li>
+<li>e.g. The latest version of cuDNN is 9 but as of the date of writing this post Tensoflow doesn&rsquo;t support cuDNN 9.</li>
+<li>I am assuming you had no previous conflicting packages installed, like a previous version of tensoflow or nvidia CUDA toolkit.</li>
+</ol>
+<h2 id="the-steps-">The steps ::</h2>
+<ul>
+<li>Go to <a href="https://developer.nvidia.com/cuda-toolkit">https://developer.nvidia.com/cuda-toolkit</a> , but if you proceed it takes you to the cuda toolkit version 9&rsquo;s download page which we do not want as TF doesnt support it as of now.</li>
+<li>So go to CUDA Toolkit Archive and download the toolkit version 8 from the list. Proceed and download the <code>.deb (local)</code> file.</li>
+<li>Install the .deb package || At the end of the installation you will most probably get this error
+/sbin/ldconfig.real: /usr/lib/nvidia-375/libEGL.so.1 is not a symbolic link</li>
+<li>The fix to this is is simply renaming some files :::</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ sudo mv /usr/lib/nvidia-375/libEGL.so.1 /usr/lib/nvidia-375/libEGL.so.1.org
+$ sudo mv /usr/lib32/nvidia-375/libEGL.so.1 /usr/lib32/nvidia-375/libEGL.so.1.org
+$ sudo ln -s /usr/lib/nvidia-375/libEGL.so.375.39 /usr/lib/nvidia-375/libEGL.so.1
+$ sudo ln -s /usr/lib32/nvidia-375/libEGL.so.375.39 /usr/lib32/nvidia-375/libEGL.so.1
+</code></pre></div><ul>
+<li>For sanity installation the .deb package again.</li>
+<li>Now you have to add the path variables to the .bashrc file</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+</code></pre></div><p>Make sure that the installation was done in  <code>/usr/local/cuda-8.0</code>  only, if it were anywhere else accordingly change that.</p>
+<ul>
+<li>Now go to cuDNN downloads and sign up to download the appropriate version , note that cuDNN 7 is supported by TF as of now.</li>
+<li>Download the cuDNN v6.0 Library for Linux , even if there is a .deb versio nfor ubuntu go for this ! Why ? Because it worked for me !!</li>
+</ul>
+<ol>
+<li>Navigate to your <cudnnpath> directory containing the cuDNN Tar file.</li>
+<li>Unzip the cuDNN package.
+<code>$ tar -xzvf cudnn-9.0-linux-x64-v7.tgz</code></li>
+<li>Copy the following files into the CUDA Toolkit directory. Use these 👇</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">$ sudo cp -P include/cudnn.h /usr/local/cuda-8.0/include/
+$ sudo cp -P lib64/libcudnn* /usr/local/cuda-8.0/lib64/
+$ sudo chmod a+r /usr/lib/x86_64-linux-gnu/libcudnn*
+</code></pre></div><p>That’s it ! <br>
+Do not meddle with your graphics driver, I did that twice once via <code>tty mode</code> and once via <code>additional drivers</code> option. Both the time I got stuck in a login loop.</p>
+
+      </div>
+
+      <footer>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sangeet259-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Hi There !</p>
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-106054431-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  </body>
+
+</html>

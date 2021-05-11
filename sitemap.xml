@@ -1,320 +1,195 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://sangeetmishra.in/categories/blog/</loc>
-    <lastmod>2020-04-05T10:07:54+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/categories/</loc>
-    <lastmod>2020-04-05T10:07:54+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/devops/</loc>
-    <lastmod>2020-04-05T10:07:54+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/posts/http-to-https/</loc>
-    <lastmod>2020-04-05T10:07:54+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/posts/</loc>
-    <lastmod>2020-04-05T10:07:54+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/</loc>
-    <lastmod>2020-04-05T10:07:54+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/python/</loc>
-    <lastmod>2019-02-22T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/til/python-site-vs-dist-packages/</loc>
-    <lastmod>2019-02-22T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/categories/til/</loc>
-    <lastmod>2019-02-22T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/til/</loc>
-    <lastmod>2019-02-22T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/docker/</loc>
-    <lastmod>2019-02-18T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/til/proxy-for-docker-files/</loc>
-    <lastmod>2019-02-18T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/til/function-search-across-project/</loc>
-    <lastmod>2019-02-16T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/til/cat-ce-vs-sparse-cat-ce/</loc>
-    <lastmod>2019-02-06T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/keras/</loc>
-    <lastmod>2019-02-06T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/mldlaiip/</loc>
-    <lastmod>2019-02-06T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/til/key-in-min_max/</loc>
-    <lastmod>2019-02-05T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/tensorflow/</loc>
-    <lastmod>2019-02-04T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/posts/eager-execution-in-tensorflow/</loc>
-    <lastmod>2019-02-04T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/posts/ctx-in-python/</loc>
-    <lastmod>2019-02-03T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/extensions/</loc>
-    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/mercurial/</loc>
-    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/octobus/</loc>
-    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/posts/evolve-from-source/</loc>
-    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/til/files-in-colab/</loc>
-    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/colab/</loc>
-    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/data/</loc>
-    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/gpu/</loc>
-    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/til/http-in-https/</loc>
-    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/jupyter/</loc>
-    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/proxy/</loc>
-    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/fish/</loc>
-    <lastmod>2019-01-11T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/tags/intropost/</loc>
-    <lastmod>2019-01-11T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/til/today-i-learned/</loc>
-    <lastmod>2019-01-11T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sangeetmishra.in/til/xclip-in-fish/</loc>
-    <lastmod>2019-01-11T00:00:00+05:30</lastmod>
-  </url>
-  
   <url>
     <loc>https://sangeetmishra.in/</loc>
-    <lastmod>2018-10-31T21:45:29+05:30</lastmod>
+    <lastmod>2019-02-22T00:00:00+05:30</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://sangeetmishra.in/categories/</loc>
+    <lastmod>2019-02-22T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/python/</loc>
+    <lastmod>2019-02-22T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/til/python-site-vs-dist-packages/</loc>
+    <lastmod>2019-02-22T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/</loc>
+    <lastmod>2019-02-22T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/categories/til/</loc>
+    <lastmod>2019-02-22T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/til/</loc>
+    <lastmod>2019-02-22T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/devops/</loc>
+    <lastmod>2019-02-18T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/docker/</loc>
+    <lastmod>2019-02-18T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/til/proxy-for-docker-files/</loc>
+    <lastmod>2019-02-18T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/til/function-search-across-project/</loc>
+    <lastmod>2019-02-16T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/til/cat-ce-vs-sparse-cat-ce/</loc>
+    <lastmod>2019-02-06T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/keras/</loc>
+    <lastmod>2019-02-06T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/mldlaiip/</loc>
+    <lastmod>2019-02-06T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/til/key-in-min_max/</loc>
+    <lastmod>2019-02-05T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/posts/</loc>
+    <lastmod>2019-02-04T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/categories/tech/</loc>
+    <lastmod>2019-02-04T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/tensorflow/</loc>
+    <lastmod>2019-02-04T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/posts/eager-execution-in-tensorflow/</loc>
+    <lastmod>2019-02-04T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/posts/ctx-in-python/</loc>
+    <lastmod>2019-02-03T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/extensions/</loc>
+    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/mercurial/</loc>
+    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/octobus/</loc>
+    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/posts/evolve-from-source/</loc>
+    <lastmod>2019-01-22T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/til/files-in-colab/</loc>
+    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/colab/</loc>
+    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/data/</loc>
+    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/gpu/</loc>
+    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/til/http-in-https/</loc>
+    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/jupyter/</loc>
+    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/proxy/</loc>
+    <lastmod>2019-01-21T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/fish/</loc>
+    <lastmod>2019-01-11T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/tags/intropost/</loc>
+    <lastmod>2019-01-11T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/til/today-i-learned/</loc>
+    <lastmod>2019-01-11T00:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://sangeetmishra.in/til/xclip-in-fish/</loc>
+    <lastmod>2019-01-11T00:00:00+05:30</lastmod>
+  </url><url>
     <loc>https://sangeetmishra.in/quotes/</loc>
     <lastmod>2018-10-31T21:45:29+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/categories/gsoc/</loc>
     <lastmod>2018-08-12T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/tags/gsoc/</loc>
     <lastmod>2018-08-12T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/posts/gcoc-final-post/</loc>
     <lastmod>2018-08-12T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/tags/psf/</loc>
     <lastmod>2018-08-12T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/posts/gcoc-post-7/</loc>
     <lastmod>2018-08-08T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/posts/gcoc-post-6/</loc>
     <lastmod>2018-07-24T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/posts/gcoc-post-5/</loc>
     <lastmod>2018-07-09T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/posts/gcoc-post-4/</loc>
     <lastmod>2018-06-27T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/posts/gcoc-post-3/</loc>
     <lastmod>2018-06-11T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/posts/gsoc-post-2/</loc>
     <lastmod>2018-05-28T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/posts/mercurial-grep-all-issue/</loc>
     <lastmod>2018-05-13T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/posts/gsoc-proposal-acceptance/</loc>
     <lastmod>2018-05-13T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/posts/custom-bash-config/</loc>
     <lastmod>2018-01-26T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/tags/customization/</loc>
     <lastmod>2018-01-26T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/tags/hacks/</loc>
     <lastmod>2018-01-07T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/posts/matplotlib-backend-dl-training/</loc>
     <lastmod>2018-01-07T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/posts/being-pythonic/</loc>
     <lastmod>2017-12-07T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/posts/opencv-setup/</loc>
     <lastmod>2017-12-07T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/tags/setup/</loc>
     <lastmod>2017-12-07T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/tags/blog/</loc>
     <lastmod>2017-11-14T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/tags/jekyll/</loc>
     <lastmod>2017-11-14T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/tags/ml-dl-ai-ip/</loc>
     <lastmod>2017-11-14T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/posts/first-jekyll-post/</loc>
     <lastmod>2017-11-14T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/posts/cuda-setup/</loc>
     <lastmod>2017-11-14T19:03:31+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/values/</loc>
     <lastmod>2017-04-10T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sangeetmishra.in/about/</loc>
+  </url><url>
+    <loc>https://sangeetmishra.in/authors/</loc>
+  </url><url>
+    <loc>https://sangeetmishra.in/series/</loc>
   </url>
-  
 </urlset>

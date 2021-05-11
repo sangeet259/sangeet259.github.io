@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tils on sangeet259</title>
+    <title>Tils on Sangeet</title>
     <link>https://sangeetmishra.in/til/</link>
-    <description>Recent content in Tils on sangeet259</description>
+    <description>Recent content in Tils on Sangeet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 22 Feb 2019 00:00:00 +0530</lastBuildDate>
-    
-	<atom:link href="https://sangeetmishra.in/til/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 22 Feb 2019 00:00:00 +0530</lastBuildDate><atom:link href="https://sangeetmishra.in/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python Site Packages vs Dist Packages</title>
       <link>https://sangeetmishra.in/til/python-site-vs-dist-packages/</link>
@@ -87,7 +83,7 @@ From this point onward you can use cd and ls to explore your drive and go where 
       <guid>https://sangeetmishra.in/til/http-in-https/</guid>
       <description>Whenever I set an https_proxy, I am tempted to do something like :
 https_proxy=https://172.16.2.30:8080/
-Notice the &amp;ldquo;https://&amp;quot; , sadly that&amp;rsquo;s not how it works, you have to set it &amp;ldquo;https://&amp;quot; only.
+Notice the &amp;ldquo;https://&amp;quot; , sadly that&amp;rsquo;s not how it works, you have to set it &amp;ldquo;http://&amp;quot; only.
 I have previously been caught in problems due to this. The latest one was when I used the https:// in the docker proxy configuration.
 Thankfully this stackoverflow answer saved the day : https://stackoverflow.com/a/51648635/6507303</description>
     </item>
@@ -101,7 +97,7 @@ Thankfully this stackoverflow answer saved the day : https://stackoverflow.com/a
       <description>Hey There! Greeting of the season!
 I am planning to start a TIL Section in my blog where I write some tit-bits I learn here and there over the time of the day, mostly Googling and Stack-Overlfow-ing :sweat-smile:
 So Check this section out for more!
-Cheers 🍺</description>
+Cheers :beer:</description>
     </item>
     
     <item>

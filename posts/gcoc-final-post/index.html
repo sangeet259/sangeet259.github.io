@@ -4,81 +4,136 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
 
-    <meta name="author" content="SANGEET KUMAR MISHRA">
-    <meta name="description" content="Sangeet Kumar Mishra&#39;s personal website">
+    <meta name="author" content="Sangeet Mishra">
+    <meta name="description" content="HG Grep | The Google Summer of Code Project Mercurial | Python Software Foundation Mentors : Yuya Nishihara, Pulkit Goyal, Jordi GH, Kevin Bullock, Sean Farley
+I did my project under Python Software Foundation and Mercurial. My project in the GSoC’18 dealt with the grepping aspect of Mecurial
+Now, before diving into it, making some things clear from the title.
+What is Google Summer of Code ? Google Summer of Code is program to promote open-source development.">
     <meta name="keywords" content="blog,developer,personal">
 
-    <base href="https://sangeetmishra.in/">
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GSoC Final Post"/>
+<meta name="twitter:description" content="HG Grep | The Google Summer of Code Project Mercurial | Python Software Foundation Mentors : Yuya Nishihara, Pulkit Goyal, Jordi GH, Kevin Bullock, Sean Farley
+I did my project under Python Software Foundation and Mercurial. My project in the GSoC’18 dealt with the grepping aspect of Mecurial
+Now, before diving into it, making some things clear from the title.
+What is Google Summer of Code ? Google Summer of Code is program to promote open-source development."/>
+
+    <meta property="og:title" content="GSoC Final Post" />
+<meta property="og:description" content="HG Grep | The Google Summer of Code Project Mercurial | Python Software Foundation Mentors : Yuya Nishihara, Pulkit Goyal, Jordi GH, Kevin Bullock, Sean Farley
+I did my project under Python Software Foundation and Mercurial. My project in the GSoC’18 dealt with the grepping aspect of Mecurial
+Now, before diving into it, making some things clear from the title.
+What is Google Summer of Code ? Google Summer of Code is program to promote open-source development." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sangeetmishra.in/posts/gcoc-final-post/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-08-12T19:03:31&#43;05:30" />
+<meta property="article:modified_time" content="2018-08-12T19:03:31&#43;05:30" />
+
+
+
     <title>
-  GSoC Final Post · sangeet259
+  GSoC Final Post · Sangeet
 </title>
 
-    <link rel="canonical" href="https://sangeetmishra.in/posts/gcoc-final-post/">
+    
+      <link rel="canonical" href="https://sangeetmishra.in/posts/gcoc-final-post/">
+    
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"  "anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"  "anonymous" />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+      integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8/normalize.min.css">
     
       
       
-      <link rel="stylesheet" href="https://sangeetmishra.in/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css"  "anonymous" media="screen" />
+      <link rel="stylesheet" href="/css/coder.min.f01c647a0d25b40da992a37c3376291185eed8a50ced8c26cc2c0bcfe38c97df.css" integrity="sha256-8Bxkeg0ltA2pkqN8M3YpEYXu2KUM7YwmzCwLz&#43;OMl98=" crossorigin="anonymous" media="screen" />
     
 
     
 
     
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css" integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+      <link rel="stylesheet" href="/css/custom.css" />
+    
 
     
 
-    <link rel="icon" type="image/png" href="https://sangeetmishra.in/images/logo.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://sangeetmishra.in/images/logo.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
     
+      <script defer src="https://twemoji.maxcdn.com/v/13.0.1/twemoji.min.js"
+        integrity="sha384-5f4X0lBluNY/Ib4VhGx0Pf6iDCF99VGXJIyYy7dDLY5QlEd7Ap0hICSSZA1XYbc4" crossorigin="anonymous"></script>
+    
 
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.83.1" />
   </head>
 
-  <body class=" ">
+  
+  
+    
+  
+  <body class="colorscheme-dark"
+        onload=" twemoji.parse(document.body); "
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="https://sangeetmishra.in/">
-      sangeet259
+    <a class="navigation-title" href="/">
+      Sangeet
     </a>
-    <input type="checkbox" id="menu-toggle" />
-    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
-    <ul class="navigation-list">
-      
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
         
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://sangeetmishra.in/about/">ABOUT</a>
-          </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">All Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/categories/">Categories</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/til/">T.I.L</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/resume.pdf">Résumé</a>
+            </li>
+          
         
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://sangeetmishra.in/til/">TIL</a>
-          </li>
         
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://sangeetmishra.in/posts/">BLOG</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://sangeetmishra.in/values/">VALUES</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://sangeetmishra.in/quotes/">QUOTES</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://sangeetmishra.in/resume.pdf">RÉSUMÉ</a>
-          </li>
-        
-      
-      
-    </ul>
+      </ul>
+    
   </section>
 </nav>
 
@@ -94,45 +149,47 @@
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
-              <i class="fas fa-calendar"></i>
+              <i class="fa fa-calendar" aria-hidden="true"></i>
               <time datetime='2018-08-12T19:03:31&#43;05:30'>
                 August 12, 2018
               </time>
             </span>
             <span class="reading-time">
-              <i class="fas fa-clock"></i>
-              8 minutes read
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              8-minute read
             </span>
           </div>
+          
           <div class="categories">
-  <i class="fas fa-folder"></i>
-    <a href="https://sangeetmishra.in/categories/blog/">Blog</a>
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/tech/">Tech</a>
       <span class="separator">•</span>
-    <a href="https://sangeetmishra.in/categories/gsoc/">GSoC</a></div>
+    <a href="/categories/gsoc/">GSoC</a></div>
 
           <div class="tags">
-  <i class="fas fa-tag"></i>
-    <a href="https://sangeetmishra.in/tags/gsoc/">gsoc</a>
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <a href="/tags/gsoc/">gsoc</a>
       <span class="separator">•</span>
-    <a href="https://sangeetmishra.in/tags/psf/">psf</a>
+    <a href="/tags/psf/">psf</a>
       <span class="separator">•</span>
-    <a href="https://sangeetmishra.in/tags/mercurial/">mercurial</a></div>
+    <a href="/tags/mercurial/">mercurial</a></div>
 
         </div>
       </header>
 
       <div>
+        
         <h1 id="hg-grep--the-google-summer-of-code-project">HG Grep | The Google Summer of Code Project</h1>
 <h2 id="mercurial--python-software-foundation">Mercurial | Python Software Foundation</h2>
 <p><strong>Mentors</strong> : Yuya Nishihara, Pulkit Goyal, Jordi GH, Kevin Bullock, Sean Farley</p>
 <p>I did my project under <code>Python Software Foundation</code> and <code>Mercurial</code>. My project in the GSoC’18 dealt with the grepping aspect of Mecurial</p>
 <p>Now, before diving into it, making some things clear from the title.</p>
 <h3 id="what-is-google-summer-of-code-">What is Google Summer of Code ?</h3>
-<center>![gsoc-img](https://cdn-images-1.medium.com/max/800/1*LmIMc8mqJLQTRtFtOKdPVg.png)</center>
+<!-- raw HTML omitted -->
 <p><strong>Google Summer of Code</strong> is program to promote open-source development. It is organised by Google every summer since last decade. It runs for 12 weeks from mid May to Mid August. Students contribute to open-source repositories and get paid by Google in return.</p>
 <h3 id="what-is-mercurial-">What is Mercurial ?</h3>
-<center>![](https://cdn-images-1.medium.com/max/800/1*WMxyzi8OyGI-_Yys9_YIPw.png)</center>
-<center>**The Mercurial Version Control System**</center>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p><strong>Mercurial</strong> is a distributed revision-control tool for software developers. There are other SCMs like Git, SVN, perforce.</p>
 <h3 id="grep-command">Grep Command</h3>
 <p>Grep is a command-line utility for searching plain-text data sets for lines that match a regular expression.</p>
@@ -167,7 +224,7 @@ I realised this was due to the empty pstate (parent state) dictionary that was b
 Thus the issue was fixed<span style="color:#ff79c6">.</span>
 </code></pre></div><blockquote>
 <p>A more detailed read :
-<a href="https://sangeetmishra.in/2018/03/26/demonstrating-the-problem-with-forward-ordered-grep-all-in-mercurial.html">https://sangeetmishra.in/2018/03/26/demonstrating-the-problem-with-forward-ordered-grep-all-in-mercurial.html</a></p>
+<a href="http://sangeet259.github.io/2018/03/26/demonstrating-the-problem-with-forward-ordered-grep-all-in-mercurial.html">http://sangeet259.github.io/2018/03/26/demonstrating-the-problem-with-forward-ordered-grep-all-in-mercurial.html</a></p>
 <p><a href="https://phab.mercurial-scm.org/rHGa2a6755a3defe471113eb9b259dcd8fd5f20566c">https://phab.mercurial-scm.org/rHGa2a6755a3defe471113eb9b259dcd8fd5f20566c</a></p>
 </blockquote>
 <p><strong>Additional work related to it:</strong></p>
@@ -231,7 +288,7 @@ The name all for the flag &ndash;all makes no sense at all. There is nothing all
 <p><strong>[5]. Changing the default behaviour</strong></p>
 <p>Here I caught the default state, ie no revisions passed, no diff flag. And then specified the parameters that need to be set, in order to simulate what we want the default to be. Specifically, it should be searching the wdir and it should consider all the files.</p>
 <p>A small demo of the behaviour.</p>
-<p><u><strong>OLD BEHAVIOUR</strong></u></p>
+<p><!-- raw HTML omitted --><strong>OLD BEHAVIOUR</strong><!-- raw HTML omitted --></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hg init a
 $ <span style="color:#8be9fd;font-style:italic">cd</span> a
 $ <span style="color:#8be9fd;font-style:italic">echo</span> “some text”&gt;&gt;file1
@@ -243,7 +300,7 @@ file2:1:some text
 file1:0:some text
 </code></pre></div><p>This behaviour is undesirable since file1 is not in the current history and was
 renamed as file2, so the second result was redundant and confusing.</p>
-<p><u><strong>NEW BEHAVIOUR</strong></u></p>
+<p><!-- raw HTML omitted --><strong>NEW BEHAVIOUR</strong><!-- raw HTML omitted --></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hg init a
 $ <span style="color:#8be9fd;font-style:italic">cd</span> a
 $ <span style="color:#8be9fd;font-style:italic">echo</span> “some text”&gt;&gt;file1
@@ -283,11 +340,15 @@ file2:2147483647:some text
 </ul>
 <p>At last I would like thank <a href="https://www.linkedin.com/in/pulkitg25">Pulkit</a> for helping me keep progress with the timeline, and encouragement. <a href="https://savannah.gnu.org/users/jordigh">Jordi</a> for his suggestion of PUDB . <a href="https://twitter.com/yujauja?lang=en">Yuya</a> for reviewing my codes and pointing out my silly mistakes. And the entire Mercurial community for clearing my noob doubts when they arose.</p>
 <p>The connection that has been with <code>Mercurial</code>, is more than just a summer of code. I will always be active in the channel, fixing up some bugs, and helping new comers to <code>Mercurial</code>.</p>
-<p>Cheers! 🍺</p>
+<p>Cheers! :beer:</p>
 
       </div>
 
+
       <footer>
+        
+
+
         <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -301,13 +362,15 @@ file2:2147483647:some text
             return;
         }
         var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "sangeet259-github-io" + '.disqus.com/embed.js';
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
       </footer>
     </article>
 
@@ -316,32 +379,65 @@ file2:2147483647:some text
 
       </div>
 
-      <footer class="footer">
-  <section class="container">
-    
-      <p>Hi There !</p>
-    
-    
-    
-    
-  </section>
-</footer>
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+          2018 -
+        
+        2021
+         Sangeet Mishra 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
 
     </main>
 
     
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-106054431-1', 'auto');
-	
-	ga('send', 'pageview');
-}
+      
+        
+        <script src="/js/dark-mode.min.aee9c8a464eb7b3534c7110f7c5e169e7039e2fd92710e0626d451d6725af137.js"></script>
+      
+    
+
+    
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
 </script>
+
+
+    <script async defer data-domain="example.com" src="https://analytics.example.com/js/plausible.js"></script>
+
+
+    <script data-goatcounter="https://code.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+
+    
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "token"}'></script>
 
 
   </body>

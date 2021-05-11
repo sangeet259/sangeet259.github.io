@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="SANGEET KUMAR MISHRA">
+    <meta name="description" content="Sangeet Kumar Mishra&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="https://sangeetmishra.in/">
+    <title>
+  Demonstrating the problem with forward ordered grep --all · sangeet259
+</title>
+
+    <link rel="canonical" href="https://sangeetmishra.in/posts/mercurial-grep-all-issue/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"  "anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"  "anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://sangeetmishra.in/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css"  "anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://sangeetmishra.in/images/logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://sangeetmishra.in/images/logo.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://sangeetmishra.in/">
+      sangeet259
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/about/">ABOUT</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/til/">TIL</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/posts/">BLOG</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/values/">VALUES</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/quotes/">QUOTES</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/resume.pdf">RÉSUMÉ</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Demonstrating the problem with forward ordered grep --all</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2018-05-13T19:03:31&#43;05:30'>
+                May 13, 2018
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              3 minutes read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://sangeetmishra.in/categories/blog/">Blog</a>
+      <span class="separator">•</span>
+    <a href="https://sangeetmishra.in/categories/gsoc/">GSoC</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://sangeetmishra.in/tags/gsoc/">gsoc</a>
+      <span class="separator">•</span>
+    <a href="https://sangeetmishra.in/tags/psf/">psf</a>
+      <span class="separator">•</span>
+    <a href="https://sangeetmishra.in/tags/mercurial/">mercurial</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <h1 id="demonstrating-the-problem-with-forward-ordered-grep---all">Demonstrating the problem with forward ordered grep <code>--``all</code></h1>
+<p>So if you do a <code>hg grep &quot;pattern&quot; --all</code>, you would get all the lines along with revision numbers showing when this pattern appeared or disappeared from the repository. Cool, that’s what we want.</p>
+<p>And by default, it does a reverse revlog search. That is, it starts from the latest revision and goes all the way upto the oldest one. And accordingly shows you the result.</p>
+<p>All the demonstration are performed on this repository : <a href="https://bitbucket.org/sangeet259/hg_grep_all">https://bitbucket.org/sangeet259/hg_grep_all</a></p>
+<p><em>You can try to reproduce the following results by cloning</em></p>
+<p>Okay, now coming to the point.
+This is the output of <code>hg grep &quot;ruleid&quot; --all</code> on that repo.</p>
+<p><img src="https://d2mxuefqeaa7sj.cloudfront.net/s_14728F58E2C2447B974FA1CEED8D87C4B844A7A44205FE637404A4BCC53C1097_1522070989071_image.png" alt=""></p>
+<p>This is what we expect. Now if you do <code>hg grep -r 0:tip  &quot;ruleid&quot; --all</code>, what you want is that the older hits are shown first, that we start from the oldest revision and iterate upto the latest revision. But the result is unexpected :
+Output of <code>**hg grep -r 0:tip &quot;ruleid&quot; --all**</code> on that repo.</p>
+<p><img src="https://d2mxuefqeaa7sj.cloudfront.net/s_14728F58E2C2447B974FA1CEED8D87C4B844A7A44205FE637404A4BCC53C1097_1522071187711_image.png" alt=""></p>
+<p><img src="https://d2mxuefqeaa7sj.cloudfront.net/s_14728F58E2C2447B974FA1CEED8D87C4B844A7A44205FE637404A4BCC53C1097_1522071203953_image.png" alt=""></p>
+<p>Points to note:</p>
+<ol>
+<li>There are no removals</li>
+<li>Even in case of additions, they are just not correct</li>
+</ol>
+<p>I realised this was due to the empty pstate dictionary that was being passed. And this dictionary was empty because at the end of each revision we are simply deleting the <strong>matches[rev].</strong>
+So in the next revision it’s passing <code>[]</code> as pstate, as the computation of diff via difflib.SequenceMatcher() requires comparing the previous state with this state, it’s simply showing that the previous state is empty and to get the current state, you just need to add everything from the current state to the pstate. This is the reason why there are no removals in the output and the discrepancy even in the additions.</p>
+<p>To solve this we need to simply keep the matches and not delete it. But as Jordi told, there will be a huge memory leak which we can not afford, so I came up with another solution of keeping the matches dictionary only till the end of this window and clearing it up once the window ends.
+I did not make any changes to the line <code>del revfiles[rev]</code> . So we will know when a window ends when this revfiles dict gets empty.
+Hence this :</p>
+<pre><code>del revfiles[rev]
+if not revfiles:
+  matches.clear()
+</code></pre>
+<p>Now see the result of <code>hg grep --all -r 0:tip &quot;ruleid&quot;</code></p>
+<p><img src="https://d2mxuefqeaa7sj.cloudfront.net/s_14728F58E2C2447B974FA1CEED8D87C4B844A7A44205FE637404A4BCC53C1097_1522071934273_image.png" alt=""></p>
+<p>🎉  We got the older hits first and the results are correct.</p>
+<p>PS: There are other benifts of using clear over one by ine del on a dictionary.</p>
+<ol>
+<li>Time: See the pastebin paste I created comparing the times
+<a href="https://bpaste.net/show/fe79d2daae39">https://bpaste.net/show/fe79d2daae39</a></li>
+<li>Memory: clear() method apparently, according to this SO answer is more memory efficient
+<a href="https://stackoverflow.com/questions/10446839/does-dictionarys-clear-method-delete-all-the-item-related-objects-from-memory/30519908#30519908">https://stackoverflow.com/questions/10446839/does-dictionarys-clear-method-delete-all-the-item-related-objects-from-memory/30519908#30519908</a></li>
+</ol>
+
+      </div>
+
+      <footer>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sangeet259-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Hi There !</p>
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-106054431-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  </body>
+
+</html>

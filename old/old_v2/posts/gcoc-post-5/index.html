@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="SANGEET KUMAR MISHRA">
+    <meta name="description" content="Sangeet Kumar Mishra&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="https://sangeetmishra.in/">
+    <title>
+  GSoC Blog Post 5 · sangeet259
+</title>
+
+    <link rel="canonical" href="https://sangeetmishra.in/posts/gcoc-post-5/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"  "anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"  "anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://sangeetmishra.in/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css"  "anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://sangeetmishra.in/images/logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://sangeetmishra.in/images/logo.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://sangeetmishra.in/">
+      sangeet259
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/about/">ABOUT</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/til/">TIL</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/posts/">BLOG</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/values/">VALUES</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/quotes/">QUOTES</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://sangeetmishra.in/resume.pdf">RÉSUMÉ</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">GSoC Blog Post 5</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2018-07-09T19:03:31&#43;05:30'>
+                July 9, 2018
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              One minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://sangeetmishra.in/categories/blog/">Blog</a>
+      <span class="separator">•</span>
+    <a href="https://sangeetmishra.in/categories/gsoc/">GSoC</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://sangeetmishra.in/tags/gsoc/">gsoc</a>
+      <span class="separator">•</span>
+    <a href="https://sangeetmishra.in/tags/psf/">psf</a>
+      <span class="separator">•</span>
+    <a href="https://sangeetmishra.in/tags/mercurial/">mercurial</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <h1 id="gsoc-blog-post-5">GSOC Blog Post #5</h1>
+<p>This time I was working on changing the default of the grep command to a new behaviour.</p>
+<p>With this patch grep searches on the working directory by default
+and looks for all files tracked by the working directory and greps on them</p>
+<p>==========================Demonstration================</p>
+<p><strong>OLD BEHAVIOUR</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hg init a
+$ <span style="color:#8be9fd;font-style:italic">cd</span> a
+$ <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;some text&#34;</span>&gt;&gt;file1
+$ hg add file1
+$ hg commit -m <span style="color:#f1fa8c">&#34;adds file1&#34;</span>
+$ hg mv file1 file2
+$ hg grep <span style="color:#f1fa8c">&#34;some&#34;</span>
+file2:1:some text
+file1:0:some text
+</code></pre></div><p>This behaviour is undesirable since file1 is not in the current history and was
+renamed as file2, so the second result was redundant and confusing</p>
+<p><strong>NEW BEHAVIOUR</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hg init a
+$ <span style="color:#8be9fd;font-style:italic">cd</span> a
+$ <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;some text&#34;</span>&gt;&gt;file1
+$ hg add file1
+$ hg commit -m <span style="color:#f1fa8c">&#34;adds file1&#34;</span>
+$ hg mv file1 file2
+$ hg grep <span style="color:#f1fa8c">&#34;some&#34;</span>
+file2:2147483647:some text
+</code></pre></div><p>======================================================</p>
+<p>The change can be seen in the line of the respective snippets, in the second case file1 is no more present in the repo and so is not searched again.</p>
+<p>Link to the Differential Revision:: <a href="https://phab.mercurial-scm.org/D3826">https://phab.mercurial-scm.org/D3826</a></p>
+<p>I then wrote the test demonstrating the same, next I plan to enable passing revs and multiple revisions to grep.</p>
+
+      </div>
+
+      <footer>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "sangeet259-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Hi There !</p>
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-106054431-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  </body>
+
+</html>

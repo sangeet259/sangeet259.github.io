@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>python on sangeet259</title>
+    <title>python on Sangeet</title>
     <link>https://sangeetmishra.in/tags/python/</link>
-    <description>Recent content in python on sangeet259</description>
+    <description>Recent content in python on Sangeet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 22 Feb 2019 00:00:00 +0530</lastBuildDate>
-    
-	<atom:link href="https://sangeetmishra.in/tags/python/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 22 Feb 2019 00:00:00 +0530</lastBuildDate><atom:link href="https://sangeetmishra.in/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python Site Packages vs Dist Packages</title>
       <link>https://sangeetmishra.in/til/python-site-vs-dist-packages/</link>

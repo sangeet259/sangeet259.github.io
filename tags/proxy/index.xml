@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>proxy on sangeet259</title>
+    <title>proxy on Sangeet</title>
     <link>https://sangeetmishra.in/tags/proxy/</link>
-    <description>Recent content in proxy on sangeet259</description>
+    <description>Recent content in proxy on Sangeet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 21 Jan 2019 00:00:00 +0530</lastBuildDate>
-    
-	<atom:link href="https://sangeetmishra.in/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 21 Jan 2019 00:00:00 +0530</lastBuildDate><atom:link href="https://sangeetmishra.in/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTTP in HTTPS proxy</title>
       <link>https://sangeetmishra.in/til/http-in-https/</link>
@@ -19,7 +15,7 @@
       <guid>https://sangeetmishra.in/til/http-in-https/</guid>
       <description>Whenever I set an https_proxy, I am tempted to do something like :
 https_proxy=https://172.16.2.30:8080/
-Notice the &amp;ldquo;https://&amp;quot; , sadly that&amp;rsquo;s not how it works, you have to set it &amp;ldquo;https://&amp;quot; only.
+Notice the &amp;ldquo;https://&amp;quot; , sadly that&amp;rsquo;s not how it works, you have to set it &amp;ldquo;http://&amp;quot; only.
 I have previously been caught in problems due to this. The latest one was when I used the https:// in the docker proxy configuration.
 Thankfully this stackoverflow answer saved the day : https://stackoverflow.com/a/51648635/6507303</description>
     </item>
